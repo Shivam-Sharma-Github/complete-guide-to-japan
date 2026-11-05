@@ -391,6 +391,67 @@
       }
       .prev-next button.next { text-align: right; border-left: 2px solid var(--line); }
       .prev-next button span { display: block; font-size: 11.5px; color: var(--accent-ink); font-weight: 800; text-transform: uppercase; letter-spacing: 0.12em; margin-bottom: 4px; }
+      /* ---------- try japan course ---------- */
+      .course-banner {
+        background: var(--surface); border: 1px solid var(--line); border-radius: 22px;
+        box-shadow: var(--shadow); overflow: hidden;
+        display: grid; grid-template-columns: 1fr;
+      }
+      @media (min-width: 820px) { .course-banner { grid-template-columns: 1.35fr 0.65fr; } }
+      .cb-main { padding: 30px 28px 28px; }
+      .cb-main .kicker { color: var(--accent-ink); margin-bottom: 12px; }
+      .cb-main h3 { margin: 0 0 12px; font-size: clamp(30px, 5vw, 48px); font-weight: 900; text-transform: uppercase; letter-spacing: -0.015em; line-height: 1.0; }
+      .cb-main p { margin: 0 0 18px; color: var(--ink-soft); font-size: 16px; max-width: 52ch; }
+      .cb-meta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 22px; }
+      .cb-pill {
+        font-size: 12.5px; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase;
+        border: 1.5px solid var(--line); border-radius: 999px; padding: 8px 14px; color: var(--ink);
+        background: var(--surface-2);
+      }
+      .cb-pill.hot { background: var(--accent); border-color: var(--accent); color: #fff; }
+      .cb-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+      .cb-side {
+        background: var(--accent-soft); display: flex; flex-direction: column; align-items: center; justify-content: center;
+        gap: 4px; padding: 26px 18px; text-align: center;
+      }
+      .cb-kana { font-size: clamp(52px, 8vw, 84px); font-weight: 900; line-height: 1.1; color: var(--accent-ink); letter-spacing: 0.06em; }
+      .cb-side .cb-note { font-size: 13px; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent-ink); }
+
+      .course-view { padding: 26px 0 10px; }
+      .course-view .g-tag { color: var(--accent-ink); display: inline-block; margin-bottom: 14px; font-size: 13px; }
+      .course-view h1 { font-size: clamp(36px, 7.4vw, 64px); line-height: 0.98; letter-spacing: -0.018em; font-weight: 900; text-transform: uppercase; margin: 0 0 18px; max-width: 16ch; }
+      .course-lede { font-size: clamp(16.5px, 2.4vw, 19.5px); font-weight: 500; color: var(--ink-soft); margin: 0 0 24px; max-width: 58ch; }
+      .course-facts { display: grid; grid-template-columns: 1fr; gap: 14px; margin-bottom: 8px; }
+      @media (min-width: 760px) { .course-facts { grid-template-columns: 1fr 1fr; } }
+      .course-fact { background: var(--surface); border: 1px solid var(--line); border-radius: 18px; box-shadow: var(--shadow); padding: 22px; }
+      .course-fact h3 { margin: 0 0 8px; font-size: 19px; font-weight: 900; text-transform: uppercase; letter-spacing: 0.01em; }
+      .course-fact p { margin: 0; color: var(--ink-soft); font-size: 15.5px; }
+      .week-block { margin-top: 40px; }
+      .week-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 16px; border-top: 3px solid var(--ink); padding-top: 16px; margin-bottom: 6px; }
+      .week-head h3 { margin: 0; font-size: clamp(23px, 4vw, 32px); font-weight: 900; text-transform: uppercase; letter-spacing: -0.01em; }
+      .week-head .week-dates { font-size: 13px; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent-ink); }
+      .day-row {
+        display: grid; grid-template-columns: 52px 1fr; gap: 4px 14px;
+        border-top: 1px solid var(--line); padding: 15px 4px;
+        align-items: start;
+      }
+      .day-row:last-child { border-bottom: 1px solid var(--line); }
+      .day-num { font-size: 24px; font-weight: 900; color: var(--accent-ink); line-height: 1.15; }
+      .day-main { min-width: 0; }
+      .day-title { font-weight: 800; font-size: 16.5px; line-height: 1.3; }
+      .day-detail { color: var(--ink-soft); font-size: 14.5px; margin-top: 3px; overflow-wrap: break-word; }
+      .day-side { grid-column: 2; display: flex; flex-wrap: wrap; align-items: center; gap: 6px 12px; margin-top: 6px; }
+      .day-date { font-size: 12.5px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-soft); }
+      .day-pending {
+        font-size: 11.5px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase;
+        background: var(--surface-2); border: 1px solid var(--line); color: var(--ink-soft);
+        border-radius: 999px; padding: 5px 11px;
+      }
+      @media (min-width: 700px) {
+        .day-row { grid-template-columns: 60px 1fr auto; }
+        .day-side { grid-column: 3; grid-row: 1; flex-direction: column; align-items: flex-end; margin-top: 2px; }
+      }
+      .guide-card.course-hit { border: 2px solid var(--accent); }
       [hidden] { display: none !important; }
     </style>
   </head>
@@ -484,6 +545,33 @@
         </div>
       </section>
 
+      <section class="block" id="course">
+        <div class="wrap">
+          <div class="block-head">
+            <p class="kicker" data-i18n="courseKicker">New free course</p>
+            <h2 data-i18n="courseBannerTitle">Try Japan for 30 Days</h2>
+          </div>
+          <div class="course-banner">
+            <div class="cb-main">
+              <p data-i18n="courseBannerText">Watching Japan videos and dreaming of coming here? Learn survival Japanese first — one small lesson a day for 30 days: Hiragana, Katakana, greetings, the words that work every day, and your first full sentences. Taught by an Indian living in Japan, in simple words.</p>
+              <div class="cb-meta">
+                <span class="cb-pill hot" data-i18n="courseDatePill">Day 1 · Mon 7 Dec 2026</span>
+                <span class="cb-pill" data-i18n="courseMetaFree">Free · 30 days · 1 lesson a day</span>
+                <span class="cb-pill" data-i18n="courseMetaLevel">Beginner · No book needed</span>
+              </div>
+              <div class="cb-actions">
+                <button type="button" class="btn" id="courseOpenBtn"><span data-i18n="courseCtaChart">See the 30-day chart</span></button>
+                <a class="btn ghost" href="https://www.instagram.com/shivam_bhai_japan" target="_blank" rel="noopener" data-i18n="aboutBtn">Follow @shivam_bhai_japan</a>
+              </div>
+            </div>
+            <div class="cb-side" aria-hidden="true">
+              <span class="cb-kana">あ ア<br />日本</span>
+              <span class="cb-note" data-i18n="courseSideNote">Hiragana · Katakana · Kanji</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section class="block" id="guides">
         <div class="wrap">
           <div class="block-head">
@@ -563,6 +651,17 @@
           <span data-i18n="backAll">All guides</span>
         </button>
         <div id="guideBody"></div>
+      </div>
+    </main>
+
+    <!-- ============ COURSE VIEW ============ -->
+    <main id="viewCourse" class="course-view" hidden>
+      <div class="wrap">
+        <button type="button" class="back-btn" id="courseBackBtn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+          <span data-i18n="courseBack">Back to home</span>
+        </button>
+        <div id="courseBody"></div>
       </div>
     </main>
 
@@ -929,6 +1028,125 @@
           hi: "श्रम नियम, प्रान्त के हिसाब से न्यूनतम वेतन, स्वास्थ्य और कल्याण।" }
       ];
 
+      var COURSE_ALIASES = "try japan course 30 days 30 din hiragana katakana kanji learn japanese japanese seekho japanese course beginner nihongo survival japanese जापानी सीखें जापानी सीखो कोर्स तीस दिन हिरागाना काताकाना";
+
+      var COURSE_WEEKS = [
+        {
+          en: { name: "Week 1 — Hiragana: Japan's ABC", dates: "7–13 Dec" },
+          hi: { name: "हफ़्ता 1 — Hiragana: जापान की ABC", dates: "7–13 दिसंबर" },
+          days: [
+            { n: 1, dateEn: "Mon 7 Dec", dateHi: "सोम 7 दिस",
+              en: { title: "Three scripts + vowels", detail: "Japanese uses 3 scripts — Hiragana, Katakana and Kanji. No fear: start with the 5 vowels — あ a, い i, う u, え e, お o." },
+              hi: { title: "तीन स्क्रिप्ट + स्वर (Vowels)", detail: "जापानी में 3 स्क्रिप्ट होती हैं — Hiragana, Katakana और Kanji। डर ख़त्म: शुरुआत 5 स्वरों से — あ a, い i, う u, え e, お o।" } },
+            { n: 2, dateEn: "Tue 8 Dec", dateHi: "मंगल 8 दिस",
+              en: { title: "Ka row + Sa row", detail: "かきくけこ — ka, ki, ku, ke, ko · さしすせそ — sa, shi, su, se, so." },
+              hi: { title: "Ka पंक्ति + Sa पंक्ति", detail: "かきくけこ — ka, ki, ku, ke, ko · さしすせそ — sa, shi, su, se, so।" } },
+            { n: 3, dateEn: "Wed 9 Dec", dateHi: "बुध 9 दिस",
+              en: { title: "Ta row + Na row", detail: "たちつてと — ta, chi, tsu, te, to · なにぬねの — na, ni, nu, ne, no." },
+              hi: { title: "Ta पंक्ति + Na पंक्ति", detail: "たちつてと — ta, chi, tsu, te, to · なにぬねの — na, ni, nu, ne, no।" } },
+            { n: 4, dateEn: "Thu 10 Dec", dateHi: "गुरु 10 दिस",
+              en: { title: "Ha row + Ma row", detail: "はひふへほ — ha, hi, fu, he, ho · まみむめも — ma, mi, mu, me, mo." },
+              hi: { title: "Ha पंक्ति + Ma पंक्ति", detail: "はひふへほ — ha, hi, fu, he, ho · まみむめも — ma, mi, mu, me, mo।" } },
+            { n: 5, dateEn: "Fri 11 Dec", dateHi: "शुक्र 11 दिस",
+              en: { title: "Ya, Ra + Wa rows", detail: "やゆよ — ya, yu, yo · らりるれろ — ra, ri, ru, re, ro · わをん — wa, wo, n. Hiragana complete!" },
+              hi: { title: "Ya, Ra + Wa पंक्तियाँ", detail: "やゆよ — ya, yu, yo · らりるれろ — ra, ri, ru, re, ro · わをん — wa, wo, n। Hiragana पूरा!" } },
+            { n: 6, dateEn: "Sat 12 Dec", dateHi: "शनि 12 दिस",
+              en: { title: "Dakuten — the ten-ten marks", detail: "Two small marks change the sound: か → が, さ → ざ, た → だ, は → ば → ぱ." },
+              hi: { title: "Dakuten — टेन-टेन वाले निशान", detail: "दो छोटे निशान आवाज़ बदल देते हैं: か → が, さ → ざ, た → だ, は → ば → ぱ।" } },
+            { n: 7, dateEn: "Sun 13 Dec", dateHi: "रवि 13 दिस",
+              en: { title: "Week 1 test — read 10 words", detail: "Read aloud: あい (love), すし, さくら, ねこ, うみ, かぜ, ゆき, はな, つき, ほし. Post your score in the comments." },
+              hi: { title: "हफ़्ता 1 टेस्ट — 10 शब्द पढ़ें", detail: "ज़ोर से पढ़ें: あい (प्यार), すし, さくら, ねこ, うみ, かぜ, ゆき, はな, つき, ほし। अपना स्कोर कमेंट में लिखें।" } }
+          ]
+        },
+        {
+          en: { name: "Week 2 — Katakana + First Words", dates: "14–20 Dec" },
+          hi: { name: "हफ़्ता 2 — Katakana + पहले शब्द", dates: "14–20 दिसंबर" },
+          days: [
+            { n: 8, dateEn: "Mon 14 Dec", dateHi: "सोम 14 दिस",
+              en: { title: "Katakana — the script for foreign words", detail: "Katakana writes words that came from other languages. Start: アイウエオ, カキクケコ — now read コーヒー (coffee)." },
+              hi: { title: "Katakana — विदेशी शब्दों की स्क्रिप्ट", detail: "दूसरी भाषाओं से आए शब्द Katakana में लिखे जाते हैं। शुरुआत: アイウエオ, カキクケコ — अब コーヒー (coffee) पढ़कर देखें।" } },
+            { n: 9, dateEn: "Tue 15 Dec", dateHi: "मंगल 15 दिस",
+              en: { title: "Katakana 2 + your name in Japanese", detail: "The サ to ノ rows — then write your own name in Katakana and post it as homework." },
+              hi: { title: "Katakana 2 + जापानी में आपका नाम", detail: "サ से ノ तक की पंक्तियाँ — फिर अपना नाम Katakana में लिखें और होमवर्क के तौर पर कमेंट करें।" } },
+            { n: 10, dateEn: "Wed 16 Dec", dateHi: "बुध 16 दिस",
+              en: { title: "Katakana complete — read a menu", detail: "The ハ to ワ rows. Read real words: ラーメン (ramen), ビール (beer), テレビ (TV), ホテル (hotel)." },
+              hi: { title: "Katakana पूरा — मेनू पढ़ें", detail: "ハ से ワ तक की पंक्तियाँ। असली शब्द पढ़ें: ラーメン (ramen), ビール (beer), テレビ (TV), ホテル (hotel)।" } },
+            { n: 11, dateEn: "Thu 17 Dec", dateHi: "गुरु 17 दिस",
+              en: { title: "Greetings 1", detail: "おはようございます (good morning), こんにちは (hello), こんばんは (good evening), おやすみなさい (good night)." },
+              hi: { title: "अभिवादन 1", detail: "おはようございます (सुप्रभात), こんにちは (नमस्ते), こんばんは (शुभ संध्या), おやすみなさい (शुभ रात्रि)।" } },
+            { n: 12, dateEn: "Fri 18 Dec", dateHi: "शुक्र 18 दिस",
+              en: { title: "Greetings 2 — the 4 most useful", detail: "ありがとうございます (thank you), すみません (excuse me / sorry), おねがいします (please), はい / いいえ (yes / no)." },
+              hi: { title: "अभिवादन 2 — सबसे काम के 4", detail: "ありがとうございます (धन्यवाद), すみません (माफ़ कीजिए / सॉरी), おねがいします (कृपया), はい / いいえ (हाँ / नहीं)।" } },
+            { n: 13, dateEn: "Sat 19 Dec", dateHi: "शनि 19 दिस",
+              en: { title: "Introduce yourself in Japanese", detail: "はじめまして。___です。インドから きました。よろしく おねがいします。— your full introduction, in Japanese." },
+              hi: { title: "जापानी में अपना परिचय दें", detail: "はじめまして。___です。インドから きました。よろしく おねがいします。— आपका पूरा परिचय, जापानी में।" } },
+            { n: 14, dateEn: "Sun 20 Dec", dateHi: "रवि 20 दिस",
+              en: { title: "Numbers 1–10 + asking a price", detail: "いち, に, さん, よん, ご, ろく, なな, はち, きゅう, じゅう (1–10) + これは いくらですか? (How much is this?)" },
+              hi: { title: "नंबर 1–10 + दाम पूछना", detail: "いち, に, さん, よん, ご, ろく, なな, はち, きゅう, じゅう (1–10) + これは いくらですか? (यह कितने का है?)" } }
+          ]
+        },
+        {
+          en: { name: "Week 3 — Words That Work", dates: "21–27 Dec" },
+          hi: { name: "हफ़्ता 3 — काम के शब्द", dates: "21–27 दिसंबर" },
+          days: [
+            { n: 15, dateEn: "Mon 21 Dec", dateHi: "सोम 21 दिस",
+              en: { title: "Verbs set 1 — everyday life", detail: "たべる (eat), のむ (drink), いく (go), くる (come), みる (see / watch)." },
+              hi: { title: "क्रियाएँ सेट 1 — रोज़ की ज़िंदगी", detail: "たべる (खाना), のむ (पीना), いく (जाना), くる (आना), みる (देखना)।" } },
+            { n: 16, dateEn: "Tue 22 Dec", dateHi: "मंगल 22 दिस",
+              en: { title: "Verbs set 2 — doing words", detail: "かう (buy), はたらく (work), はなす (speak), きく (listen / ask), つくる (make)." },
+              hi: { title: "क्रियाएँ सेट 2 — काम की क्रियाएँ", detail: "かう (खरीदना), はたらく (काम करना), はなす (बोलना), きく (सुनना / पूछना), つくる (बनाना)।" } },
+            { n: 17, dateEn: "Wed 23 Dec", dateHi: "बुध 23 दिस",
+              en: { title: "Everyday nouns", detail: "みず (water), パン (bread), おかね (money), でんしゃ (train), みせ (shop), いえ (home), しごと (work)." },
+              hi: { title: "रोज़ के संज्ञा शब्द", detail: "みず (पानी), パン (ब्रेड), おかね (पैसा), でんしゃ (ट्रेन), みせ (दुकान), いえ (घर), しごと (काम)।" } },
+            { n: 18, dateEn: "Thu 24 Dec", dateHi: "गुरु 24 दिस",
+              en: { title: "Adjectives", detail: "おおきい (big), ちいさい (small), たかい (expensive / high), やすい (cheap), おいしい (tasty), あつい (hot), さむい (cold)." },
+              hi: { title: "विशेषण (Adjectives)", detail: "おおきい (बड़ा), ちいさい (छोटा), たかい (महँगा / ऊँचा), やすい (सस्ता), おいしい (स्वादिष्ट), あつい (गर्म), さむい (ठंडा)।" } },
+            { n: 19, dateEn: "Fri 25 Dec", dateHi: "शुक्र 25 दिस",
+              en: { title: "Time words", detail: "きょう (today), あした (tomorrow), きのう (yesterday), いま (now) + なんじですか? (What time is it?)" },
+              hi: { title: "समय वाले शब्द", detail: "きょう (आज), あした (आने वाला कल), きのう (बीता हुआ कल), いま (अभी) + なんじですか? (कितने बजे हैं?)" } },
+            { n: 20, dateEn: "Sat 26 Dec", dateHi: "शनि 26 दिस",
+              en: { title: "Your first full sentence", detail: "わたしは ___を たべます / のみます / かいます — the simple magic of the polite ~masu form." },
+              hi: { title: "आपका पहला पूरा वाक्य", detail: "わたしは ___を たべます / のみます / かいます — विनम्र ~masu रूप का आसान जादू।" } },
+            { n: 21, dateEn: "Sun 27 Dec", dateHi: "रवि 27 दिस",
+              en: { title: "Week 3 challenge — make 5 sentences", detail: "Make 5 sentences of your own and post them in the comments — the best 5 get read out in the next Reel." },
+              hi: { title: "हफ़्ता 3 चैलेंज — 5 वाक्य बनाएँ", detail: "अपने 5 वाक्य बनाएँ और कमेंट में लिखें — सबसे अच्छे 5 अगली Reel में पढ़े जाएँगे।" } }
+          ]
+        },
+        {
+          en: { name: "Week 4 — Real Japan", dates: "28 Dec – 5 Jan" },
+          hi: { name: "हफ़्ता 4 — असली जापान", dates: "28 दिसंबर – 5 जनवरी" },
+          days: [
+            { n: 22, dateEn: "Mon 28 Dec", dateHi: "सोम 28 दिस",
+              en: { title: "Convenience store survival", detail: "これを ください (this one, please), ふくろは いりません (no bag needed) — and how to answer at the till." },
+              hi: { title: "कॉनबिनी (सुविधा स्टोर) में काम चलाएँ", detail: "これを ください (यह दे दीजिए), ふくろは いりません (बैग नहीं चाहिए) — और काउंटर पर जवाब कैसे दें।" } },
+            { n: 23, dateEn: "Tue 29 Dec", dateHi: "मंगल 29 दिस",
+              en: { title: "Station survival", detail: "___は どこですか? (Where is ___?), きっぷ (ticket), でんしゃ (train), えき (station)." },
+              hi: { title: "स्टेशन पर काम चलाएँ", detail: "___は どこですか? (___ कहाँ है?), きっぷ (टिकट), でんしゃ (ट्रेन), えき (स्टेशन)।" } },
+            { n: 24, dateEn: "Wed 30 Dec", dateHi: "बुध 30 दिस",
+              en: { title: "Restaurant survival", detail: "メニューを ください (menu, please), みずを ください (water, please), おかいけい おねがいします (bill, please), ごちそうさまでした (thank you for the meal)." },
+              hi: { title: "रेस्टोरेंट में काम चलाएँ", detail: "メニューを ください (मेनू दीजिए), みずを ください (पानी दीजिए), おかいけい おねがいします (बिल दीजिए), ごちそうさまでした (खाने के लिए धन्यवाद)।" } },
+            { n: 25, dateEn: "Thu 31 Dec", dateHi: "गुरु 31 दिस",
+              en: { title: "Words for work", detail: "おつかれさまです (the after-work greeting), わかりました (understood), もういちど おねがいします (once more, please)." },
+              hi: { title: "काम पर काम आने वाले शब्द", detail: "おつかれさまです (काम के बाद का अभिवादन), わかりました (समझ गया), もういちど おねがいします (एक बार फिर बोलिए)।" } },
+            { n: 26, dateEn: "Fri 1 Jan", dateHi: "शुक्र 1 जन",
+              en: { title: "Help phrases", detail: "たすけてください (help!), わかりません (I don't understand), ゆっくり おねがいします (slowly, please). New Year bonus: あけまして おめでとうございます (Happy New Year)." },
+              hi: { title: "मदद माँगने वाले वाक्य", detail: "たすけてください (मदद कीजिए!), わかりません (समझ नहीं आया), ゆっくり おねがいします (धीरे बोलिए)। नए साल का बोनस: あけまして おめでとうございます (नव वर्ष की शुभकामनाएँ)।" } },
+            { n: 27, dateEn: "Sat 2 Jan", dateHi: "शनि 2 जन",
+              en: { title: "Basic kanji 1 — people & Japan", detail: "人 (person), 日 (day / sun), 本 (book / origin) — now read 日本 (Japan) and 日本人 (Japanese person)." },
+              hi: { title: "बेसिक Kanji 1 — इंसान और जापान", detail: "人 (इंसान), 日 (दिन / सूरज), 本 (किताब / मूल) — अब 日本 (जापान) और 日本人 (जापानी व्यक्ति) पढ़कर देखें।" } },
+            { n: 28, dateEn: "Sun 3 Jan", dateHi: "रवि 3 जन",
+              en: { title: "Basic kanji 2 — nature & size", detail: "山 (mountain), 川 (river), 田 (rice field), 大 (big), 小 (small), 中 (middle)." },
+              hi: { title: "बेसिक Kanji 2 — प्रकृति और आकार", detail: "山 (पहाड़), 川 (नदी), 田 (धान का खेत), 大 (बड़ा), 小 (छोटा), 中 (बीच)।" } },
+            { n: 29, dateEn: "Mon 4 Jan", dateHi: "सोम 4 जन",
+              en: { title: "A full conversation", detail: "Role-play: introduce yourself → buy something in a shop → say thank you. All 30 days in one scene." },
+              hi: { title: "एक पूरी बातचीत", detail: "रोल-प्ले: अपना परिचय → दुकान पर कुछ खरीदना → धन्यवाद। 30 दिन की पूरी सीख, एक ही सीन में।" } },
+            { n: 30, dateEn: "Tue 5 Jan", dateHi: "मंगल 5 जन",
+              en: { title: "Final test + your next step", detail: "Post your introduction + 3 sentences in the comments. Completed all 30 days? Your next step is the N5 roadmap." },
+              hi: { title: "फ़ाइनल टेस्ट + आपका अगला कदम", detail: "अपना परिचय + 3 वाक्य कमेंट करें। 30/30 दिन पूरे किए? आपका अगला कदम है N5 का रोडमैप।" } }
+          ]
+        }
+      ];
+
       var STR = {
         en: {
           brandSub: "Complete Guide to Japan",
@@ -984,7 +1202,30 @@
           checked: "Facts checked: November 2026",
           disclaimer: "General information, not legal advice — always check the official source for your case.",
           prevGuide: "Previous guide",
-          nextGuide: "Next guide"
+          nextGuide: "Next guide",
+          courseKicker: "New free course",
+          courseBannerTitle: "Try Japan for 30 Days",
+          courseTitle: "Try Japan for 30 Days",
+          courseTag: "Free course · Starts 7 Dec 2026",
+          courseBannerText: "Watching Japan videos and dreaming of coming here? Learn survival Japanese first — one small lesson a day for 30 days: Hiragana, Katakana, greetings, the words that work every day, and your first full sentences. Taught by an Indian living in Japan, in simple words.",
+          courseDatePill: "Day 1 · Mon 7 Dec 2026",
+          courseMetaFree: "Free · 30 days · 1 lesson a day",
+          courseMetaLevel: "Beginner · No book needed",
+          courseCtaChart: "See the 30-day chart",
+          courseSideNote: "Hiragana · Katakana · Kanji",
+          courseBack: "Back to home",
+          courseLede: "A free 30-day beginner course for Japan lovers in India who are thinking of coming to Japan. One short Reel lesson every day — basic Hiragana and Katakana, a few useful kanji, greetings, and the verbs, nouns and adjectives you will actually use.",
+          coursePromise: "An honest promise: 30 days will not make you fluent. But you will not be lost in a shop, a station or a street in Japan — you will be able to read the scripts, greet people, ask prices and say your first full sentences. No certificate or visa promises — just real, usable Japanese.",
+          courseWhoTitle: "Who is this for?",
+          courseWho: "You watch videos of life in Japan and think, “maybe me too?” This course takes you from that dream to your first real step — before you spend money or make big decisions, learn the language Japan actually runs on.",
+          courseHowTitle: "How it works",
+          courseHow: "Day 1 starts Monday, 7 December 2026. Every day, one 45–75 second Reel lesson on Instagram — never more than 5 new items — with a small homework in the comments. Miss a day? Just continue the next day; the series does not break. All 30 lessons are listed below.",
+          courseChartTitle: "The 30-day chart",
+          coursePending: "Reel coming",
+          courseDayWord: "Day",
+          courseFollowTitle: "Watch the daily lessons",
+          courseFollowText: "Every lesson is a free Reel on Instagram. Follow now so Day 1 does not pass you by — and send this course to one friend who dreams of Japan.",
+          courseFollowBtn: "Follow @shivam_bhai_japan"
         },
         hi: {
           brandSub: "जापान की पूरी गाइड",
@@ -1040,7 +1281,30 @@
           checked: "जानकारी जाँची गई: नवंबर 2026",
           disclaimer: "यह सामान्य जानकारी है, कानूनी सलाह नहीं — अपने मामले के लिए हमेशा आधिकारिक स्रोत ज़रूर देखें।",
           prevGuide: "पिछली गाइड",
-          nextGuide: "अगली गाइड"
+          nextGuide: "अगली गाइड",
+          courseKicker: "नया मुफ़्त कोर्स",
+          courseBannerTitle: "Try Japan — 30 Din",
+          courseTitle: "Try Japan — 30 Din",
+          courseTag: "मुफ़्त कोर्स · 7 दिसंबर 2026 से शुरू",
+          courseBannerText: "जापान की वीडियोज़ देखकर यहाँ आने का सपना देख रहे हैं? पहले survival Japanese सीखें — 30 दिन, रोज़ एक छोटा lesson: Hiragana, Katakana, अभिवादन, रोज़ काम आने वाले शब्द और आपके पहले पूरे वाक्य। जापान में रहने वाला एक भारतीय, आसान शब्दों में सिखाएगा।",
+          courseDatePill: "Day 1 · सोमवार 7 दिसंबर 2026",
+          courseMetaFree: "मुफ़्त · 30 दिन · रोज़ 1 lesson",
+          courseMetaLevel: "शुरुआती · कोई किताब नहीं चाहिए",
+          courseCtaChart: "30 दिन का चार्ट देखें",
+          courseSideNote: "Hiragana · Katakana · Kanji",
+          courseBack: "होम पर वापस",
+          courseLede: "भारत में बैठे उन Japan-प्रेमियों के लिए मुफ़्त 30-दिन का शुरुआती कोर्स, जो जापान आने की सोच रहे हैं। रोज़ एक छोटा Reel lesson — बेसिक Hiragana और Katakana, कुछ काम के kanji, अभिवादन, और वे क्रियाएँ, संज्ञाएँ व विशेषण जो असल में काम आएँगे।",
+          coursePromise: "एक सच्चा वादा: 30 दिन में आप fluent नहीं होंगे। लेकिन जापान की किसी दुकान, स्टेशन या गली में आप खोए हुए नहीं रहेंगे — आप स्क्रिप्ट पढ़ पाएँगे, अभिवादन कर पाएँगे, दाम पूछ पाएँगे और अपने पहले पूरे वाक्य बोल पाएँगे। कोई सर्टिफिकेट या वीज़ा का वादा नहीं — सिर्फ़ असली, काम आने वाली जापानी।",
+          courseWhoTitle: "यह किसके लिए है?",
+          courseWho: "आप जापान की ज़िंदगी की वीडियोज़ देखते हैं और सोचते हैं — “शायद मैं भी?” यह कोर्स आपको उस सपने से पहले असली कदम तक ले जाता है — पैसे खर्च करने या बड़े फ़ैसले लेने से पहले, वह भाषा सीखें जिस पर जापान असल में चलता है।",
+          courseHowTitle: "यह कैसे चलेगा?",
+          courseHow: "Day 1 सोमवार, 7 दिसंबर 2026 से शुरू होगा। रोज़ Instagram पर एक 45–75 सेकंड का Reel lesson — कभी 5 से ज़्यादा नए items नहीं — और कमेंट में एक छोटा-सा होमवर्क। एक दिन छूट जाए? अगले दिन से जारी रखें; सीरीज़ नहीं टूटती। नीचे सभी 30 lessons दिए हैं।",
+          courseChartTitle: "30 दिन का चार्ट",
+          coursePending: "Reel जल्द आएगी",
+          courseDayWord: "दिन",
+          courseFollowTitle: "रोज़ के lessons देखें",
+          courseFollowText: "हर lesson Instagram पर एक मुफ़्त Reel है। अभी फॉलो करें ताकि Day 1 छूट न जाए — और यह कोर्स उस एक दोस्त को भेजें जो जापान का सपना देखता है।",
+          courseFollowBtn: "@shivam_bhai_japan को फॉलो करें"
         }
       };
     </script>
@@ -1178,6 +1442,15 @@
           return hay.indexOf(q) !== -1;
         });
         var html = "";
+        var courseHit = activeSection === "all" && courseMatches(q);
+        if (courseHit) {
+          html += '<button type="button" class="guide-card course-hit" data-course-card="1">'
+            + '<span class="g-top"><span class="g-idx">30</span><span class="g-tag">' + esc(t.courseTag) + '</span></span>'
+            + '<h3>' + esc(t.courseTitle) + '</h3>'
+            + '<p>' + esc(t.courseLede) + '</p>'
+            + '<span class="g-open">' + esc(t.courseCtaChart) + ' ' + ICONS.arrow + '</span>'
+            + '</button>';
+        }
         list.forEach(function (g) {
           var sec = sectionById(g.section);
           var num = GUIDES.indexOf(g) + 1;
@@ -1191,10 +1464,14 @@
         });
         document.getElementById("guideGrid").innerHTML = html;
         var nr = document.getElementById("noResults");
-        if (list.length === 0) {
+        if (list.length === 0 && !courseHit) {
           nr.hidden = false; nr.textContent = t.noResults;
         } else { nr.hidden = true; }
-        var cards = document.querySelectorAll(".guide-card");
+        var cc = document.querySelectorAll("[data-course-card]");
+        for (var k = 0; k < cc.length; k++) {
+          cc[k].addEventListener("click", function () { location.hash = "#/course"; });
+        }
+        var cards = document.querySelectorAll(".guide-card[data-guide]");
         for (var i = 0; i < cards.length; i++) {
           cards[i].addEventListener("click", function () {
             location.hash = "#/guide/" + this.getAttribute("data-guide");
@@ -1223,19 +1500,37 @@
         money: "money salary wage pension tax payslip yen \u092a\u0948\u0938\u093e \u0935\u0947\u0924\u0928 \u092a\u0947\u0902\u0936\u0928 \u091f\u0948\u0915\u094d\u0938",
         links: "official links government portal \u0938\u0930\u0915\u093e\u0930\u0940 \u0932\u093f\u0902\u0915 \u0906\u0927\u093f\u0915\u093e\u0930\u093f\u0915"
       };
+      function courseHaystack() {
+        var titles = "";
+        COURSE_WEEKS.forEach(function (w) {
+          titles += " " + w.en.name + " " + w.hi.name;
+          w.days.forEach(function (d) { titles += " " + d.en.title + " " + d.en.detail + " " + d.hi.title + " " + d.hi.detail; });
+        });
+        return (STR.en.courseTitle + " " + STR.hi.courseTitle + " " + COURSE_ALIASES + titles).toLowerCase();
+      }
+      function courseMatches(q) {
+        q = (q || "").trim().toLowerCase();
+        if (!q) return false;
+        if (courseHaystack().indexOf(q) !== -1) return true;
+        var words = q.split(/\s+/);
+        for (var i = 0; i < words.length; i++) {
+          if (words[i].length > 2 && COURSE_ALIASES.indexOf(words[i]) !== -1) return true;
+        }
+        return false;
+      }
       function guideHaystack(g) {
         var sec = sectionById(g.section);
         return (g.en.title + " " + g.en.simple + " " + g.hi.title + " " + g.hi.simple + " " + (g.keywords || "") + " " + (sec ? sec.en.name + " " + sec.hi.name : "")).toLowerCase();
       }
       function heroMatches(q) {
         q = q.trim().toLowerCase();
-        if (!q) return { guides: [], sections: [] };
+        if (!q) return { guides: [], sections: [], course: false };
         var gs = GUIDES.filter(function (g) { return guideHaystack(g).indexOf(q) !== -1; });
         var ss = SECTIONS.filter(function (s) {
           var hay = (s.en.name + " " + s.en.desc + " " + s.hi.name + " " + s.hi.desc + " " + (SECTION_KEYWORDS[s.id] || "")).toLowerCase();
           return hay.indexOf(q) !== -1;
         });
-        return { guides: gs, sections: ss };
+        return { guides: gs, sections: ss, course: courseMatches(q) };
       }
       function renderHeroResults() {
         var t = STR[lang];
@@ -1246,6 +1541,9 @@
         if (!q) { box.hidden = true; box.innerHTML = ""; return; }
         var m = heroMatches(q);
         var html = "";
+        if (m.course) {
+          html += '<button type="button" class="hero-result" data-hero-course="1"><span class="hr-main"><span class="hr-tag">' + esc(t.courseTag) + '</span><span class="hr-title">' + esc(t.courseTitle) + '</span></span><span class="hr-arrow" aria-hidden="true">\u2192</span></button>';
+        }
         m.guides.slice(0, 6).forEach(function (g) {
           var sec = sectionById(g.section);
           html += '<button type="button" class="hero-result" data-hero-guide="' + g.id + '"><span class="hr-main"><span class="hr-tag">' + esc(sec[lang].name) + '</span><span class="hr-title">' + esc(g[lang].title) + '</span></span><span class="hr-arrow" aria-hidden="true">\u2192</span></button>';
@@ -1261,6 +1559,13 @@
         }
         box.innerHTML = html;
         box.hidden = false;
+        var cb = box.querySelectorAll("[data-hero-course]");
+        for (var c = 0; c < cb.length; c++) {
+          cb[c].addEventListener("click", function () {
+            box.hidden = true;
+            location.hash = "#/course";
+          });
+        }
         var gb = box.querySelectorAll("[data-hero-guide]");
         for (var i = 0; i < gb.length; i++) {
           gb[i].addEventListener("click", function () {
@@ -1290,9 +1595,16 @@
         var q = document.getElementById("heroSearchInput").value.trim();
         if (!q) { document.getElementById("guides").scrollIntoView({ behavior: "smooth" }); return; }
         var m = heroMatches(q);
-        if (m.guides.length) {
+        var courseFirst = m.course && (COURSE_ALIASES.indexOf(q) !== -1 || q.indexOf("try japan") !== -1 || q.indexOf("30 din") !== -1);
+        if (courseFirst) {
+          document.getElementById("heroResults").hidden = true;
+          location.hash = "#/course";
+        } else if (m.guides.length) {
           document.getElementById("heroResults").hidden = true;
           location.hash = "#/guide/" + m.guides[0].id;
+        } else if (m.course) {
+          document.getElementById("heroResults").hidden = true;
+          location.hash = "#/course";
         } else {
           renderHeroResults();
           document.getElementById("guides").scrollIntoView({ behavior: "smooth" });
@@ -1334,24 +1646,68 @@
         }
       }
 
+      /* ---- course detail ---- */
+      function renderCourse() {
+        var t = STR[lang];
+        var weeks = "";
+        COURSE_WEEKS.forEach(function (w) {
+          var rows = "";
+          w.days.forEach(function (d) {
+            var c = d[lang];
+            var date = lang === "hi" ? d.dateHi : d.dateEn;
+            rows += '<div class="day-row">'
+              + '<span class="day-num">' + (d.n < 10 ? "0" : "") + d.n + '</span>'
+              + '<span class="day-main"><span class="day-title">' + esc(c.title) + '</span>'
+              + '<span class="day-detail" style="display:block">' + esc(c.detail) + '</span></span>'
+              + '<span class="day-side"><span class="day-date">' + esc(date) + '</span>'
+              + '<span class="day-pending">' + esc(t.coursePending) + '</span></span>'
+              + '</div>';
+          });
+          weeks += '<div class="week-block"><div class="week-head"><h3>' + esc(w[lang].name) + '</h3>'
+            + '<span class="week-dates">' + esc(w[lang].dates) + '</span></div>' + rows + '</div>';
+        });
+        var html = '<span class="g-tag">' + esc(t.courseTag) + '</span>'
+          + '<h1>' + esc(t.courseTitle) + '</h1>'
+          + '<p class="course-lede">' + esc(t.courseLede) + '</p>'
+          + '<div class="simple-box"><div class="sb-label">' + esc(t.simpleAnswer) + '</div><p>' + esc(t.coursePromise) + '</p></div>'
+          + '<div class="course-facts">'
+          + '<div class="course-fact"><h3>' + esc(t.courseWhoTitle) + '</h3><p>' + esc(t.courseWho) + '</p></div>'
+          + '<div class="course-fact"><h3>' + esc(t.courseHowTitle) + '</h3><p>' + esc(t.courseHow) + '</p></div>'
+          + '</div>'
+          + '<h2 class="sec-h" style="font-size:clamp(24px,4vw,34px);font-weight:900;text-transform:uppercase;letter-spacing:-0.01em;margin:38px 0 4px;">' + esc(t.courseChartTitle) + '</h2>'
+          + weeks
+          + '<div class="reel-card"><span class="reel-play">' + ICONS.play + '</span>'
+          + '<div><h3>' + esc(t.courseFollowTitle) + '</h3><p>' + esc(t.courseFollowText) + '</p></div>'
+          + '<a class="btn" href="' + IG_URL + '" target="_blank" rel="noopener">' + esc(t.courseFollowBtn) + '</a></div>';
+        document.getElementById("courseBody").innerHTML = html;
+      }
+
       /* ---- routing ---- */
       var currentGuide = null;
+      var onCourse = false;
       function route() {
         var h = location.hash || "#/";
         var m = h.match(/^#\/guide\/(.+)$/);
         var home = document.getElementById("viewHome");
         var gv = document.getElementById("viewGuide");
+        var cv = document.getElementById("viewCourse");
         var tb = document.getElementById("topbar");
-        if (m && guideById(m[1])) {
+        if (h === "#/course") {
           if (tb) tb.classList.add("solid");
-          currentGuide = guideById(m[1]);
+          currentGuide = null; onCourse = true;
+          renderCourse();
+          home.hidden = true; gv.hidden = true; cv.hidden = false;
+          window.scrollTo(0, 0);
+        } else if (m && guideById(m[1])) {
+          if (tb) tb.classList.add("solid");
+          currentGuide = guideById(m[1]); onCourse = false;
           renderGuide(currentGuide);
-          home.hidden = true; gv.hidden = false;
+          home.hidden = true; gv.hidden = false; cv.hidden = true;
           window.scrollTo(0, 0);
         } else {
           if (tb) tb.classList.remove("solid");
-          currentGuide = null;
-          gv.hidden = true; home.hidden = false;
+          currentGuide = null; onCourse = false;
+          gv.hidden = true; cv.hidden = true; home.hidden = false;
         }
       }
 
@@ -1363,6 +1719,7 @@
         renderLinks();
         renderHeroResults();
         if (currentGuide) renderGuide(currentGuide);
+        if (onCourse) renderCourse();
       }
 
       document.getElementById("langEn").addEventListener("click", function () { if (lang !== "en") { lang = "en"; renderAll(); } });
@@ -1384,6 +1741,8 @@
         if (hs && !hs.contains(e.target)) document.getElementById("heroResults").hidden = true;
       });
       document.getElementById("backBtn").addEventListener("click", function () { location.hash = "#/"; });
+      document.getElementById("courseBackBtn").addEventListener("click", function () { location.hash = "#/"; });
+      document.getElementById("courseOpenBtn").addEventListener("click", function () { location.hash = "#/course"; });
       document.getElementById("brandHome").addEventListener("click", function (e) {
         e.preventDefault(); location.hash = "#/"; window.scrollTo(0, 0);
       });
