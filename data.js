@@ -687,6 +687,57 @@
               "महँगा course अकेले जवाब नहीं है — रोज़ की practice जवाब है। आपके घर के पास FREE क्लास भी होती हैं — FREE Japanese Classes वाली गाइड देखें।"
             ]
           }
+        },
+        {
+          id: "resume-samples-2-styles", section: "jobs",
+          keywords: "resume sample rirekisho shokumu keirekisho cv japanese resume format sample example履歴書 職務経歴書 रिज़्यूमे नमूना सैंपल जापानी रिज़्यूमे बायोडाटा",
+          source: { label: "SSW Official Portal — ssw.go.jp", url: "https://www.ssw.go.jp" },
+          en: {
+            title: "Resume Samples — 2 Styles for Japan Jobs",
+            simple: "In Japan, a job application usually needs a resume — and there are 2 styles. Style 1 is the Rirekisho: the standard one-page Japanese resume almost every company asks for first. Style 2 is the Shokumu Keirekisho: a work-experience sheet that explains your jobs and skills in detail. Below are full samples of both. The name and details in the samples are EXAMPLES — copy the style, and write your own true details.",
+            steps: [
+              "STYLE 1 — RIREKISHO (the standard resume). Photo, size 4 cm x 3 cm, formal, plain background, taken in the last 3 months. Sample photo place: top-right corner of the form.",
+              "Rirekisho sample — personal details: Name: Amit Kumar (SAMPLE name). Furigana (name in katakana): アミット・クマール. Date of birth: 10 May 2002. Address: New Delhi, India. Phone and email: your real, working ones — the company will contact you on these.",
+              "Rirekisho sample — history (write in year order, school and work together): 2020 — Passed Class 12 (Higher Secondary). 2020–2023 — Worked at a parts factory in India: checking and packing machine parts. 2024 — Passed JLPT N4. 2024 — Passed the SSW skill test (Manufacturing). Nothing after that — write 'ijou' (end) on the next line, like Japanese resumes do.",
+              "Rirekisho sample — licences and qualifications (separate box): JLPT N4 — passed. JFT-Basic — passed. SSW Skill Test, Manufacturing — passed. (Write only what you have truly passed.)",
+              "Rirekisho sample — reason for applying (shibou douki): 'I want to work in Japanese manufacturing, use my factory experience, and keep improving my Japanese. I want to work in Japan for a long time.' Short, true, and about THIS company and THIS work — do not copy one line for every company.",
+              "Rirekisho sample — your requests (kibou): if the company has not asked anything special, write 'As per company rules' (kiisha kitei ni shitagaimasu). Do not start by demanding salary or holidays.",
+              "STYLE 2 — SHOKUMU KEIREKISHO (the work-experience sheet). No fixed form — 1 to 2 pages, typed. It answers one question: 'What work can this person actually do?' Sample below.",
+              "Shokumu sample — summary (3 lines at the top): '3 years of factory work in India. Experience in checking and packing machine parts. JLPT N4 passed, now studying for N3. Careful, on time, and used to team work.'",
+              "Shokumu sample — work detail: Company: ABC Parts Factory, India (2020–2023). Work: checked machine parts by size and look, removed bad pieces, packed finished parts. Learned: quality checking, counting and records, cleaning and 5S rules. Write your real work like this — what you did, and what you learned.",
+              "Shokumu sample — skills list: Parts checking and quality check. Packing and counting. Basic machine-area cleaning. Japanese: N4, daily study going on. Team work and reporting to seniors.",
+              "Shokumu sample — self-PR (last part): 'I have never missed work without informing. I study Japanese 20 minutes every day. I want to build my skill in Japan and work long-term.' Only write what is true — the interview will ask about every line."
+            ],
+            traps: [
+              "Never write false dates, false jobs or a test you have not passed. Document screening and the interview will catch it — and one false line can end everything (see Company Sach Part 4).",
+              "Your name spelling must match your passport letter by letter — in both resumes, every time.",
+              "No selfie, no cap or sunglasses photo, no old photo. One simple formal photo, plain background.",
+              "Do not copy the sample person's life. Copy the STYLE — then write your own true school, work and tests."
+            ]
+          },
+          hi: {
+            title: "Resume के Sample — Japan की नौकरी के लिए 2 Style",
+            simple: "Japan में नौकरी के apply में आमतौर पर resume लगता है — और उसके 2 style होते हैं। Style 1 है Rirekisho: एक page वाला standard जापानी resume, जो लगभग हर कंपनी सबसे पहले माँगती है। Style 2 है Shokumu Keirekisho: काम के अनुभव वाली sheet, जिसमें आपकी नौकरियाँ और skills detail में समझाई जाती हैं। नीचे दोनों के पूरे sample हैं। Sample में नाम और details EXAMPLE हैं — style copy करें, और अपनी सच्ची details लिखें।",
+            steps: [
+              "STYLE 1 — RIREKISHO (standard resume)। Photo: 4 cm x 3 cm, formal, सादा background, पिछले 3 महीनों में ली हुई। Sample में photo की जगह: form के ऊपर-दायें कोने में।",
+              "Rirekisho sample — अपनी जानकारी: नाम: Amit Kumar (SAMPLE नाम)। Furigana (katakana में नाम): アミット・クマール। जन्म तारीख: 10 मई 2002। पता: New Delhi, India। Phone और email: अपने असली, चालू वाले — कंपनी इन्हीं पर संपर्क करेगी।",
+              "Rirekisho sample — इतिहास (साल के क्रम में लिखें, पढ़ाई और काम एक साथ): 2020 — Class 12 (Higher Secondary) पास। 2020–2023 — India की एक parts factory में काम: machine parts की जाँच और packing। 2024 — JLPT N4 पास। 2024 — SSW skill test (Manufacturing) पास। इसके बाद कुछ नहीं — अगली line में 'ijou' (समाप्त) लिखें, जैसे जापानी resume में होता है।",
+              "Rirekisho sample — licence और योग्यता (अलग box): JLPT N4 — पास। JFT-Basic — पास। SSW Skill Test, Manufacturing — पास। (सिर्फ़ वही लिखें जो आपने सच में पास किया है।)",
+              "Rirekisho sample — apply करने की वजह (shibou douki): 'मैं जापान के manufacturing में काम करना चाहता हूँ, अपने factory अनुभव का इस्तेमाल करना चाहता हूँ, और अपनी जापानी बेहतर करते रहना चाहता हूँ। मैं जापान में लंबे समय तक काम करना चाहता हूँ।' छोटा, सच्चा, और इसी कंपनी व इसी काम के बारे में — हर कंपनी के लिए एक ही line copy न करें।",
+              "Rirekisho sample — आपकी माँगें (kibou): कंपनी ने कुछ ख़ास न पूछा हो, तो लिखें — 'कंपनी के नियमों के अनुसार' (kiisha kitei ni shitagaimasu)। शुरुआत में ही salary या छुट्टी की माँग न करें।",
+              "STYLE 2 — SHOKUMU KEIREKISHO (काम-अनुभव वाली sheet)। कोई तय form नहीं — 1 से 2 page, type की हुई। यह एक सवाल का जवाब देती है: 'यह इंसान असल में क्या काम कर सकता है?' Sample नीचे है।",
+              "Shokumu sample — सारांश (ऊपर 3 line): 'India में 3 साल factory का काम। Machine parts की जाँच और packing का अनुभव। JLPT N4 पास, अब N3 की पढ़ाई चल रही है। ध्यान से काम, समय की पाबंदी, और team में काम की आदत।'",
+              "Shokumu sample — काम की detail: कंपनी: ABC Parts Factory, India (2020–2023)। काम: machine parts को size और देखकर जाँचना, ख़राब pieces अलग करना, तैयार parts pack करना। सीखा: quality जाँच, गिनती और record, सफ़ाई और 5S नियम। अपना असली काम इसी तरह लिखें — क्या किया, और क्या सीखा।",
+              "Shokumu sample — skills की list: Parts की जाँच और quality check। Packing और गिनती। Machine वाले हिस्से की basic सफ़ाई। जापानी: N4, रोज़ की पढ़ाई जारी। Team में काम और seniors को report करना।",
+              "Shokumu sample — self-PR (आख़िरी हिस्सा): 'मैंने कभी बिना बताए छुट्टी नहीं ली। मैं रोज़ 20 मिनट जापानी पढ़ता हूँ। मैं जापान में अपनी skill बनाना और लंबे समय तक काम करना चाहता हूँ।' सिर्फ़ वही लिखें जो सच है — interview में हर line पर सवाल आएगा।"
+            ],
+            traps: [
+              "कभी झूठी तारीख, झूठी नौकरी या वह test न लिखें जो पास नहीं किया। Documents की जाँच और interview में यह पकड़ा जाएगा — और एक झूठी line सब ख़त्म कर सकती है (Company Sach Part 4 देखें)।",
+              "आपके नाम की spelling passport से अक्षर-अक्षर मिलनी चाहिए — दोनों resume में, हर बार।",
+              "Selfie नहीं, टोपी या धूप के चश्मे वाली photo नहीं, पुरानी photo नहीं। एक simple formal photo, सादा background।",
+              "Sample वाले इंसान की ज़िंदगी copy न करें। STYLE copy करें — फिर अपनी सच्ची पढ़ाई, काम और tests लिखें।"
+            ]
+          }
         }
       ];
 

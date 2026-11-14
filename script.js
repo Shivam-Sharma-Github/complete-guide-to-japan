@@ -189,7 +189,7 @@
       /* ---- hero search ---- */
       var SECTION_KEYWORDS = {
         visas: "visa ssw titp ikusei shuro kaigo welding \u0935\u0940\u091c\u093c\u093e \u0935\u0940\u091c\u093e",
-        jobs: "job jobs interview hiring company sach naukri connect job fourth valley \u0928\u094c\u0915\u0930\u0940 \u0907\u0902\u091f\u0930\u0935\u094d\u092f\u0942 \u0915\u0902\u092a\u0928\u0940 \u0938\u091a",
+        jobs: "job jobs interview hiring company sach naukri resume rirekisho connect job fourth valley \u0928\u094c\u0915\u0930\u0940 \u0907\u0902\u091f\u0930\u0935\u094d\u092f\u0942 \u0915\u0902\u092a\u0928\u0940 \u0938\u091a",
         exams: "exam test prometric jft japanese \u092a\u0930\u0940\u0915\u094d\u0937\u093e \u091f\u0947\u0938\u094d\u091f \u091c\u093e\u092a\u093e\u0928\u0940",
         help: "emergency problem report police help 110 119 118 188 9110 consumer shopping fraud scam \u0907\u092e\u0930\u091c\u0947\u0902\u0938\u0940 \u092e\u0926\u0926 \u092a\u0930\u0947\u0936\u093e\u0928\u0940 \u092a\u0941\u0932\u093f\u0938 \u0927\u094b\u0916\u093e\u0927\u0921\u093c\u0940 \u0916\u0930\u0940\u0926\u093e\u0930\u0940",
         money: "money salary wage pension tax payslip yen \u092a\u0948\u0938\u093e \u0935\u0947\u0924\u0928 \u092a\u0947\u0902\u0936\u0928 \u091f\u0948\u0915\u094d\u0938",
