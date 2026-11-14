@@ -14,12 +14,15 @@
         { id: "visas", icon: "passport",
           en: { name: "Visas", desc: "TITP, SSW-1, SSW-2, Ikusei Shuro and the Kaigo status — every door, explained simply." },
           hi: { name: "वीज़ा", desc: "TITP, SSW-1, SSW-2, Ikusei Shuro और Kaigo स्टेटस — हर दरवाज़ा, आसान भाषा में।" } },
+        { id: "jobs", icon: "pen",
+          en: { name: "Jobs & Interviews", desc: "Company Sach — what a real Japanese hiring company looks for, interview mistakes, and the apply-to-offer process." },
+          hi: { name: "नौकरियाँ और इंटरव्यू", desc: "Company Sach — एक असली जापानी hiring कंपनी ने ख़ुद बताया: कंपनी क्या देखती है, इंटरव्यू की ग़लतियाँ और apply से offer तक का पूरा process।" } },
         { id: "exams", icon: "pen",
           en: { name: "Exams & Tests", desc: "Prometric booking, SSW skill tests and the JFT-Basic Japanese test." },
           hi: { name: "परीक्षाएँ", desc: "Prometric बुकिंग, SSW स्किल टेस्ट और JFT-Basic जापानी टेस्ट।" } },
         { id: "help", icon: "shield",
-          en: { name: "Problem? Get Help", desc: "Where to report a problem, who helps you, and the emergency numbers." },
-          hi: { name: "परेशानी? मदद लें", desc: "कहाँ रिपोर्ट करें, कौन मदद करता है, और इमरजेंसी नंबर।" } },
+          en: { name: "Problem? Get Help", desc: "Where to report a problem, who helps you, and the emergency and help numbers — 110, 119, #9110 and 188." },
+          hi: { name: "परेशानी? मदद लें", desc: "कहाँ रिपोर्ट करें, कौन मदद करता है, और इमरजेंसी व मदद वाले नंबर — 110, 119, #9110 और 188।" } },
         { id: "money", icon: "yen",
           en: { name: "Money & Life", desc: "Minimum wage, payslips and what your salary really means." },
           hi: { name: "पैसा और ज़िंदगी", desc: "न्यूनतम वेतन, पे-स्लिप और आपकी सैलरी का असली मतलब।" } },
@@ -105,37 +108,45 @@
         },
         {
           id: "emergency-contacts", section: "help",
-          keywords: "emergency police ambulance fire 110 119 danger accident help number phone इमरजेंसी आपातकाल पुलिस एम्बुलेंस आग खतरा दुर्घटना नंबर फोन",
+          keywords: "emergency police ambulance fire 110 119 118 coast guard danger accident help number phone 188 9110 consumer centre center shohi seikatsu shopping fraud scam contract non emergency police consultation इमरजेंसी आपातकाल पुलिस एम्बुलेंस आग खतरा दुर्घटना नंबर फोन उपभोक्ता केंद्र खरीदारी धोखाधड़ी फ्रॉड सलाह गैर इमरजेंसी तटरक्षक",
           source: { label: "Immigration Services Agency — isa.go.jp", url: "https://www.isa.go.jp" },
           en: {
             title: "Emergency Contacts in Japan",
-            simple: "Two numbers can save a life in Japan. Police: 110. Fire or ambulance: 119. Both are free, work 24 hours, and can be called from any phone — even without a Japanese SIM plan.",
+            simple: "Save these numbers in your phone today. For danger right now: Police 110, Fire / Ambulance 119 — free, 24 hours, from any phone. For problems that are NOT an emergency, Japan has two more doors: police advice on #9110, and the Consumer Hotline 188 for shopping and contract trouble.",
             steps: [
-              "Police — 110: for a crime, an accident, or danger.",
-              "Fire / ambulance — 119: for a fire, sudden illness or serious injury.",
-              "When you call, say your location first — your address or a nearby landmark.",
-              "Save these in your phone today: 110, 119, your embassy, your company and your support organisation.",
+              "Police — 110: for a crime happening now, an accident, or danger. Free, 24 hours.",
+              "Fire / ambulance — 119: for a fire, sudden illness or serious injury. Free, 24 hours.",
+              "Police advice, NOT an emergency — #9110: use it when you need police advice but nobody is in danger right now — a lost item, a suspicious phone call, stalking worry, trouble with a neighbour, or the doubt 'is this a crime?' It connects you to the police consultation centre. Usually weekday daytime; timings change by prefecture.",
+              "Consumer Hotline — 188: for shopping and contract trouble — an online order that never came, a fake shopping site, a wrong or broken product, a contract you were pushed to sign, or door-to-door selling pressure. 188 connects you to your nearest Consumer Centre (Shohi Seikatsu Center). Advice is free; only the call charge applies. Help is mainly in Japanese, so keep your bill, screenshots and the shop's name ready.",
+              "Sea emergency — 118: for an accident at sea or on the coast, call the Japan Coast Guard on 118.",
+              "When you call 110 or 119, say your location first — your address or a nearby landmark.",
+              "Save these in your phone today: 110, 119, #9110, 188, your embassy, your company and your support organisation.",
               "Keep your residence card details — and a photo of the card — in your phone."
             ],
             traps: [
-              "Do not wait because your Japanese is weak. Call anyway — speak slowly, in simple words.",
-              "119 is for real emergencies, not for small health questions.",
+              "Do not use 110 for small questions — for advice, use #9110. Save 110 and 119 for real danger.",
+              "Do not wait because your Japanese is weak. For 110 and 119, call anyway — speak slowly, in simple words.",
+              "Shopping fraud? Do not pay more and do not keep replying to the fake shop. Save the screenshots and bills, call 188 — and if money was taken by trick, also ask the police on #9110.",
               "Learn to say your own address in Japanese before you ever need it."
             ]
           },
           hi: {
             title: "जापान के इमरजेंसी नंबर",
-            simple: "दो नंबर जापान में जान बचा सकते हैं। पुलिस: 110। आग या एम्बुलेंस: 119। दोनों मुफ़्त हैं, 24 घंटे चलते हैं, और किसी भी फोन से लगाए जा सकते हैं — जापानी SIM प्लान न हो तब भी।",
+            simple: "ये नंबर आज ही अपने फोन में सेव करें। अभी खतरा हो तो: पुलिस 110, आग / एम्बुलेंस 119 — मुफ़्त, 24 घंटे, किसी भी फोन से। जो परेशानी इमरजेंसी नहीं है, उसके लिए जापान में दो दरवाज़े और हैं: पुलिस की सलाह #9110 पर, और खरीदारी व कॉन्ट्रैक्ट की परेशानी के लिए Consumer Hotline 188।",
             steps: [
-              "पुलिस — 110: अपराध, एक्सीडेंट या खतरे के लिए।",
-              "आग / एम्बुलेंस — 119: आग, अचानक बीमारी या गंभीर चोट के लिए।",
-              "कॉल करें तो सबसे पहले अपनी जगह बताएँ — अपना पता या आसपास की कोई पहचान वाली जगह।",
-              "आज ही ये नंबर फोन में सेव करें: 110, 119, अपनी एम्बेसी, कंपनी और सपोर्ट संस्था।",
+              "पुलिस — 110: अभी हो रहा अपराध, एक्सीडेंट या खतरे के लिए। मुफ़्त, 24 घंटे।",
+              "आग / एम्बुलेंस — 119: आग, अचानक बीमारी या गंभीर चोट के लिए। मुफ़्त, 24 घंटे।",
+              "पुलिस की सलाह, इमरजेंसी नहीं — #9110: जब पुलिस की सलाह चाहिए लेकिन अभी कोई खतरे में नहीं है — खोई हुई चीज़, शक वाला फोन कॉल, पीछा करने की चिंता, पड़ोसी से झगड़ा, या यह शक कि 'क्या यह अपराध है?' यह नंबर आपको पुलिस सलाह केंद्र से जोड़ता है। आमतौर पर हफ़्ते के दिनों में दिन के समय; समय हर प्रान्त में अलग हो सकता है।",
+              "Consumer Hotline — 188: खरीदारी और कॉन्ट्रैक्ट की परेशानी के लिए — ऑनलाइन ऑर्डर आया ही नहीं, नकली shopping साइट, ग़लत या टूटा सामान, ज़बरदस्ती साइन कराया गया कॉन्ट्रैक्ट, या घर आकर बेचने का दबाव। 188 आपको आपके सबसे पास वाले Consumer Centre (Shohi Seikatsu Center, उपभोक्ता जीवन केंद्र) से जोड़ता है। सलाह मुफ़्त है; सिर्फ़ कॉल का चार्ज लगता है। मदद ज़्यादातर जापानी में मिलती है, इसलिए अपना बिल, screenshots और दुकान का नाम तैयार रखें।",
+              "समुद्र की इमरजेंसी — 118: समुद्र या किनारे पर एक्सीडेंट हो, तो Japan Coast Guard को 118 पर कॉल करें।",
+              "110 या 119 पर कॉल करें तो सबसे पहले अपनी जगह बताएँ — अपना पता या आसपास की कोई पहचान वाली जगह।",
+              "आज ही ये नंबर फोन में सेव करें: 110, 119, #9110, 188, अपनी एम्बेसी, कंपनी और सपोर्ट संस्था।",
               "अपने रेज़िडेंस कार्ड की डिटेल — और कार्ड की एक फोटो — फोन में रखें।"
             ],
             traps: [
-              "जापानी कमज़ोर है, इसलिए रुकें नहीं। कॉल करें ही — धीरे बोलें, आसान शब्दों में।",
-              "119 सिर्फ़ असली इमरजेंसी के लिए है, छोटी स्वास्थ्य सलाह के लिए नहीं।",
+              "छोटे सवालों के लिए 110 का इस्तेमाल न करें — सलाह के लिए #9110 है। 110 और 119 असली खतरे के लिए बचाकर रखें।",
+              "जापानी कमज़ोर है, इसलिए रुकें नहीं। 110 / 119 पर कॉल करें ही — धीरे बोलें, आसान शब्दों में।",
+              "खरीदारी में धोखा हुआ? नकली दुकान को और पैसे न दें और बार-बार जवाब भी न दें। Screenshots और बिल सेव करें, 188 पर कॉल करें — और ठगकर पैसे लिए गए हों, तो #9110 पर पुलिस से भी पूछें।",
               "अपना पता जापानी में बोलना पहले से सीख लें — ज़रूरत पड़ने से पहले।"
             ]
           }
@@ -503,6 +514,179 @@
               "Kaigo Fukushishi परीक्षा पूरी जापानी में होती है — जापानी की शुरुआत आखिरी साल में नहीं, अभी से करें।"
             ]
           }
+        },
+        {
+          id: "company-sach-1-what-companies-want", section: "jobs",
+          keywords: "company sach part 1 hiring company what companies want japanese adaptability skill fourth valley connect job interview priority ranking naukri job कंपनी सच नौकरी इंटरव्यू जापानी स्किल कंपनी क्या देखती है हायरिंग",
+          source: { label: "SSW Official Portal — ssw.go.jp", url: "https://www.ssw.go.jp" },
+          en: {
+            title: "Company Sach Part 1 — What Companies Want First",
+            simple: "Shivam asked a real Japanese hiring company — Fourth Valley Concierge (Connect Job) — one question: when you hire a foreign worker, what do you look at first? Their ranking may surprise you. Number 1: Japanese language. Number 2: how well you adjust to their place and team. Number 3: your skill. Yes — skill is only third.",
+            steps: [
+              "Number 1 — Japanese language: improve it first. Study 20 minutes every day, without a gap. Small daily Japanese beats one big study day.",
+              "Number 2 — Adjusting (fitting in): learn the Japanese work style — come on time, report your work to your senior, and move with the team. In Japan this is not a 'soft' thing — it is a hard requirement.",
+              "Number 3 — Skill: build your skill too, but after the first two. Without language, nobody can even see your skill.",
+              "Improve in this same order: language first, fitting-in second, skill third."
+            ],
+            traps: [
+              "A certificate kept in a file is useless if your Japanese is zero — the file stays closed. Language opens the door.",
+              "Do not think 'my skill is strong, so Japanese is not needed.' The company itself put skill at number 3."
+            ]
+          },
+          hi: {
+            title: "Company Sach Part 1 — कंपनी सबसे पहले क्या देखती है?",
+            simple: "शिवम ने एक असली जापानी hiring कंपनी — Fourth Valley Concierge (Connect Job) — से एक सवाल पूछा: विदेशी वर्कर को रखते समय आप सबसे पहले क्या देखते हैं? उनका क्रम आपको चौंका सकता है। नंबर 1: जापानी भाषा। नंबर 2: आप उनकी जगह और टीम में कितनी अच्छी तरह adjust होते हैं। नंबर 3: आपकी स्किल। जी हाँ — स्किल सिर्फ़ तीसरे नंबर पर है।",
+            steps: [
+              "नंबर 1 — जापानी भाषा: इसे सबसे पहले सुधारें। रोज़ 20 मिनट पढ़ें, बिना gap के। रोज़ की छोटी पढ़ाई, एक बड़े दिन की पढ़ाई से बेहतर है।",
+              "नंबर 2 — Adjust होना (टीम में घुलना): जापानी काम का तरीका सीखें — समय पर आएँ, अपने सीनियर को काम की report दें, और टीम के साथ चलें। जापान में यह 'soft' बात नहीं है — यह सबसे कड़ी ज़रूरत है।",
+              "नंबर 3 — स्किल: अपनी स्किल भी बनाएँ, लेकिन पहले दो के बाद। भाषा न हो, तो आपकी स्किल कोई देख ही नहीं पाएगा।",
+              "सुधार भी इसी क्रम में करें: पहले भाषा, फिर adjust होना, फिर स्किल।"
+            ],
+            traps: [
+              "सर्टिफ़िकेट फ़ाइल में रखा है और जापानी zero है — तो फ़ाइल बंद ही रहेगी। भाषा ही दरवाज़ा खोलती है।",
+              "यह न सोचें — 'मेरी स्किल मज़बूत है, इसलिए जापानी ज़रूरी नहीं।' कंपनी ने ख़ुद स्किल को नंबर 3 पर रखा है।"
+            ]
+          }
+        },
+        {
+          id: "company-sach-2-n4-n3-n2", section: "jobs",
+          keywords: "company sach part 2 n4 n3 n2 jlpt jft visa naukri job engineer visa gijinkoku japanese level कंपनी सच वीज़ा नौकरी जापानी लेवल इंजीनियर वीज़ा",
+          source: { label: "SSW Official Portal — ssw.go.jp", url: "https://www.ssw.go.jp" },
+          en: {
+            title: "Company Sach Part 2 — N4 = Visa, N3 = Job, N2 = Engineer Visa",
+            simple: "How much Japanese do you really need? The same hiring company (Fourth Valley Concierge — Connect Job) answered clearly: for SSW, N4 can get you the visa — but N4 holders are in thousands all over the world. An N3 candidate becomes the company's first choice. And for an Engineer visa, you need N2 — below that, the chance is very low.",
+            steps: [
+              "N4 — the visa line: with N4 or JFT-Basic, your SSW visa can be made. But this is the starting line, not the finish line.",
+              "N3 — the job line: companies prefer N3. If two candidates are equal, the N3 candidate is picked first.",
+              "N2 — the Engineer visa line: for the Engineer / Specialist visa (Gijinkoku), aim for N2 or above.",
+              "Reach N3, step 1: read one small Japanese passage every day, with a timer. Reading is where most people fall.",
+              "Reach N3, step 2: learn words inside sentences, not alone. A word alone is forgotten; a word in a sentence stays.",
+              "Reach N3, step 3: take one mock test every week, and write your mistakes in a list. That mistake list is your real book."
+            ],
+            traps: [
+              "Do not stop at N4 and relax. N4 gives the paper — the job comes from the language above it.",
+              "Only collecting certificates does not impress a company. What you can actually speak and read is what counts."
+            ]
+          },
+          hi: {
+            title: "Company Sach Part 2 — N4 = वीज़ा, N3 = नौकरी, N2 = Engineer वीज़ा",
+            simple: "असल में कितनी जापानी चाहिए? उसी hiring कंपनी (Fourth Valley Concierge — Connect Job) ने साफ़ जवाब दिया: SSW के लिए N4 से वीज़ा बन जाता है — लेकिन N4 वाले पूरी दुनिया में हज़ारों हैं। N3 वाला candidate कंपनी की पहली पसंद बनता है। और Engineer वीज़ा चाहिए, तो N2 चाहिए — उससे नीचे chance बहुत कम है।",
+            steps: [
+              "N4 — वीज़ा वाली लाइन: N4 या JFT-Basic से आपका SSW वीज़ा बन सकता है। लेकिन यह starting line है, finish line नहीं।",
+              "N3 — नौकरी वाली लाइन: कंपनियाँ N3 को पसंद करती हैं। दो candidate बराबर हों, तो N3 वाला पहले चुना जाता है।",
+              "N2 — Engineer वीज़ा वाली लाइन: Engineer / Specialist वीज़ा (Gijinkoku) के लिए N2 या उससे ऊपर का लक्ष्य रखें।",
+              "N3 तक पहुँचें, स्टेप 1: रोज़ एक छोटा जापानी passage समय लगाकर पढ़ें। Reading में ही सबसे ज़्यादा लोग गिरते हैं।",
+              "N3 तक पहुँचें, स्टेप 2: शब्दों को अकेले नहीं, वाक्य के अंदर याद करें। अकेला शब्द भूल जाता है; वाक्य वाला शब्द टिकता है।",
+              "N3 तक पहुँचें, स्टेप 3: हर हफ़्ते एक mock test दें, और अपनी ग़लतियों की list बनाएँ। वही list आपकी असली किताब है।"
+            ],
+            traps: [
+              "N4 पर रुककर आराम न करें। N4 काग़ज़ देता है — नौकरी उससे ऊपर वाली भाषा से मिलती है।",
+              "सिर्फ़ सर्टिफ़िकेट जमा करने से कंपनी प्रभावित नहीं होती। असल में आप कितना बोल और पढ़ सकते हैं — वही मायने रखता है।"
+            ]
+          }
+        },
+        {
+          id: "company-sach-3-interview-mistakes", section: "jobs",
+          keywords: "company sach part 3 interview mistakes reject indian candidates listening overselling fast speaking interrupt कंपनी सच इंटरव्यू ग़लती ग़लतियाँ रिजेक्ट सुनना तेज़ बोलना",
+          source: { label: "SSW Official Portal — ssw.go.jp", url: "https://www.ssw.go.jp" },
+          en: {
+            title: "Company Sach Part 3 — 3 Interview Mistakes That Get You Rejected",
+            simple: "Why do Indian candidates get rejected in interviews? A Japanese hiring company (Fourth Valley Concierge — Connect Job) named 3 mistakes from their own daily interviews. Mistake 1: not listening. Mistake 2: talking long, only about yourself. Mistake 3: speaking fast and cutting the other person's words. The reason is usually not your skill.",
+            steps: [
+              "Fix 1 — the 2-second rule: when the other person stops speaking, wait 2 seconds, then speak. This one habit stops most interrupting.",
+              "Fix 2 — answer in one line first: give the short answer first. Give details only when they ask for them.",
+              "Fix 3 — record yourself: record your voice on your phone and listen to it. If you speak fast, you will hear it yourself — then slow down.",
+              "Remember what the interview is really testing: 'Will this person work peacefully inside our team?' Calm and clear wins."
+            ],
+            traps: [
+              "Overselling — talking big about yourself — works against you in Japan. Let your work and your documents speak.",
+              "Interrupting the interviewer, even once, can finish your chance. Listen fully, then answer."
+            ]
+          },
+          hi: {
+            title: "Company Sach Part 3 — इंटरव्यू की 3 ग़लतियाँ = Reject",
+            simple: "भारतीय candidate इंटरव्यू में reject क्यों होते हैं? एक जापानी hiring कंपनी (Fourth Valley Concierge — Connect Job) ने अपने रोज़ के इंटरव्यू से 3 ग़लतियाँ गिनाईं। ग़लती 1: सुनते ही नहीं। ग़लती 2: लंबा बोलना, सिर्फ़ अपनी ही बात करना। ग़लती 3: तेज़ बोलना और सामने वाले की बात काट देना। वजह आमतौर पर आपकी स्किल नहीं होती।",
+            steps: [
+              "Fix 1 — 2-second नियम: सामने वाला बोलना बंद करे, तो 2 second रुकें, फिर बोलें। यही एक आदत ज़्यादातर बात काटने को रोक देती है।",
+              "Fix 2 — पहले जवाब एक line में: पहले छोटा जवाब दें। Detail तभी दें, जब वे पूछें।",
+              "Fix 3 — ख़ुद को record करें: फोन पर अपनी आवाज़ record करके सुनें। तेज़ बोलते हैं, तो ख़ुद सुनाई देगा — फिर धीमे हो जाएँ।",
+              "याद रखें, इंटरव्यू असल में यह test करता है: 'क्या यह इंसान हमारी टीम में शांति से काम करेगा?' शांत और साफ़ जवाब जीतता है।"
+            ],
+            traps: [
+              "Overselling — अपने बारे में बड़ी-बड़ी बातें — जापान में आपके ख़िलाफ़ जाता है। अपने काम और अपने काग़ज़ों को बोलने दें।",
+              "Interviewer की बात एक बार भी काटना आपका chance ख़त्म कर सकता है। पूरी बात सुनें, फिर जवाब दें।"
+            ]
+          }
+        },
+        {
+          id: "company-sach-4-apply-to-offer", section: "jobs",
+          keywords: "company sach part 4 apply offer process document screening resume rirekisho interview support company कंपनी सच अप्लाई ऑफ़र प्रोसेस दस्तावेज़ स्क्रीनिंग रिज़्यूमे",
+          source: { label: "SSW Official Portal — ssw.go.jp", url: "https://www.ssw.go.jp" },
+          en: {
+            title: "Company Sach Part 4 — Apply to Offer: The Full Process",
+            simple: "Japan's job process is not like India's. The hiring company (Fourth Valley Concierge — Connect Job) explained it simply: there are mainly 2 steps — first document screening, then the interview. The dangerous part: the first step can reject you without ever meeting you. That is why your documents are everything.",
+            steps: [
+              "Step 1 — Document screening: the company checks your papers first. A clean and true Japanese-style resume (rirekisho) is a must.",
+              "Do not hide empty time in your resume — explain it simply and truly. A hidden gap that opens up later destroys trust.",
+              "Keep your documents ready before you apply: JLPT or JFT result, skill test result, and passport.",
+              "Step 2 — Interview: if your papers pass, the interview comes. Read Part 3 for the 3 mistakes to avoid.",
+              "Use a good support company: a real support company helps with interview practice, the visa, and life support after you reach Japan — this help is part of their job.",
+              "Do not stop at one company — but apply properly each time, with full and true documents."
+            ],
+            traps: [
+              "In Japan, a slow process does not always mean 'no'. Every company takes its own time — do not panic, and do not pay anyone to 'speed it up'.",
+              "One false paper or one false line in the resume can end everything — in screening, or even after joining."
+            ]
+          },
+          hi: {
+            title: "Company Sach Part 4 — Apply से Offer तक: पूरा Process",
+            simple: "जापान का नौकरी process इंडिया जैसा नहीं है। Hiring कंपनी (Fourth Valley Concierge — Connect Job) ने आसान शब्दों में समझाया: मुख्य रूप से 2 step हैं — पहले documents की छानबीन (screening), फिर इंटरव्यू। ख़तरनाक बात यह है: पहला step आपको बिना मिले ही बाहर कर सकता है। इसीलिए आपके documents ही सब कुछ हैं।",
+            steps: [
+              "Step 1 — Document screening: कंपनी पहले आपके काग़ज़ देखती है। साफ़ और सच्चा जापानी-स्टाइल resume (rirekisho) ज़रूरी है।",
+              "Resume में ख़ाली समय न छिपाएँ — उसे आसान और सच्चे शब्दों में समझाएँ। छिपाया हुआ gap बाद में खुले, तो भरोसा ख़त्म हो जाता है।",
+              "Apply करने से पहले documents तैयार रखें: JLPT या JFT का result, skill test का result, और passport।",
+              "Step 2 — Interview: काग़ज़ पास हों, तो इंटरव्यू आता है। बचने वाली 3 ग़लतियों के लिए Part 3 पढ़ें।",
+              "एक अच्छी support कंपनी का साथ लें: असली support कंपनी इंटरव्यू की practice, वीज़ा, और जापान पहुँचने के बाद life support में मदद करती है — यह मदद उनके काम का हिस्सा है।",
+              "एक ही कंपनी पर न रुकें — लेकिन हर बार पूरे और सच्चे documents के साथ ठीक से apply करें।"
+            ],
+            traps: [
+              "जापान में धीमा process हमेशा 'ना' नहीं होता। हर कंपनी अपना समय लेती है — घबराएँ नहीं, और process 'तेज़' कराने के लिए किसी को पैसे न दें।",
+              "एक झूठा काग़ज़ या resume की एक झूठी line सब कुछ ख़त्म कर सकती है — screening में, या join करने के बाद भी।"
+            ]
+          }
+        },
+        {
+          id: "company-sach-5-one-advice", section: "jobs",
+          keywords: "company sach part 5 one advice japanese six month plan 6 months learn japanese कंपनी सच सलाह जापानी छह महीने प्लान सीखें",
+          source: { label: "SSW Official Portal — ssw.go.jp", url: "https://www.ssw.go.jp" },
+          en: {
+            title: "Company Sach Part 5 — The Company's One Advice + 6-Month Plan",
+            simple: "Last question to the company (Fourth Valley Concierge — Connect Job): 'Give Indian candidates one advice.' They did not say skill. They did not say a course. They said one word: Japanese. Their words: the more Japanese you have, the more the benefit — in work, and in daily life in Japan. At the station, in the hospital, in the office — if you have the language, Japan is yours.",
+            steps: [
+              "Months 1–2: 20 minutes every day — words and basic grammar. No gap days.",
+              "Months 3–4: start reading small passages and listening every day — move toward N3.",
+              "Months 5–6: one mock test every week, and speaking practice — the Japanese you need in interviews.",
+              "Keep it daily and small. This one habit will put you ahead of thousands of candidates in India."
+            ],
+            traps: [
+              "Do not wait for a 'perfect time' to start Japanese. The company said it plainly: language is the job, and language is life in Japan.",
+              "A costly course alone is not the answer — daily practice is. Free classes near your home also exist — see the FREE Japanese Classes guide."
+            ]
+          },
+          hi: {
+            title: "Company Sach Part 5 — कंपनी की एक सलाह + 6 महीने का Plan",
+            simple: "कंपनी (Fourth Valley Concierge — Connect Job) से आख़िरी सवाल: 'भारतीय candidates को एक सलाह दीजिए।' उन्होंने स्किल नहीं कहा। Course नहीं कहा। एक शब्द कहा: जापानी। उनके शब्द: जितनी ज़्यादा जापानी, उतना फ़ायदा — काम में भी, और जापान की रोज़ की ज़िंदगी में भी। स्टेशन पर, अस्पताल में, ऑफ़िस में — भाषा है, तो जापान आपका है।",
+            steps: [
+              "महीना 1–2: रोज़ 20 मिनट — शब्द और basic grammar। Gap वाला दिन नहीं।",
+              "महीना 3–4: रोज़ छोटे passages पढ़ना और सुनना शुरू करें — N3 की तरफ़ बढ़ें।",
+              "महीना 5–6: हर हफ़्ते एक mock test, और बोलने की practice — इंटरव्यू में काम आने वाली जापानी।",
+              "रोज़ करें, छोटा करें। यही एक आदत आपको इंडिया के हज़ारों candidates से आगे खड़ा कर देगी।"
+            ],
+            traps: [
+              "जापानी शुरू करने के लिए 'perfect time' का इंतज़ार न करें। कंपनी ने साफ़ कहा: भाषा ही नौकरी है, और भाषा ही जापान में ज़िंदगी है।",
+              "महँगा course अकेले जवाब नहीं है — रोज़ की practice जवाब है। आपके घर के पास FREE क्लास भी होती हैं — FREE Japanese Classes वाली गाइड देखें।"
+            ]
+          }
         }
       ];
 
@@ -518,7 +702,10 @@
           hi: "रेज़िडेंस स्टेटस, प्रक्रियाएँ और आवेदन।" },
         { label: "Ministry of Health, Labour and Welfare", url: "https://www.mhlw.go.jp", host: "mhlw.go.jp",
           en: "Labour rules, minimum wage by prefecture, health and welfare.",
-          hi: "श्रम नियम, प्रान्त के हिसाब से न्यूनतम वेतन, स्वास्थ्य और कल्याण।" }
+          hi: "श्रम नियम, प्रान्त के हिसाब से न्यूनतम वेतन, स्वास्थ्य और कल्याण।" },
+        { label: "Consumer Affairs Agency — Hotline 188", url: "https://www.caa.go.jp", host: "caa.go.jp",
+          en: "Shopping and contract problems — call the Consumer Hotline on 188 to reach your nearest Consumer Centre.",
+          hi: "खरीदारी और कॉन्ट्रैक्ट की परेशानी — Consumer Hotline 188 पर कॉल करें, सबसे पास वाला Consumer Centre मिलेगा।" }
       ];
 
       var COURSE_ALIASES = "try japan course 30 days 30 din hiragana katakana kanji learn japanese japanese seekho japanese course beginner nihongo survival japanese जापानी सीखें जापानी सीखो कोर्स तीस दिन हिरागाना काताकाना";
