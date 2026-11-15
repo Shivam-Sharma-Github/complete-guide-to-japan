@@ -74,7 +74,7 @@
       /* ---- home: sections ---- */
       var SECTION_MEDIA = {
         visas: { type: "img", src: "images/section-visas-kibitsu-shrine.jpg", alt: "Kibitsu Shrine in Okayama, with its famous double-gabled shrine hall under a clear blue sky" },
-        jobs: { type: "img", src: "images/section-jobs-interview.jpg", alt: "Young candidates in black suits at a group job interview, seated around a table facing the interviewer" },
+        jobs: { type: "img", src: "images/section-jobs-interview-scene.jpg", alt: "A candidate in a black suit at a job interview in a bright office, facing the interviewer across a table" },
         exams: { type: "img", src: "images/section-exams-korakuen.jpg", alt: "Korakuen Garden in Okayama, its pond and lawns with the black keep of Okayama Castle behind the trees" },
         help: { type: "graphic", cls: "red", big: "110 · 119" },
         money: { type: "img", src: "images/section-money-kurashiki.jpg", alt: "The canal of the Kurashiki Bikan Quarter in Okayama, willow trees and white-walled old storehouses reflected in the water" },
