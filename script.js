@@ -323,7 +323,7 @@
           + '<h2 class="sec-h">' + esc(t.trapsTitle) + '</h2><ul class="traps">' + traps + '</ul>'
           + '<div class="reel-card"><span class="reel-play">' + ICONS.play + '</span>'
           + '<div><h3>' + esc(t.reelTitle) + '</h3><p>' + esc(t.reelText) + '</p></div>'
-          + '<a class="btn" href="' + IG_URL + '" target="_blank" rel="noopener">' + esc(t.reelBtn) + '</a></div>'
+          + '<a class="btn" href="' + (g.reel || IG_URL) + '" target="_blank" rel="noopener">' + esc(t.reelBtn) + '</a></div>'
           + '<div class="source-box"><span class="src-label">' + esc(t.sourceLabel) + '</span>'
           + '<a href="' + g.source.url + '" target="_blank" rel="noopener">' + esc(g.source.label) + '</a>'
           + '<span class="checked">' + esc(t.checked) + '</span></div>'
