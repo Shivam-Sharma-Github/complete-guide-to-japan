@@ -200,7 +200,7 @@
           html += '<button type="button" class="path-card" data-path="' + p.id + '">'
             + '<span class="pc-num">' + (i + 1) + '</span>'
             + '<span class="pc-body"><h3>' + esc(p[lang].name) + '</h3><p>' + esc(p[lang].desc) + '</p>'
-            + '<span class="pc-meta">' + p.guides.length + ' ' + STR[lang].guidesWord + ' \u00b7 ' + esc(STR[lang].pathOpen) + ' \u2192</span></span>'
+            + '<span class="pc-meta">' + p.guides.length + ' ' + STR[lang].stepsWord + ' \u00b7 ' + esc(STR[lang].pathOpen) + ' \u2192</span></span>'
             + '</button>';
         });
         grid.innerHTML = html;
