@@ -754,6 +754,30 @@
         }
       ];
 
+      /* ================= JOURNEY PATHS =================
+         The 3 doors on the homepage. Each path is a list of
+         guide ids, in the order a person should read them. */
+      var PATHS = [
+        {
+          id: "from-india",
+          en: { name: "I am in India - I want to come to Japan", desc: "The full road from India: visa, tests, job, and how not to get cheated on the way." },
+          hi: { name: "मैं India में हूँ - मुझे Japan आना है", desc: "India से पूरा रास्ता: visa, tests, नौकरी, और रास्ते में ठगे जाने से कैसे बचें।" },
+          guides: ["ssw-titp-visas", "prometric-registration", "ssw2-free-books", "free-japanese-classes", "company-sach-2-n4-n3-n2", "resume-samples-2-styles", "company-sach-4-apply-to-offer", "agent-money-system"]
+        },
+        {
+          id: "in-japan",
+          en: { name: "I am already in Japan", desc: "Life inside Japan: emergency numbers, problems, salary rules, and your next visa step." },
+          hi: { name: "मैं पहले से Japan में हूँ", desc: "Japan के अंदर की ज़िंदगी: emergency नंबर, परेशानियाँ, वेतन के नियम, और आपका अगला visa कदम।" },
+          guides: ["emergency-contacts", "report-a-problem", "minimum-wage", "titp-ending-ikusei-shuro", "ssw1-to-ssw2", "kaigo-other-door"]
+        },
+        {
+          id: "job-hunt",
+          en: { name: "I am looking for a job in Japan", desc: "What companies really want, the mistakes that reject you, and the resume that gets you called." },
+          hi: { name: "मुझे Japan में नौकरी चाहिए", desc: "कंपनियाँ असल में क्या चाहती हैं, कौन-सी गलतियाँ reject कराती हैं, और वो resume जो आपको बुलावा दिलाए।" },
+          guides: ["company-sach-1-what-companies-want", "company-sach-2-n4-n3-n2", "company-sach-3-interview-mistakes", "resume-samples-2-styles", "company-sach-4-apply-to-offer", "company-sach-5-one-advice", "welding-job-japan", "bsc-nursing-roadmap"]
+        }
+      ];
+
       var LINKS = [
         { label: "SSW Official Portal", url: "https://www.ssw.go.jp", host: "ssw.go.jp",
           en: "Visas, tests and rules for Specified Skilled Workers - the main official source.",
@@ -942,6 +966,19 @@
           reelTitle: "Watch the Reel",
           reelText: "Shivam explains this exact topic in a short Reel on Instagram - simple Hindi, straight from Japan.",
           reelBtn: "Watch on Instagram",
+          pathsKicker: "Start here - your journey",
+          pathsTitle: "Where are you right now?",
+          pathsSub: "Pick your situation. We show you the right guides in the right order, step by step.",
+          pathStepWord: "Step",
+          pathOpen: "Start this path",
+          shareBtn: "Share",
+          whatsappBtn: "WhatsApp",
+          summaryBtn: "Photo summary",
+          relatedTitle: "Also useful for you",
+          reportBtn: "Something wrong in this guide? Tell Shivam",
+          popularLabel: "Most asked:",
+          stickyHome: "Home",
+          stickyVideo: "Video",
           sourceLabel: "Official source",
           checked: "Facts checked: November 2026",
           disclaimer: "General information, not legal advice - always check the official source for your case.",
@@ -1021,6 +1058,19 @@
           reelTitle: "Reel देखें",
           reelText: "शिवम इसी विषय को Instagram पर एक छोटी Reel में समझाते हैं - आसान हिंदी में, सीधे जापान से।",
           reelBtn: "Instagram पर देखें",
+          pathsKicker: "यहाँ से शुरू करें - आपका सफ़र",
+          pathsTitle: "आप अभी कहाँ हैं?",
+          pathsSub: "अपनी स्थिति चुनें। हम आपको सही guides सही क्रम में दिखाएँगे, कदम-दर-कदम।",
+          pathStepWord: "कदम",
+          pathOpen: "ये रास्ता शुरू करें",
+          shareBtn: "शेयर करें",
+          whatsappBtn: "WhatsApp",
+          summaryBtn: "फोटो सारांश",
+          relatedTitle: "ये भी आपके काम आएगा",
+          reportBtn: "इस guide में कुछ गलत लगा? Shivam को बताएँ",
+          popularLabel: "सबसे ज़्यादा पूछे गए:",
+          stickyHome: "होम",
+          stickyVideo: "वीडियो",
           sourceLabel: "आधिकारिक स्रोत",
           checked: "जानकारी जाँची गई: नवंबर 2026",
           disclaimer: "यह सामान्य जानकारी है, कानूनी सलाह नहीं - अपने मामले के लिए हमेशा आधिकारिक स्रोत ज़रूर देखें।",

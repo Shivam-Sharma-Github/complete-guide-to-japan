@@ -57,6 +57,7 @@
             </div>
             <div class="hero-results" id="heroResults" hidden></div>
             <p class="hero-search-hint" data-i18n="heroSearchHint">Start typing - try “kaigo”, “वेतन”, “prometric” or “emergency”.</p>
+            <div class="hero-popular"><span class="hp-label" data-i18n="popularLabel">Most asked:</span><span id="heroPopular"></span></div>
           </div>
           <p class="lede" data-i18n="heroLede">Everything Shivam explains in his Instagram Reels - visas, exams, where to report a problem, emergency numbers and money - written down in simple words, so you can find it any time.</p>
           <div class="hero-actions">
@@ -85,6 +86,17 @@
           <span class="e-free" data-i18n="emgFree">Free · 24 hours · any phone</span>
         </div>
       </div>
+
+      <section class="block" id="paths">
+        <div class="wrap">
+          <div class="block-head">
+            <p class="kicker" data-i18n="pathsKicker">Start here - your journey</p>
+            <h2 data-i18n="pathsTitle">Where are you right now?</h2>
+            <p class="sub" data-i18n="pathsSub">Pick your situation. We show you the right guides in the right order, step by step.</p>
+          </div>
+          <div class="path-grid" id="pathGrid"></div>
+        </div>
+      </section>
 
       <section class="intro">
         <div class="wrap intro-grid">
@@ -230,6 +242,33 @@
         <div id="courseBody"></div>
       </div>
     </main>
+
+    <!-- ============ PATH VIEW ============ -->
+    <main id="viewPath" class="guide-view" hidden>
+      <div class="wrap">
+        <button type="button" class="back-btn" id="pathBackBtn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+          <span data-i18n="backAll">All guides</span>
+        </button>
+        <div id="pathBody"></div>
+      </div>
+    </main>
+
+    <!-- ============ STICKY BAR (guide pages, phones) ============ -->
+    <nav id="stickyBar" class="sticky-bar" hidden aria-label="Quick actions">
+      <a class="sb-item" id="stickyVideo" href="#" target="_blank" rel="noopener">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13l11-6.5Z"/></svg>
+        <span data-i18n="stickyVideo">Video</span>
+      </a>
+      <button type="button" class="sb-item" id="stickyShare">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.6 13.5 6.8 4M15.4 6.5l-6.8 4"/></svg>
+        <span data-i18n="shareBtn">Share</span>
+      </button>
+      <a class="sb-item" href="#/">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 10 9-7 9 7v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"/><path d="M9 22v-8h6v8"/></svg>
+        <span data-i18n="stickyHome">Home</span>
+      </a>
+    </nav>
 
     <script src="data.js"></script>
     <script src="script.js"></script>

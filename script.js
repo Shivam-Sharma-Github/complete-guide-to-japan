@@ -16,6 +16,8 @@
         ext: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M21 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5"/></svg>',
         warn: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg>',
         play: '<svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13l11-6.5Z"/></svg>',
+        share: '<svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.6 13.5 6.8 4M15.4 6.5l-6.8 4"/></svg>',
+        flag: '<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><path d="M4 22v-7"/></svg>',
         arrow: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>'
       };
 
@@ -28,6 +30,21 @@
       }
       function guideById(id) {
         for (var i = 0; i < GUIDES.length; i++) if (GUIDES[i].id === id) return GUIDES[i];
+        return null;
+      }
+      var SITE_URL = "https://shivam-sharma-github.github.io/complete-guide-to-japan/";
+      function guideUrl(g) { return SITE_URL + "#/guide/" + g.id; }
+      function shareText(g) { return g[lang].title + " - Complete Guide to Japan (free): " + guideUrl(g); }
+      function shareGuide(g) {
+        var url = guideUrl(g);
+        if (navigator.share) {
+          navigator.share({ title: g[lang].title, text: shareText(g), url: url }).catch(function () {});
+        } else {
+          window.open("https://wa.me/?text=" + encodeURIComponent(shareText(g)), "_blank");
+        }
+      }
+      function pathById(id) {
+        for (var i = 0; i < PATHS.length; i++) if (PATHS[i].id === id) return PATHS[i];
         return null;
       }
       function guidesIn(sectionId) {
@@ -169,6 +186,72 @@
         for (var i = 0; i < cards.length; i++) {
           cards[i].addEventListener("click", function () {
             location.hash = "#/guide/" + this.getAttribute("data-guide");
+          });
+        }
+      }
+
+      /* ---- home: journey paths ---- */
+      function renderPaths() {
+        var grid = document.getElementById("pathGrid");
+        if (!grid) return;
+        var html = "";
+        PATHS.forEach(function (p, i) {
+          html += '<button type="button" class="path-card" data-path="' + p.id + '">'
+            + '<span class="pc-num">' + (i + 1) + '</span>'
+            + '<span class="pc-body"><h3>' + esc(p[lang].name) + '</h3><p>' + esc(p[lang].desc) + '</p>'
+            + '<span class="pc-meta">' + p.guides.length + ' ' + STR[lang].guidesWord + ' \u00b7 ' + esc(STR[lang].pathOpen) + ' \u2192</span></span>'
+            + '</button>';
+        });
+        grid.innerHTML = html;
+        var cards = grid.querySelectorAll("[data-path]");
+        for (var i = 0; i < cards.length; i++) {
+          cards[i].addEventListener("click", function () {
+            location.hash = "#/path/" + this.getAttribute("data-path");
+          });
+        }
+      }
+      function renderPath(p) {
+        var t = STR[lang];
+        var html = '<span class="g-tag">' + esc(t.pathsKicker) + '</span>'
+          + '<h1>' + esc(p[lang].name) + '</h1>'
+          + '<p class="course-lede">' + esc(p[lang].desc) + '</p>'
+          + '<div class="path-steps">';
+        p.guides.forEach(function (gid, i) {
+          var g = guideById(gid);
+          if (!g) return;
+          html += '<button type="button" class="path-step" data-nav="' + g.id + '">'
+            + '<span class="ps-num">' + esc(t.pathStepWord) + ' ' + (i + 1) + '</span>'
+            + '<span class="ps-main"><span class="ps-title">' + esc(g[lang].title) + '</span></span>'
+            + '<span class="hr-arrow" aria-hidden="true">\u2192</span></button>';
+        });
+        html += '</div>';
+        document.getElementById("pathBody").innerHTML = html;
+        var btns = document.querySelectorAll("#pathBody [data-nav]");
+        for (var i = 0; i < btns.length; i++) {
+          btns[i].addEventListener("click", function () {
+            location.hash = "#/guide/" + this.getAttribute("data-nav");
+          });
+        }
+      }
+
+      /* ---- home: popular search chips ---- */
+      var POPULAR = ["Resume", "188", "JLPT", "Minimum wage", "Kaigo"];
+      function renderPopular() {
+        var box = document.getElementById("heroPopular");
+        if (!box) return;
+        var html = "";
+        POPULAR.forEach(function (term) {
+          html += '<button type="button" class="hp-chip" data-pop="' + esc(term) + '">' + esc(term) + '</button>';
+        });
+        box.innerHTML = html;
+        var chips = box.querySelectorAll("[data-pop]");
+        for (var i = 0; i < chips.length; i++) {
+          chips[i].addEventListener("click", function () {
+            var term = this.getAttribute("data-pop");
+            document.getElementById("heroSearchInput").value = term;
+            onHeroSearch();
+            document.getElementById("heroResults").hidden = true;
+            document.getElementById("guides").scrollIntoView({ behavior: "smooth" });
           });
         }
       }
@@ -318,27 +401,50 @@
         var traps = c.traps.map(function (s) { return "<li>" + ICONS.warn + esc(s) + "</li>"; }).join("");
         var html = '<span class="g-tag">' + esc(sec[lang].name) + '</span>'
           + '<h1>' + esc(c.title) + '</h1>'
+          + '<div class="checked-badge">' + ICONS.shield + esc(t.checked) + '</div>'
           + '<div class="simple-box"><div class="sb-label">' + esc(t.simpleAnswer) + '</div><p>' + esc(c.simple) + '</p></div>'
           + '<h2 class="sec-h">' + esc(t.stepByStep) + '</h2><ol class="steps">' + steps + '</ol>'
           + '<h2 class="sec-h">' + esc(t.trapsTitle) + '</h2><ul class="traps">' + traps + '</ul>'
           + '<div class="reel-card"><span class="reel-play">' + ICONS.play + '</span>'
           + '<div><h3>' + esc(t.reelTitle) + '</h3><p>' + esc(t.reelText) + '</p></div>'
           + '<a class="btn" href="' + (g.reel || IG_URL) + '" target="_blank" rel="noopener">' + esc(t.reelBtn) + '</a></div>'
+          + '<div class="share-row">'
+          + '<a class="btn wa" href="https://wa.me/?text=' + encodeURIComponent(shareText(g)) + '" target="_blank" rel="noopener">' + esc(t.whatsappBtn) + '</a>'
+          + '<button type="button" class="btn ghost" id="guideShareBtn">' + ICONS.share + esc(t.shareBtn) + '</button>'
+          + '<a class="btn ghost" href="images/share-' + g.id + '.jpg" target="_blank" rel="noopener">' + esc(t.summaryBtn) + '</a>'
+          + '</div>'
           + '<div class="source-box"><span class="src-label">' + esc(t.sourceLabel) + '</span>'
           + '<a href="' + g.source.url + '" target="_blank" rel="noopener">' + esc(g.source.label) + '</a>'
           + '<span class="checked">' + esc(t.checked) + '</span></div>'
           + '<p class="disclaimer">' + esc(t.disclaimer) + '</p>'
+          + '<a class="report-link" href="https://ig.me/m/shivam_bhai_japan" target="_blank" rel="noopener">' + ICONS.flag + esc(t.reportBtn) + '</a>'
+          + relatedHtml(g)
           + '<div class="prev-next">'
           + (prev ? '<button type="button" data-nav="' + prev.id + '"><span>' + esc(t.prevGuide) + '</span>' + esc(prev[lang].title) + '</button>' : '<span style="flex:1"></span>')
           + (next ? '<button type="button" class="next" data-nav="' + next.id + '"><span>' + esc(t.nextGuide) + '</span>' + esc(next[lang].title) + '</button>' : '<span style="flex:1"></span>')
           + '</div>';
         document.getElementById("guideBody").innerHTML = html;
+        var sb = document.getElementById("guideShareBtn");
+        if (sb) sb.addEventListener("click", function () { shareGuide(g); });
+        var sv = document.getElementById("stickyVideo");
+        if (sv) sv.setAttribute("href", g.reel || IG_URL);
         var navBtns = document.querySelectorAll("[data-nav]");
         for (var i = 0; i < navBtns.length; i++) {
           navBtns[i].addEventListener("click", function () {
             location.hash = "#/guide/" + this.getAttribute("data-nav");
           });
         }
+      }
+
+      function relatedHtml(g) {
+        var t = STR[lang];
+        var rel = guidesIn(g.section).filter(function (x) { return x.id !== g.id; }).slice(0, 3);
+        if (!rel.length) return "";
+        var html = '<h2 class="sec-h">' + esc(t.relatedTitle) + '</h2><div class="rel-grid">';
+        rel.forEach(function (r) {
+          html += '<button type="button" class="rel-card" data-nav="' + r.id + '"><h3>' + esc(r[lang].title) + '</h3><span class="g-open">' + esc(t.openGuide) + ' ' + ICONS.arrow + '</span></button>';
+        });
+        return html + '</div>';
       }
 
       /* ---- course detail ---- */
@@ -380,34 +486,47 @@
       /* ---- routing ---- */
       var currentGuide = null;
       var onCourse = false;
+      var currentPath = null;
       function route() {
         var h = location.hash || "#/";
         var m = h.match(/^#\/guide\/(.+)$/);
+        var pm = h.match(/^#\/path\/(.+)$/);
         var home = document.getElementById("viewHome");
         var gv = document.getElementById("viewGuide");
         var cv = document.getElementById("viewCourse");
+        var pv = document.getElementById("viewPath");
+        var bar = document.getElementById("stickyBar");
         var tb = document.getElementById("topbar");
-        if (h === "#/course") {
+        if (bar) bar.hidden = !(m && guideById(m[1]));
+        if (pm && pathById(pm[1])) {
           if (tb) tb.classList.add("solid");
-          currentGuide = null; onCourse = true;
+          currentGuide = null; onCourse = false; currentPath = pathById(pm[1]);
+          renderPath(currentPath);
+          home.hidden = true; gv.hidden = true; cv.hidden = true; pv.hidden = false;
+          window.scrollTo(0, 0);
+        } else if (h === "#/course") {
+          if (tb) tb.classList.add("solid");
+          currentGuide = null; onCourse = true; currentPath = null;
           renderCourse();
-          home.hidden = true; gv.hidden = true; cv.hidden = false;
+          home.hidden = true; gv.hidden = true; cv.hidden = false; pv.hidden = true;
           window.scrollTo(0, 0);
         } else if (m && guideById(m[1])) {
           if (tb) tb.classList.add("solid");
-          currentGuide = guideById(m[1]); onCourse = false;
+          currentGuide = guideById(m[1]); onCourse = false; currentPath = null;
           renderGuide(currentGuide);
-          home.hidden = true; gv.hidden = false; cv.hidden = true;
+          home.hidden = true; gv.hidden = false; cv.hidden = true; pv.hidden = true;
           window.scrollTo(0, 0);
         } else {
           if (tb) tb.classList.remove("solid");
-          currentGuide = null; onCourse = false;
-          gv.hidden = true; cv.hidden = true; home.hidden = false;
+          currentGuide = null; onCourse = false; currentPath = null;
+          gv.hidden = true; cv.hidden = true; pv.hidden = true; home.hidden = false;
         }
       }
 
       function renderAll() {
         applyStatic();
+        renderPaths();
+        renderPopular();
         renderSections();
         renderChips();
         renderGuides();
@@ -415,6 +534,7 @@
         renderHeroResults();
         if (currentGuide) renderGuide(currentGuide);
         if (onCourse) renderCourse();
+        if (currentPath) renderPath(currentPath);
       }
 
       document.getElementById("langEn").addEventListener("click", function () { if (lang !== "en") { lang = "en"; renderAll(); } });
@@ -436,6 +556,8 @@
         if (hs && !hs.contains(e.target)) document.getElementById("heroResults").hidden = true;
       });
       document.getElementById("backBtn").addEventListener("click", function () { location.hash = "#/"; });
+      document.getElementById("pathBackBtn").addEventListener("click", function () { location.hash = "#/"; });
+      document.getElementById("stickyShare").addEventListener("click", function () { if (currentGuide) shareGuide(currentGuide); });
       document.getElementById("courseBackBtn").addEventListener("click", function () { location.hash = "#/"; });
       document.getElementById("courseOpenBtn").addEventListener("click", function () { location.hash = "#/course"; });
       document.getElementById("brandHome").addEventListener("click", function (e) {
