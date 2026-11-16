@@ -35,7 +35,7 @@
         {
           id: "ssw-titp-visas", section: "visas",
           keywords: "visa visas ssw titp work route training trainee skilled worker welding shipbuilding वीज़ा वीजा वर्क रूट ट्रेनिंग प्रशिक्षु नौकरी काम",
-          source: { label: "SSW Official Portal - ssw.go.jp", url: "https://www.ssw.go.jp" },
+          sources: [ { label: "SSW Official Portal - ssw.go.jp", url: "https://www.ssw.go.jp/en/" }, { label: "Immigration Services Agency (ISA) - moj.go.jp", url: "https://www.moj.go.jp/isa/" }, { label: "OTIT - otit.go.jp", url: "https://www.otit.go.jp/" } ],
           reel: "https://www.instagram.com/reel/De4bClJTi5p/",
           en: {
             title: "SSW & TITP Visas - The Two Main Work Routes",
@@ -73,7 +73,7 @@
         {
           id: "report-a-problem", section: "help",
           keywords: "problem report help otit labour office complaint unpaid salary overtime trouble परेशानी समस्या रिपोर्ट मदद शिकायत वेतन नहीं मिला ओवरटाइम",
-          source: { label: "SSW Official Portal - ssw.go.jp", url: "https://www.ssw.go.jp" },
+          sources: [ { label: "OTIT - otit.go.jp", url: "https://www.otit.go.jp/" }, { label: "Ministry of Health, Labour and Welfare - mhlw.go.jp", url: "https://www.mhlw.go.jp/" } ],
           reel: "https://www.instagram.com/reel/De615GpB7dL/",
           en: {
             title: "Where to Report a Problem",
@@ -111,7 +111,7 @@
         {
           id: "emergency-contacts", section: "help",
           keywords: "emergency police ambulance fire 110 119 118 coast guard danger accident help number phone 188 9110 consumer centre center shohi seikatsu shopping fraud scam contract non emergency police consultation इमरजेंसी आपातकाल पुलिस एम्बुलेंस आग खतरा दुर्घटना नंबर फोन उपभोक्ता केंद्र खरीदारी धोखाधड़ी फ्रॉड सलाह गैर इमरजेंसी तटरक्षक",
-          source: { label: "Immigration Services Agency - isa.go.jp", url: "https://www.isa.go.jp" },
+          sources: [ { label: "Consumer Affairs Agency - 188 Hotline - caa.go.jp", url: "https://www.caa.go.jp/" }, { label: "Japan Coast Guard - 118 - kaiho.mlit.go.jp", url: "https://www.kaiho.mlit.go.jp/" } ],
           reel: "https://www.instagram.com/reel/DezRok0sMdp/",
           en: {
             title: "Emergency Contacts in Japan",
@@ -157,7 +157,7 @@
         {
           id: "prometric-registration", section: "exams",
           keywords: "prometric exam test booking jft-basic jft japanese test registration skill test परीक्षा टेस्ट बुकिंग रजिस्ट्रेशन जापानी परीक्षा पासपोर्ट",
-          source: { label: "SSW Official Portal - ssw.go.jp", url: "https://www.ssw.go.jp" },
+          sources: [ { label: "Prometric - Official SSW Test Booking - prometric-jp.com", url: "https://www.prometric-jp.com/en/ssw/" }, { label: "JFT-Basic - Japan Foundation - jpf.go.jp", url: "https://www.jpf.go.jp/jft-basic/e/" } ],
           reel: "https://www.instagram.com/reel/DfCqgyDBkXP/",
           en: {
             title: "Prometric Registration - Booking Your Tests",
@@ -197,7 +197,7 @@
         {
           id: "ssw2-free-books", section: "exams",
           keywords: "ssw-2 ssw2 books free books book kitab किताब किताबें study material textbook sample questions jaim otaff maff manufacturing food agriculture preparation मुफ़्त पढ़ाई तैयारी सरकारी एग्ज़ाम",
-          source: { label: "SSW Official Portal - ssw.go.jp", url: "https://www.ssw.go.jp" },
+          sources: [ { label: "SSW Official Portal - ssw.go.jp", url: "https://www.ssw.go.jp/en/" } ],
           reel: "https://www.instagram.com/reel/DfXYfe0htFV/",
           en: {
             title: "SSW-2 Books Are FREE - Official Study Material",
@@ -231,7 +231,7 @@
         {
           id: "minimum-wage", section: "money",
           keywords: "minimum wage salary pay payslip money yen wage per hour prefecture pension tax वेतन न्यूनतम वेतन सैलरी पैसा तनख्वाह पेमेंट पेंशन टैक्स",
-          source: { label: "Ministry of Health, Labour and Welfare - mhlw.go.jp", url: "https://www.mhlw.go.jp" },
+          sources: [ { label: "MHLW - Official Minimum Wage List - mhlw.go.jp", url: "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/minimumichiran/index.html" } ],
           reel: "https://www.instagram.com/reel/DfPd6nwS9VT/",
           en: {
             title: "Minimum Wage in Japan",
@@ -267,7 +267,7 @@
         {
           id: "titp-ending-ikusei-shuro", section: "visas",
           keywords: "titp ending ikusei shuro 2027 new system visa change ट्रेनिंग खत्म नया सिस्टम वीज़ा बदलाव",
-          source: { label: "SSW Official Portal - ssw.go.jp", url: "https://www.ssw.go.jp" },
+          sources: [ { label: "Immigration Services Agency (ISA) - moj.go.jp", url: "https://www.moj.go.jp/isa/" }, { label: "OTIT - otit.go.jp", url: "https://www.otit.go.jp/" } ],
           en: {
             title: "TITP Is Ending - The New Ikusei Shuro System",
             simple: "TITP will be replaced by a new system called Ikusei Shuro (Employment for Skill Development) from 1 April 2027. The new system is designed to train workers and lead them into SSW. If you are on TITP now, your road forward passes through this change - so plan early.",
@@ -302,7 +302,7 @@
         {
           id: "ssw1-to-ssw2", section: "visas",
           keywords: "ssw2 ssw-2 ssw1 upgrade family spouse children five years renew वीज़ा अपग्रेड परिवार पत्नी बच्चे पाँच साल रिन्यू",
-          source: { label: "SSW Official Portal - ssw.go.jp", url: "https://www.ssw.go.jp" },
+          sources: [ { label: "SSW Official Portal - ssw.go.jp", url: "https://www.ssw.go.jp/en/" }, { label: "Immigration Services Agency (ISA) - moj.go.jp", url: "https://www.moj.go.jp/isa/" } ],
           en: {
             title: "SSW-1 to SSW-2 - The Big Upgrade",
             simple: "SSW-1 lets you stay up to 5 years in total, and your family cannot join you. SSW-2 is the upgrade: it can be renewed with no total limit, and your spouse and children can live with you. SSW-2 exists in 11 fields and needs an advanced skill exam plus work experience. One warning: nursing care (kaigo) has NO SSW-2.",
@@ -337,7 +337,7 @@
         {
           id: "kaigo-other-door", section: "visas",
           keywords: "kaigo care nursing care worker fukushishi exam nurse elderly देखभाल नर्सिंग केयर वर्कर परीक्षा बुज़ुर्ग सेवा",
-          source: { label: "Kaigo Fukushishi Exam Centre - sssc.or.jp", url: "https://www.sssc.or.jp" },
+          sources: [ { label: "Kaigo Fukushishi Exam Centre - sssc.or.jp", url: "https://www.sssc.or.jp/" }, { label: "SSW Official Portal - ssw.go.jp", url: "https://www.ssw.go.jp/en/" } ],
           reel: "https://www.instagram.com/reel/DfVgJr8ze-J/",
           en: {
             title: "Kaigo Workers: The Other Door",
@@ -373,7 +373,7 @@
         {
           id: "agent-money-system", section: "money",
           keywords: "agent money fee fees lakh commission supervising organisation deposit guarantee penalty contract itemised bill agent paisa एजेंट पैसा फीस लाख कमीशन डिपॉज़िट गारंटी पेनल्टी कॉन्ट्रैक्ट बिल",
-          source: { label: "SSW Official Portal - ssw.go.jp", url: "https://www.ssw.go.jp" },
+          sources: [ { label: "OTIT - otit.go.jp", url: "https://www.otit.go.jp/" } ],
           en: {
             title: "Agent Paisa Kaise Kamata Hai? - The Agent Money System",
             simple: "An agent does not earn from only one place. In India, many candidates pay ₹1–3 lakh in the name of training, files and “processing”. In Japan, the company pays a supervising organisation about ¥30,000 every month for each trainee - the candidate does NOT pay this. And some charges you are told to pay are already the company's duty, or are completely free.",
@@ -414,7 +414,7 @@
         {
           id: "free-japanese-classes", section: "money",
           keywords: "free japanese classes nihongo kyoshitsu learn japanese city hall shiyakusho international association coaching मुफ़्त जापानी क्लास जापानी सीखें सिटी हॉल कोचिंग भाषा",
-          source: { label: "Agency for Cultural Affairs - bunka.go.jp", url: "https://www.bunka.go.jp" },
+          sources: [ { label: "Agency for Cultural Affairs - bunka.go.jp", url: "https://www.bunka.go.jp/" }, { label: "Irodori - Free Japanese Learning, Japan Foundation - jpf.go.jp", url: "https://www.irodori.jpf.go.jp/en/" } ],
           en: {
             title: "FREE Japanese Classes Near You - Nihongo Kyoshitsu",
             simple: "In almost every city in Japan, a free Japanese class runs near your home. It is called Nihongo Kyoshitsu - a community Japanese class. City offices, international associations and local volunteers run it under the Japanese government's Japanese-language education system. Most classes are free; some take only ¥100–500 for copies and materials.",
@@ -451,7 +451,7 @@
         {
           id: "welding-job-japan", section: "visas",
           keywords: "welding welder shipbuilding ship machinery classnk exam shipyard setouchi salary वेल्डिंग वेल्डर जहाज़ शिपयार्ड परीक्षा वेतन",
-          source: { label: "SSW Official Portal - ssw.go.jp", url: "https://www.ssw.go.jp" },
+          sources: [ { label: "SSW Official Portal - ssw.go.jp", url: "https://www.ssw.go.jp/en/" } ],
           en: {
             title: "Welding Job in Japan - The SSW Shipbuilding Route",
             simple: "Welding is an official job field in Japan under SSW Shipbuilding & Ship Machinery - the shipyard industry. To work as a welder in Japan, you must pass the official SSW skill exam conducted by ClassNK, with a theory part and a practical welding part. An Indian welding certificate alone does NOT replace this exam. Pay is honest to say: it depends on the region and the company - in the Setouchi region, shipyard welders commonly start around ¥230,000–250,000 a month and grow with experience.",
@@ -488,7 +488,7 @@
         {
           id: "bsc-nursing-roadmap", section: "visas",
           keywords: "nursing bsc nursing nurse inc approved kaigo roadmap care worker degree नर्सिंग नर्स डिग्री केयर वर्कर रोडमैप कॉलेज",
-          source: { label: "SSW Official Portal - ssw.go.jp", url: "https://www.ssw.go.jp" },
+          sources: [ { label: "Kaigo Fukushishi Exam Centre - sssc.or.jp", url: "https://www.sssc.or.jp/" }, { label: "SSW Official Portal - ssw.go.jp", url: "https://www.ssw.go.jp/en/" } ],
           en: {
             title: "BSc Nursing Se Japan - The Roadmap",
             simple: "One brother asked: “My BSc Nursing college is not INC-approved. Can I still go to Japan?” The honest answer is YES - but the road changes. The licensed nurse route is hard: it needs Japan's national nursing exam in full Japanese, and Indian nursing registration can be a problem when the college is not INC-approved. The open door is Kaigo - care work - and this route needs NO nursing degree at all.",
@@ -525,7 +525,7 @@
         {
           id: "company-sach-1-what-companies-want", section: "jobs",
           keywords: "company sach part 1 hiring company what companies want japanese adaptability skill fourth valley connect job interview priority ranking naukri job कंपनी सच नौकरी इंटरव्यू जापानी स्किल कंपनी क्या देखती है हायरिंग",
-          source: { label: "SSW Official Portal - ssw.go.jp", url: "https://www.ssw.go.jp" },
+          sources: [ { label: "Connect Job - Fourth Valley Concierge (the company interviewed) - connect-job.com", url: "https://www.connect-job.com/" } ],
           reel: "https://www.instagram.com/reel/DflFrK8hI1k/",
           en: {
             title: "Company Sach Part 1 - What Companies Want First",
@@ -559,7 +559,7 @@
         {
           id: "company-sach-2-n4-n3-n2", section: "jobs",
           keywords: "company sach part 2 n4 n3 n2 jlpt jft visa naukri job engineer visa gijinkoku japanese level कंपनी सच वीज़ा नौकरी जापानी लेवल इंजीनियर वीज़ा",
-          source: { label: "SSW Official Portal - ssw.go.jp", url: "https://www.ssw.go.jp" },
+          sources: [ { label: "Connect Job - Fourth Valley Concierge (the company interviewed) - connect-job.com", url: "https://www.connect-job.com/" }, { label: "JLPT Official Website - jlpt.jp", url: "https://www.jlpt.jp/e/" } ],
           reel: "https://www.instagram.com/reel/DfnkDLlT1gz/",
           en: {
             title: "Company Sach Part 2 - N4 = Visa, N3 = Job, N2 = Engineer Visa",
@@ -597,7 +597,7 @@
         {
           id: "company-sach-3-interview-mistakes", section: "jobs",
           keywords: "company sach part 3 interview mistakes reject indian candidates listening overselling fast speaking interrupt कंपनी सच इंटरव्यू ग़लती ग़लतियाँ रिजेक्ट सुनना तेज़ बोलना",
-          source: { label: "SSW Official Portal - ssw.go.jp", url: "https://www.ssw.go.jp" },
+          sources: [ { label: "Connect Job - Fourth Valley Concierge (the company interviewed) - connect-job.com", url: "https://www.connect-job.com/" } ],
           reel: "https://www.instagram.com/reel/Dfr4J6vvTXs/",
           en: {
             title: "Company Sach Part 3 - 3 Interview Mistakes That Get You Rejected",
@@ -631,7 +631,7 @@
         {
           id: "company-sach-4-apply-to-offer", section: "jobs",
           keywords: "company sach part 4 apply offer process document screening resume rirekisho interview support company कंपनी सच अप्लाई ऑफ़र प्रोसेस दस्तावेज़ स्क्रीनिंग रिज़्यूमे",
-          source: { label: "SSW Official Portal - ssw.go.jp", url: "https://www.ssw.go.jp" },
+          sources: [ { label: "Connect Job - Fourth Valley Concierge (the company interviewed) - connect-job.com", url: "https://www.connect-job.com/" } ],
           reel: "https://www.instagram.com/reel/DfubZFcO5gE/",
           en: {
             title: "Company Sach Part 4 - Apply to Offer: The Full Process",
@@ -669,7 +669,7 @@
         {
           id: "company-sach-5-one-advice", section: "jobs",
           keywords: "company sach part 5 one advice japanese six month plan 6 months learn japanese कंपनी सच सलाह जापानी छह महीने प्लान सीखें",
-          source: { label: "SSW Official Portal - ssw.go.jp", url: "https://www.ssw.go.jp" },
+          sources: [ { label: "Connect Job - Fourth Valley Concierge (the company interviewed) - connect-job.com", url: "https://www.connect-job.com/" } ],
           reel: "https://www.instagram.com/reel/Dfw8zR0p6nH/",
           en: {
             title: "Company Sach Part 5 - The Company's One Advice + 6-Month Plan",
@@ -703,7 +703,7 @@
         {
           id: "resume-samples-2-styles", section: "jobs",
           keywords: "resume sample rirekisho shokumu keirekisho cv japanese resume format sample example履歴書 職務経歴書 रिज़्यूमे नमूना सैंपल जापानी रिज़्यूमे बायोडाटा",
-          source: { label: "SSW Official Portal - ssw.go.jp", url: "https://www.ssw.go.jp" },
+          sources: [ { label: "Hello Work - Public Employment Service - hellowork.mhlw.go.jp", url: "https://www.hellowork.mhlw.go.jp/" } ],
           reel: "https://www.instagram.com/reel/DfubZFcO5gE/",
           en: {
             title: "Resume Samples - 2 Styles for Japan Jobs",
