@@ -400,6 +400,8 @@
         var next = idx < GUIDES.length - 1 ? GUIDES[idx + 1] : null;
         var steps = c.steps.map(function (s) { return "<li>" + esc(s) + "</li>"; }).join("");
         var traps = c.traps.map(function (s) { return "<li>" + ICONS.warn + esc(s) + "</li>"; }).join("");
+        var srcs = g.sources || (g.source ? [g.source] : []);
+        var srcLinks = srcs.map(function (s) { return '<a href="' + s.url + '" target="_blank" rel="noopener">' + esc(s.label) + "</a>"; }).join('<span class="src-sep"> · </span>');
         var html = '<span class="g-tag">' + esc(sec[lang].name) + '</span>'
           + '<h1>' + esc(c.title) + '</h1>'
           + '<div class="checked-badge">' + ICONS.shield + esc(t.checked) + '</div>'
@@ -415,7 +417,7 @@
           + '<a class="btn ghost" href="images/share-' + g.id + '.jpg" target="_blank" rel="noopener">' + esc(t.summaryBtn) + '</a>'
           + '</div>'
           + '<div class="source-box"><span class="src-label">' + esc(t.sourceLabel) + '</span>'
-          + '<a href="' + g.source.url + '" target="_blank" rel="noopener">' + esc(g.source.label) + '</a>'
+          + srcLinks
           + '<span class="checked">' + esc(t.checked) + '</span></div>'
           + '<p class="disclaimer">' + esc(t.disclaimer) + '</p>'
           + '<a class="report-link" href="https://ig.me/m/shivam_bhai_japan" target="_blank" rel="noopener">' + ICONS.flag + esc(t.reportBtn) + '</a>'
