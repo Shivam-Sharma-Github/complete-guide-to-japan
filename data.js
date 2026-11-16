@@ -13,28 +13,34 @@
       var SECTIONS = [
         { id: "visas", icon: "passport",
           en: { name: "Visas", desc: "TITP, SSW-1, SSW-2, Ikusei Shuro and the Kaigo status - every door, explained simply." },
-          hi: { name: "वीज़ा", desc: "TITP, SSW-1, SSW-2, Ikusei Shuro और Kaigo स्टेटस - हर दरवाज़ा, आसान भाषा में।" } },
+          hi: { name: "वीज़ा", desc: "TITP, SSW-1, SSW-2, Ikusei Shuro और Kaigo स्टेटस - हर दरवाज़ा, आसान भाषा में।" },
+          ja: { name: "ビザ", desc: "TITP、SSW-1、SSW-2、育成就労（いくせいしゅうろう）と介護（かいご）の資格 - すべての道を簡単に説明します。" } },
         { id: "jobs", icon: "pen",
           en: { name: "Jobs & Interviews", desc: "Company Sach - what a real Japanese hiring company looks for, interview mistakes, and the apply-to-offer process." },
-          hi: { name: "नौकरियाँ और इंटरव्यू", desc: "Company Sach - एक असली जापानी hiring कंपनी ने ख़ुद बताया: कंपनी क्या देखती है, इंटरव्यू की ग़लतियाँ और apply से offer तक का पूरा process।" } },
+          hi: { name: "नौकरियाँ और इंटरव्यू", desc: "Company Sach - एक असली जापानी hiring कंपनी ने ख़ुद बताया: कंपनी क्या देखती है, इंटरव्यू की ग़लतियाँ और apply से offer तक का पूरा process।" },
+          ja: { name: "仕事と面接（めんせつ）", desc: "Company Sach - 本当の日本の会社が見ること、面接のまちがい、申し込みからオファーまでの流れ。" } },
         { id: "exams", icon: "pen",
           en: { name: "Exams & Tests", desc: "Prometric booking, SSW skill tests and the JFT-Basic Japanese test." },
-          hi: { name: "परीक्षाएँ", desc: "Prometric बुकिंग, SSW स्किल टेस्ट और JFT-Basic जापानी टेस्ट।" } },
+          hi: { name: "परीक्षाएँ", desc: "Prometric बुकिंग, SSW स्किल टेस्ट और JFT-Basic जापानी टेस्ट।" },
+          ja: { name: "試験（しけん）", desc: "Prometricの予約（よやく）、SSWのスキル試験とJFT-Basicの日本語試験。" } },
         { id: "help", icon: "shield",
           en: { name: "Problem? Get Help", desc: "Where to report a problem, who helps you, and the emergency and help numbers - 110, 119, #9110 and 188." },
-          hi: { name: "परेशानी? मदद लें", desc: "कहाँ रिपोर्ट करें, कौन मदद करता है, और इमरजेंसी व मदद वाले नंबर - 110, 119, #9110 और 188।" } },
+          hi: { name: "परेशानी? मदद लें", desc: "कहाँ रिपोर्ट करें, कौन मदद करता है, और इमरजेंसी व मदद वाले नंबर - 110, 119, #9110 और 188।" },
+          ja: { name: "困（こま）ったとき・助（たす）け", desc: "どこに相談するか、誰が助けるか、緊急と助けの番号 - 110、119、#9110、188。" } },
         { id: "money", icon: "yen",
           en: { name: "Money & Life", desc: "Minimum wage, payslips and what your salary really means." },
-          hi: { name: "पैसा और ज़िंदगी", desc: "न्यूनतम वेतन, पे-स्लिप और आपकी सैलरी का असली मतलब।" } },
+          hi: { name: "पैसा और ज़िंदगी", desc: "न्यूनतम वेतन, पे-स्लिप और आपकी सैलरी का असली मतलब।" },
+          ja: { name: "お金と生活（せいかつ）", desc: "最低賃金（さいていちんぎん）、給料明細（きゅうりょうめいさい）、あなたの給料の本当の意味。" } },
         { id: "links", icon: "link",
           en: { name: "Official Links", desc: "Every official government link in one place." },
-          hi: { name: "आधिकारिक लिंक", desc: "सभी आधिकारिक सरकारी लिंक एक ही जगह।" } }
+          hi: { name: "आधिकारिक लिंक", desc: "सभी आधिकारिक सरकारी लिंक एक ही जगह।" },
+          ja: { name: "公式リンク", desc: "政府（せいふ）の公式リンクを全部、1つの場所に。" } }
       ];
 
       var GUIDES = [
         {
           id: "ssw-titp-visas", section: "visas",
-          keywords: "visa visas ssw titp work route training trainee skilled worker welding shipbuilding वीज़ा वीजा वर्क रूट ट्रेनिंग प्रशिक्षु नौकरी काम",
+          keywords: "visa visas ssw titp work route training trainee skilled worker welding shipbuilding वीज़ा वीजा वर्क रूट ट्रेनिंग प्रशिक्षु नौकरी काम ビザ 特定技能 技能実習 働く 道",
           sources: [ { label: "SSW Official Portal - ssw.go.jp", url: "https://www.ssw.go.jp/en/" }, { label: "Immigration Services Agency (ISA) - moj.go.jp", url: "https://www.moj.go.jp/isa/" }, { label: "OTIT - otit.go.jp", url: "https://www.otit.go.jp/" } ],
           reel: "https://www.instagram.com/reel/De4bClJTi5p/",
           en: {
@@ -68,11 +74,27 @@
               "TITP ट्रेनिंग है, मनमर्ज़ी से नौकरी बदलने वाला वीज़ा नहीं - आप आसानी से दूसरी कंपनी में नहीं जा सकते।",
               "SSW पर नौकरी सिर्फ़ उसी क्षेत्र के अंदर बदली जा सकती है।"
             ]
+          },
+          ja: {
+            title: "SSWとTITPのビザ - 働くための2つの大きな道",
+            simple: "インドの人が日本で働くための大きなドアは2つあります。TITPは訓練（くんれん）のプログラムです。働きながら技術（ぎじゅつ）を学びます。SSWは働くための資格です。スキルの試験と日本語の試験に合格（ごうかく）して、決まった仕事の分野（ぶんや）で働きます。どちらも本当の政府の道です。どちらのドアが合うかは、あなたのスキルと日本語で決まります。",
+            steps: [
+              "道を決めてください: 経験（けいけん）が少なくて訓練を受けたい → TITP。もうスキルと少しの日本語がある → SSW。",
+              "SSWのため: あなたの分野のスキル試験と、日本語の試験（JFT-Basicなど）に合格してください。",
+              "あなたの分野でSSWの人を雇（やと）う日本の会社を見つけてください。",
+              "会社、または登録支援機関（とうろくしえんきかん）が、あなたの申請（しんせい）と支援計画（しえんけいかく）を手伝います。",
+              "日本に来て、仕事を始めて、あなたの資格のルールを守ってください。"
+            ],
+            traps: [
+              "ビザを「買う」ために大きいお金を要求（ようきゅう）する人 - 止めてください。まず公式ポータルを確認してください。",
+              "TITPは訓練です。自由に仕事を変えるビザではありません。簡単に他の会社に移（うつ）ることはできません。",
+              "SSWでは、同じ分野の中でだけ仕事を変えることができます。"
+            ]
           }
         },
         {
           id: "report-a-problem", section: "help",
-          keywords: "problem report help otit labour office complaint unpaid salary overtime trouble परेशानी समस्या रिपोर्ट मदद शिकायत वेतन नहीं मिला ओवरटाइम",
+          keywords: "problem report help otit labour office complaint unpaid salary overtime trouble परेशानी समस्या रिपोर्ट मदद शिकायत वेतन नहीं मिला ओवरटाइम 報告 相談 給料 残業 OTIT 労働基準監督署 助け",
           sources: [ { label: "OTIT - otit.go.jp", url: "https://www.otit.go.jp/" }, { label: "Ministry of Health, Labour and Welfare - mhlw.go.jp", url: "https://www.mhlw.go.jp/" } ],
           reel: "https://www.instagram.com/reel/De615GpB7dL/",
           en: {
@@ -106,11 +128,27 @@
               "जो कागज़ समझ न आए, उस पर कभी साइन न करें। पहले दुभाषिया माँगें।",
               "“सवाल पूछा तो घर भेज देंगे” जैसी धमकी ठीक नहीं है - इसकी रिपोर्ट करें।"
             ]
+          },
+          ja: {
+            title: "問題をどこに報告するか",
+            simple: "仕事で何かまちがっているとき - 給料が払われない、残業（ざんぎょう）が終わらない、悪い扱（あつか）い - 静かに苦しまないでください。外国人の働く人を助ける公式の場所があります。TITPでもSSWでも。相談は無料で、あなたの話は秘密（ひみつ）です。",
+            steps: [
+              "TITPですか？ OTIT（外国人技能実習機構（がいこくじんぎのうじっしゅうきこう））に連絡してください。実習生を守って、相談を受けます。",
+              "どの働く人も、給料が払われない問題や仕事のルールの問題で、近くの労働基準監督署（ろうどうきじゅんかんとくしょ）に行けます。",
+              "FRESC（外国人在留支援（がいこくじんざいりゅうしえん）センター）は無料の相談をして、正しい窓口につなげます。",
+              "今、危ないですか？ 警察110に電話してください。",
+              "証拠（しょうこ）を残してください: 給料明細、契約、仕事のスケジュールの写真が、あなたの話を強くします。"
+            ],
+            traps: [
+              "静かに苦しむことは誰も助けません。相談は無料で秘密です。",
+              "分からない紙に絶対にサインしないでください。まず通訳（つうやく）を頼んでください。",
+              "「質問したら国に帰す」という脅（おど）しはダメです。報告してください。"
+            ]
           }
         },
         {
           id: "emergency-contacts", section: "help",
-          keywords: "emergency police ambulance fire 110 119 118 coast guard danger accident help number phone 188 9110 consumer centre center shohi seikatsu shopping fraud scam contract non emergency police consultation इमरजेंसी आपातकाल पुलिस एम्बुलेंस आग खतरा दुर्घटना नंबर फोन उपभोक्ता केंद्र खरीदारी धोखाधड़ी फ्रॉड सलाह गैर इमरजेंसी तटरक्षक",
+          keywords: "emergency police ambulance fire 110 119 118 coast guard danger accident help number phone 188 9110 consumer centre center shohi seikatsu shopping fraud scam contract non emergency police consultation इमरजेंसी आपातकाल पुलिस एम्बुलेंस आग खतरा दुर्घटना नंबर फोन उपभोक्ता केंद्र खरीदारी धोखाधड़ी फ्रॉड सलाह गैर इमरजेंसी तटरक्षक 緊急 警察 救急車 火事 消費者ホットライン 相談",
           sources: [ { label: "Consumer Affairs Agency - 188 Hotline - caa.go.jp", url: "https://www.caa.go.jp/" }, { label: "Japan Coast Guard - 118 - kaiho.mlit.go.jp", url: "https://www.kaiho.mlit.go.jp/" } ],
           reel: "https://www.instagram.com/reel/DezRok0sMdp/",
           en: {
@@ -152,11 +190,31 @@
               "खरीदारी में धोखा हुआ? नकली दुकान को और पैसे न दें और बार-बार जवाब भी न दें। Screenshots और बिल सेव करें, 188 पर कॉल करें - और ठगकर पैसे लिए गए हों, तो #9110 पर पुलिस से भी पूछें।",
               "अपना पता जापानी में बोलना पहले से सीख लें - ज़रूरत पड़ने से पहले।"
             ]
+          },
+          ja: {
+            title: "日本の緊急電話番号",
+            simple: "今日、あなたの電話にこの番号を保存してください。今、危ないとき: 警察（けいさつ）110、火事（かじ）・救急車（きゅうきゅうしゃ）119。無料（むりょう）、24時間、どの電話からでもかけることができます。緊急ではない問題には、もう2つの窓口があります。警察の相談（そうだん）#9110と、買い物や契約（けいやく）のトラブルのための消費者（しょうひしゃ）ホットライン188です。",
+            steps: [
+              "警察 - 110: 今、犯罪（はんざい）があるとき、事故（じこ）のとき、危ないとき。無料、24時間。",
+              "火事・救急車 - 119: 火事のとき、急な病気（びょうき）や大きなけがのとき。無料、24時間。",
+              "警察の相談、緊急ではないとき - #9110: 警察に相談したいけれど、今は誰も危なくないとき。なくした物、あやしい電話、ストーカーの心配（しんぱい）、近所の人とのトラブル、「これは犯罪ですか？」という疑問（ぎもん）。警察の相談センターにつながります。多くは平日（へいじつ）の昼。時間は県でちがいます。",
+              "消費者ホットライン - 188: 買い物や契約のトラブルのため。届かないオンライン注文、にせの買い物サイト、まちがった商品・こわれた商品、むりにサインさせられた契約、家に来て売る人の圧力（あつりょく）。188は近くの消費生活（しょうひせいかつ）センターにつながります。相談は無料。電話のお金だけかかります。日本語だけのことが多いです。レシート、スクリーンショット、店の名前を準備（じゅんび）してください。",
+              "海の緊急 - 118: 海や海岸（かいがん）で事故のとき、海上保安庁（かいじょうほあんちょう）の118に電話してください。",
+              "110や119に電話するとき、最初に場所を言ってください。あなたの住所（じゅうしょ）か、近くの有名な建物。",
+              "今日、電話に保存してください: 110、119、#9110、188、あなたの大使館（たいしかん）、会社、サポート団体（だんたい）。",
+              "在留（ざいりゅう）カードの情報（じょうほう）と、カードの写真を電話に入れておいてください。"
+            ],
+            traps: [
+              "小さい質問に110を使わないでください。相談は#9110です。110と119は本当に危ないときのために。",
+              "日本語が上手じゃなくても、待たないでください。110と119は電話してください。ゆっくり、簡単（かんたん）な言葉で話してください。",
+              "買い物の詐欺（さぎ）？ もっと払わないでください。にせの店に返信し続けないでください。スクリーンショットとレシートを保存して、188に電話してください。お金を取られたら、#9110で警察にも相談してください。",
+              "必要（ひつよう）になる前に、自分の住所を日本語で言えるようにしておいてください。"
+            ]
           }
         },
         {
           id: "prometric-registration", section: "exams",
-          keywords: "prometric exam test booking jft-basic jft japanese test registration skill test परीक्षा टेस्ट बुकिंग रजिस्ट्रेशन जापानी परीक्षा पासपोर्ट",
+          keywords: "prometric exam test booking jft-basic jft japanese test registration skill test परीक्षा टेस्ट बुकिंग रजिस्ट्रेशन जापानी परीक्षा पासपोर्ट 試験 予約 プロメトリック JFT 申込",
           sources: [ { label: "Prometric - Official SSW Test Booking - prometric-jp.com", url: "https://www.prometric-jp.com/en/ssw/" }, { label: "JFT-Basic - Japan Foundation - jpf.go.jp", url: "https://www.jpf.go.jp/jft-basic/e/" } ],
           reel: "https://www.instagram.com/reel/DfCqgyDBkXP/",
           en: {
@@ -192,11 +250,28 @@
               "जल्दी बुक करें - डेडलाइन के पास सीटें भर जाती हैं।",
               "सिर्फ़ आधिकारिक Prometric साइट से बुक करें, ज़्यादा पैसे लेने वाले एजेंटों से नहीं।"
             ]
+          },
+          ja: {
+            title: "Prometricの登録 - 試験の予約",
+            simple: "SSWのスキル試験とJFT-Basicの日本語試験は、Prometricのウェブサイトで予約します。無料のアカウントを1つ作って、試験を選んで、日と街を選んで、試験のお金を払います。ゆっくりしてください。名前はIDと完全に同じでなければなりません。",
+            steps: [
+              "あなたの試験のPrometricページを開いてください。リンクはSSW公式ポータルにあります。",
+              "パスポートの名前の文字と完全に同じで、Prometric IDを作ってください。",
+              "試験を選んでください: あなたの分野のSSWスキル試験、またはJFT-Basic。",
+              "試験センター、日、時間を選んでください。",
+              "お金を払って、確認（かくにん）のメールを保存してください。",
+              "試験の日は、登録した同じIDを持って行ってください。"
+            ],
+            traps: [
+              "パスポートと違う名前の文字は、試験の日に大きい問題になります。1文字ずつ写してください。",
+              "早く予約してください。締切（しめきり）の近くは席（せき）が早く埋まります。",
+              "公式のPrometricサイトだけで予約してください。余分にお金を取るエージェントを通さないでください。"
+            ]
           }
         },
         {
           id: "ssw2-free-books", section: "exams",
-          keywords: "ssw-2 ssw2 books free books book kitab किताब किताबें study material textbook sample questions jaim otaff maff manufacturing food agriculture preparation मुफ़्त पढ़ाई तैयारी सरकारी एग्ज़ाम",
+          keywords: "ssw-2 ssw2 books free books book kitab किताब किताबें study material textbook sample questions jaim otaff maff manufacturing food agriculture preparation मुफ़्त पढ़ाई तैयारी सरकारी एग्ज़ाम 本 無料 教科書 サンプル問題 ダウンロード",
           sources: [ { label: "SSW Official Portal - ssw.go.jp", url: "https://www.ssw.go.jp/en/" } ],
           reel: "https://www.instagram.com/reel/DfXYfe0htFV/",
           en: {
@@ -226,11 +301,25 @@
               "किताबें FREE हैं, लेकिन EXAM FREE नहीं है - exam की फीस करीब ¥14,000–15,000 है। अपना पैसा सिर्फ़ उसी के लिए रखें।",
               "ये किताबें लगभग पूरी तरह जापानी में ही हैं। असली तैयारी है: क्षेत्र की पढ़ाई + जापानी - N3 level की reading की ओर काम करें।"
             ]
+          },
+          ja: {
+            title: "SSW-2の本は無料 - 公式の勉強の材料",
+            simple: "公式のSSW-2の勉強の本とサンプル問題は、政府から無料です。あなたの分野が何でも、公式サイトからダウンロードします。政府が無料で出す本に、エージェントにお金を払わないでください。",
+            steps: [
+              "https://www.ssw.go.jp - 公式SSWポータル - に行って、勉強の材料の部分を見つけてください。",
+              "あなたの分野を選んでください。分野ごとに公式の教科書（きょうかしょ）とサンプル問題があります。",
+              "あなたの分野の無料の公式教科書とサンプル問題をダウンロードしてください: 製造（せいぞう）はJAIM、食品（しょくひん）はOTAFF、農業（のうぎょう）はMAFF。",
+              "製造の人: JAIMの2号の教科書には無料の「マイページ」登録（とうろく）が必要です。約2分、お金は全くかかりません。"
+            ],
+            traps: [
+              "本は無料ですが、試験は無料ではありません。試験のお金は約14,000-15,000円です。あなたのお金はそのためだけに残してください。",
+              "この本はほとんど日本語だけです。本当の準備は、分野の勉強プラス日本語です。N3レベルの読みを目指してください。"
+            ]
           }
         },
         {
           id: "minimum-wage", section: "money",
-          keywords: "minimum wage salary pay payslip money yen wage per hour prefecture pension tax वेतन न्यूनतम वेतन सैलरी पैसा तनख्वाह पेमेंट पेंशन टैक्स",
+          keywords: "minimum wage salary pay payslip money yen wage per hour prefecture pension tax वेतन न्यूनतम वेतन सैलरी पैसा तनख्वाह पेमेंट पेंशन टैक्स 最低賃金 給料 時給 県 東京",
           sources: [ { label: "MHLW - Official Minimum Wage List - mhlw.go.jp", url: "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/minimumichiran/index.html" } ],
           reel: "https://www.instagram.com/reel/DfPd6nwS9VT/",
           en: {
@@ -262,11 +351,26 @@
               "रेट हर साल बदलता है (आमतौर पर अक्टूबर में) - हमेशा सबसे नया रेट देखें।",
               "ओवरटाइम के घंटे न्यूनतम वेतन से ऊपर, अलग से ज़्यादा दर पर मिलने चाहिए।"
             ]
+          },
+          ja: {
+            title: "日本の最低賃金（さいていちんぎん）",
+            simple: "日本の県ごとに、1時間の最低のお金が決まっています。外国人の働く人も全く同じです。2026年、東京は1時間1,280円、国の平均（へいきん）は1,177円です。あなたの1時間のお金が、あなたの県のお金より少ないとき、それはルール違反（いはん）です。",
+            steps: [
+              "厚生労働省（こうせいろうどうしょう）のウェブサイトで、あなたの県の今のお金を見つけてください。",
+              "給料明細を確認してください: 基本（きほん）の給料を、働いた時間で割ってください。",
+              "2つの数字を比べてください。最低より少ないとき、何かまちがっています。",
+              "あなたの支援機関か、労働基準監督署に相談してください。"
+            ],
+            traps: [
+              "「外国人は少ない」はウソです。同じ最低が全員に当たります。",
+              "お金は毎年変わります（普通は10月）。いつも新しいものを確認してください。",
+              "残業の時間は、最低賃金の上に、余分に払わなければなりません。"
+            ]
           }
         },
         {
           id: "titp-ending-ikusei-shuro", section: "visas",
-          keywords: "titp ending ikusei shuro 2027 new system visa change ट्रेनिंग खत्म नया सिस्टम वीज़ा बदलाव",
+          keywords: "titp ending ikusei shuro 2027 new system visa change ट्रेनिंग खत्म नया सिस्टम वीज़ा बदलाव 育成就労 技能実習 終わり 新しい制度 2027",
           sources: [ { label: "Immigration Services Agency (ISA) - moj.go.jp", url: "https://www.moj.go.jp/isa/" }, { label: "OTIT - otit.go.jp", url: "https://www.otit.go.jp/" } ],
           en: {
             title: "TITP Is Ending - The New Ikusei Shuro System",
@@ -297,11 +401,26 @@
               "अवधि खत्म होने तक इंतज़ार करने से रास्ता बदलने का समय नहीं बचता।",
               "“गारंटीड बदलाव” बेचने वाला आपको गुमराह कर रहा है।"
             ]
+          },
+          ja: {
+            title: "TITPは終わります - 新しい育成就労（いくせいしゅうろう）の制度（せいど）",
+            simple: "TITPは2027年4月1日から、育成就労という新しい制度に変わります。新しい制度は、働く人を育てて、SSWにつなげるために作られました。今TITPの人は、この変化を通って前に進みます。早く計画してください。",
+            steps: [
+              "あなたのTITPの期間（きかん）が終わる日を知ってください。最後の月まで待たないでください。",
+              "新しい育成就労の制度は2027年4月1日に始まります。SSWにつながるように作られています。",
+              "今、日本語とスキルを上げてください。それが次のステップを決めます。",
+              "あなたの監理団体（かんりだんたい）か支援機関に、あなたの選択肢（せんたくし）を相談してください。"
+            ],
+            traps: [
+              "うわさを信じないでください。本当のルールはSSW公式ポータルで確認してください。",
+              "期間が終わるまで待つと、道を変える時間がありません。",
+              "「確実（かくじつ）に変えられる」と売る人は、あなたをだましています。"
+            ]
           }
         },
         {
           id: "ssw1-to-ssw2", section: "visas",
-          keywords: "ssw2 ssw-2 ssw1 upgrade family spouse children five years renew वीज़ा अपग्रेड परिवार पत्नी बच्चे पाँच साल रिन्यू",
+          keywords: "ssw2 ssw-2 ssw1 upgrade family spouse children five years renew वीज़ा अपग्रेड परिवार पत्नी बच्चे पाँच साल रिन्यू 特定技能2号 家族 更新 アップグレード",
           sources: [ { label: "SSW Official Portal - ssw.go.jp", url: "https://www.ssw.go.jp/en/" }, { label: "Immigration Services Agency (ISA) - moj.go.jp", url: "https://www.moj.go.jp/isa/" } ],
           en: {
             title: "SSW-1 to SSW-2 - The Big Upgrade",
@@ -332,11 +451,26 @@
               "Kaigo वर्कर: केयर वर्क में SSW-2 नहीं है - अपना दूसरा दरवाज़ा Kaigo गाइड में पढ़ें।",
               "परिवार सिर्फ़ SSW-2 (और Kaigo स्टेटस) पर साथ आ सकता है - SSW-1 पर नहीं।"
             ]
+          },
+          ja: {
+            title: "SSW-1からSSW-2へ - 大きなアップグレード",
+            simple: "SSW-1は全部で5年まで。家族は一緒に住めません。SSW-2はアップグレードです。更新（こうしん）に合計の制限（せいげん）はありません。配偶者（はいぐうしゃ）と子どもが一緒に住めます。SSW-2は11の分野にあります。高いレベルのスキル試験と仕事の経験が必要です。1つ警告（けいこく）: 介護（かいご）にはSSW-2がありません。",
+            steps: [
+              "あなたの分野がSSW-2のある11分野の1つか確認してください。",
+              "SSW-1の間に仕事の経験を作ってください。",
+              "あなたの分野の高いレベルのSSW-2スキル試験に合格してください。",
+              "SSW-1の期間が終わる前に、資格の変更（へんこう）を申請してください。"
+            ],
+            traps: [
+              "SSW-1の5年の時計は動き続けます。5年目ではなく、2-3年目に準備を始めてください。",
+              "介護の人: 介護の仕事にはSSW-2がありません。あなたの別のドアは介護のガイドを読んでください。",
+              "家族が一緒に住めるのはSSW-2（と介護の資格）だけです。SSW-1ではできません。"
+            ]
           }
         },
         {
           id: "kaigo-other-door", section: "visas",
-          keywords: "kaigo care nursing care worker fukushishi exam nurse elderly देखभाल नर्सिंग केयर वर्कर परीक्षा बुज़ुर्ग सेवा",
+          keywords: "kaigo care nursing care worker fukushishi exam nurse elderly देखभाल नर्सिंग केयर वर्कर परीक्षा बुज़ुर्ग सेवा 介護 介護福祉士 国家試験 家族 ドア",
           sources: [ { label: "Kaigo Fukushishi Exam Centre - sssc.or.jp", url: "https://www.sssc.or.jp/" }, { label: "SSW Official Portal - ssw.go.jp", url: "https://www.ssw.go.jp/en/" } ],
           reel: "https://www.instagram.com/reel/DfVgJr8ze-J/",
           en: {
@@ -368,11 +502,26 @@
               "परीक्षा पूरी जापानी में है - जापानी की पढ़ाई वैकल्पिक नहीं है।",
               "Kaigo में SSW-2 का इंतज़ार न करें। वह है ही नहीं।"
             ]
+          },
+          ja: {
+            title: "介護の人: もう1つのドア",
+            simple: "介護の人、よく聞いてください: 介護にはSSW-2がありません。あなたのもう1つのドアは「介護」の在留資格です。介護福祉士（かいごふくしし）の国家試験に合格するともらえます。合格すれば、5年の壁なしに更新できて、家族が一緒に住めます。",
+            steps: [
+              "介護で働いて、3年以上の介護の仕事の経験を完成させてください。",
+              "実務者研修（じつむしゃけんしゅう）を完成させてください - 約450時間。",
+              "介護福祉士の国家試験を申し込んでください - 年に1回、1月、日本語で。",
+              "試験に合格して、「介護」の在留資格に変えてください。"
+            ],
+            traps: [
+              "2-3年目に始めてください。経験、研修、試験のサイクルは全部で何年もかかります。",
+              "試験は全部日本語です。日本語の勉強は選択（せんたく）ではありません。",
+              "介護のSSW-2を待たないでください。存在（そんざい）しません。"
+            ]
           }
         },
         {
           id: "agent-money-system", section: "money",
-          keywords: "agent money fee fees lakh commission supervising organisation deposit guarantee penalty contract itemised bill agent paisa एजेंट पैसा फीस लाख कमीशन डिपॉज़िट गारंटी पेनल्टी कॉन्ट्रैक्ट बिल",
+          keywords: "agent money fee fees lakh commission supervising organisation deposit guarantee penalty contract itemised bill agent paisa एजेंट पैसा फीस लाख कमीशन डिपॉज़िट गारंटी पेनल्टी कॉन्ट्रैक्ट बिल エージェント お金 監理団体 請求書 デポジット 禁止",
           sources: [ { label: "OTIT - otit.go.jp", url: "https://www.otit.go.jp/" } ],
           en: {
             title: "Agent Paisa Kaise Kamata Hai? - The Agent Money System",
@@ -409,11 +558,29 @@
               "हर एजेंट बेईमान नहीं होता - लेकिन जानकारी के बिना आप अच्छे और बुरे में फ़र्क नहीं कर सकते। हमेशा bill माँगें।",
               "कोई एजेंट “गारंटीड वीज़ा” का वादा नहीं कर सकता। गारंटी बेचने वाला आपको गुमराह कर रहा है।"
             ]
+          },
+          ja: {
+            title: "エージェントはどうやってお金を稼（かせ）ぐ？ - エージェントのお金の仕組み",
+            simple: "エージェントは1つの場所からだけ稼ぎません。インドでは、多くの候補者（こうほしゃ）が訓練、ファイル、「処理（しょり）」の名前で1-3ラークルピーを払います。日本では、会社が監理団体に実習生1人について毎月約30,000円を払います。候補者はこれを払いません。そして、あなたが払うように言われるお金の中には、会社の義務（ぎむ）のものや、完全に無料のものがあります。",
+            steps: [
+              "まず、流れを理解してください: インド側のエージェントはあなたからお金を取ります。日本側の監理団体は会社から払われます。実習生1人、毎月約30,000円。そのお金はあなたから来ません。",
+              "何か払う前に、全部の明細（めいさい）の請求書（せいきゅうしょ）を頼んでください: すべての料金の名前、金額、お金が誰に行くか。",
+              "何が無料か確認してください: 公式の勉強の本とフォームは政府から無料です。無料のものにエージェントにお金を払わないでください。",
+              "本当のビザのお金を確認してください: 政府のビザの料金は小さいです。「ビザ料金」だけで何ラークルピーも要求する人がいたら、止めて、証拠を頼んでください。",
+              "SSWでは、支援のお金は雇用主（こようぬし）の義務です。候補者の義務ではありません。会社が出さなければならない支援に、もう一度払わないでください。",
+              "Shivamのルールを守ってください: 本当のものだけに、明細の請求書で、少しずつ払ってください。最初の日に全部を払わないでください。選ぶ前に2-3のエージェントを比べてください。"
+            ],
+            traps: [
+              "デポジットや「保証（ほしょう）のお金」は、TITPの法律で禁止（きんし）です。エージェントが取ったら、まちがっているのはエージェントです。あなたではありません。",
+              "契約を破（やぶ）ったら罰金（ばっきん）を払わせる紙も、TITPの法律で禁止です。そのような紙にサインしないでください。",
+              "すべてのエージェントが不正（ふせい）ではありません。でも情報がなければ、いい人と悪い人が分かりません。いつも請求書を頼んでください。",
+              "「確実なビザ」を約束できるエージェントはいません。保証を売る人は、あなたをだましています。"
+            ]
           }
         },
         {
           id: "free-japanese-classes", section: "money",
-          keywords: "free japanese classes nihongo kyoshitsu learn japanese city hall shiyakusho international association coaching मुफ़्त जापानी क्लास जापानी सीखें सिटी हॉल कोचिंग भाषा",
+          keywords: "free japanese classes nihongo kyoshitsu learn japanese city hall shiyakusho international association coaching मुफ़्त जापानी क्लास जापानी सीखें सिटी हॉल कोचिंग भाषा 日本語教室 無料 市役所 ボランティア 勉強",
           sources: [ { label: "Agency for Cultural Affairs - bunka.go.jp", url: "https://www.bunka.go.jp/" }, { label: "Irodori - Free Japanese Learning, Japan Foundation - jpf.go.jp", url: "https://www.irodori.jpf.go.jp/en/" } ],
           en: {
             title: "FREE Japanese Classes Near You - Nihongo Kyoshitsu",
@@ -446,11 +613,27 @@
               "शाब्दिक रूप से हर छोटे कस्बे में क्लास नहीं होती - आपके शहर में न हो, तो सिटी हॉल आपको सबसे पास वाली क्लास बता देगा।",
               "इन क्लासों में कोई परीक्षा नहीं होती और हर level के लोग welcome हैं - आज आपकी जापानी zero हो, तो भी शर्माएँ नहीं।"
             ]
+          },
+          ja: {
+            title: "近くの無料の日本語教室 - にほんごきょうしつ",
+            simple: "日本のほとんどすべての街で、あなたの家の近くに無料の日本語教室があります。「にほんごきょうしつ」という名前です。市役所（しやくしょ）、国際協会（こくさいきょうかい）、地域（ちいき）のボランティアが、日本政府の日本語教育（きょういく）の仕組みで開いています。多くの教室は無料です。コピーと材料で100-500円だけの教室もあります。",
+            steps: [
+              "ステップ1 - 検索: Googleで、あなたの街の名前 +「にほんごきょうしつ」と入力してください。あなたの街の公式ページが教室を見せます。",
+              "ステップ2 - 市役所で聞く: 市役所に行って、1文聞いてください - 「にほんごきょうしつは どこですか？」リストをもらえます。",
+              "ステップ3 - 県のリストを確認: あなたの県の国際協会のウェブサイトに、県の全部の教室のリストがあります。",
+              "教室に入る: 教室は普通、週に1-2回。夜や日曜日が多いです。工場の人も行けます。",
+              "毎週行き続ける: 毎日の生活の日本語を学んで、日本人の先生と友達に会って、本当の地域の情報 - 病院、ルール、イベント - をもらえます。"
+            ],
+            traps: [
+              "自分の街の無料の教室を確認する前に、コーチングコースに20,000-30,000円を捨てないでください。",
+              "本当にすべての小さい町に教室があるわけではありません。あなたの街になければ、市役所が一番近い教室を教えます。",
+              "この教室に試験はありません。どのレベルでも歓迎（かんげい）です。今日あなたの日本語がゼロでも、恥ずかしがらないでください。"
+            ]
           }
         },
         {
           id: "welding-job-japan", section: "visas",
-          keywords: "welding welder shipbuilding ship machinery classnk exam shipyard setouchi salary वेल्डिंग वेल्डर जहाज़ शिपयार्ड परीक्षा वेतन",
+          keywords: "welding welder shipbuilding ship machinery classnk exam shipyard setouchi salary वेल्डिंग वेल्डर जहाज़ शिपयार्ड परीक्षा वेतन 溶接 造船 ClassNK 技能試験 給料",
           sources: [ { label: "SSW Official Portal - ssw.go.jp", url: "https://www.ssw.go.jp/en/" } ],
           en: {
             title: "Welding Job in Japan - The SSW Shipbuilding Route",
@@ -483,11 +666,27 @@
               "सर्टिफ़िकेट वीज़ा नहीं होता। एग्ज़ाम, नौकरी और वीज़ा - ये तीन अलग स्टेप हैं।",
               "किसी एजेंट के तय वेतन वाले वादे पर भरोसा न करें - शिपयार्ड का वेतन क्षेत्र, कंपनी और आपके अनुभव के साथ बदलता है।"
             ]
+          },
+          ja: {
+            title: "日本の溶接（ようせつ）の仕事 - SSW造船（ぞうせん）の道",
+            simple: "溶接は、SSWの造船・舶用工業（はくようこうぎょう）の下で、日本の公式の仕事の分野です。造船所（ぞうせんしょ）の産業です。日本で溶接者として働くには、ClassNKが行う公式のSSW技能試験に合格しなければなりません。理論（りろん）と実際の溶接の部分があります。インドの溶接の証明書だけでは、この試験の代わりになりません。給料は正直に言います: 地域と会社で変わります。瀬戸内（せとうち）地域では、造船所の溶接者は普通、月に約230,000-250,000円から始まって、経験で上がります。",
+            steps: [
+              "道を選んでください: SSW - 試験に合格して働く。またはTITPの溶接 - 訓練の道。どちらも本当の政府の道です。",
+              "SSWのため、まず日本語を作ってください - JLPT N4かJFT-Basicのレベル。",
+              "ClassNKが行うSSW造船・舶用工業の技能試験に合格してください - 理論と実際の溶接。",
+              "造船の会社に応募（おうぼ）して、面接に合格して、SSWの資格で来てください。",
+              "未来を計画してください: 造船にはSSW-2があります。5年の制限なしに更新できて、家族が一緒に住めます。"
+            ],
+            traps: [
+              "インドの溶接の証明書は、ClassNKのSSW試験の代わりになりません。証明書があるのはいいことです。試験はまだ必須（ひっす）です。",
+              "証明書はビザではありません。試験、仕事、ビザは3つの別のステップです。",
+              "エージェントの固定の給料の約束を信じないでください。造船所の給料は地域、会社、あなたの経験で変わります。"
+            ]
           }
         },
         {
           id: "bsc-nursing-roadmap", section: "visas",
-          keywords: "nursing bsc nursing nurse inc approved kaigo roadmap care worker degree नर्सिंग नर्स डिग्री केयर वर्कर रोडमैप कॉलेज",
+          keywords: "nursing bsc nursing nurse inc approved kaigo roadmap care worker degree नर्सिंग नर्स डिग्री केयर वर्कर रोडमैप कॉलेज 看護師 BSc 介護 INC ロードマップ",
           sources: [ { label: "Kaigo Fukushishi Exam Centre - sssc.or.jp", url: "https://www.sssc.or.jp/" }, { label: "SSW Official Portal - ssw.go.jp", url: "https://www.ssw.go.jp/en/" } ],
           en: {
             title: "BSc Nursing Se Japan - The Roadmap",
@@ -520,11 +719,27 @@
               "Kaigo केयर वर्क है, नर्सिंग की नौकरी नहीं - यह रास्ता चुनने से पहले असली काम समझ लें।",
               "Kaigo Fukushishi परीक्षा पूरी जापानी में होती है - जापानी की शुरुआत आखिरी साल में नहीं, अभी से करें।"
             ]
+          },
+          ja: {
+            title: "BSc Nursingから日本へ - ロードマップ",
+            simple: "1人の兄弟が聞きました:「私のBSc Nursingの大学はINCの承認（しょうにん）がありません。それでも日本に行けますか？」正直な答えは、はい。でも道が変わります。免許（めんきょ）の看護師（かんごし）の道は難しいです。全部日本語の日本の国家試験が必要です。そして、大学がINCの承認がないとき、インドの看護師の登録（とうろく）が問題になることがあります。開いているドアは介護です。この道には看護の学位（がくい）は全くいりません。",
+            steps: [
+              "ステップ1 - 日本語: 日本語を学んで、JLPT N4かJFT-Basicに合格してください。",
+              "ステップ2 - 介護の技能試験: Prometricで介護の技能試験に合格してください。この試験はインドでも開かれます。",
+              "ステップ3 - 仕事とビザ: 日本の会社の面接に合格して、SSWの介護の働く人として日本に来てください。",
+              "ステップ4 - 経験: 日本で介護で働いて、3年の介護の経験と、必要な実務の訓練を完成させてください。",
+              "ステップ5 - 介護福祉士の試験: この国家試験に合格して、「介護」の資格に変えてください。時間の制限なしに更新できて、家族が一緒に住めます。"
+            ],
+            traps: [
+              "まずあなたの登録を確認しないで、免許の看護師の道に時間とお金を無駄にしないでください。INCの承認がなければ、登録自体が問題になることがあります。",
+              "介護は介護の仕事です。看護の仕事ではありません。この道を選ぶ前に、本当の仕事を理解してください。",
+              "介護福祉士の試験は全部日本語です。日本語を早く始めてください。最後の年ではありません。"
+            ]
           }
         },
         {
           id: "company-sach-1-what-companies-want", section: "jobs",
-          keywords: "company sach part 1 hiring company what companies want japanese adaptability skill fourth valley connect job interview priority ranking naukri job कंपनी सच नौकरी इंटरव्यू जापानी स्किल कंपनी क्या देखती है हायरिंग",
+          keywords: "company sach part 1 hiring company what companies want japanese adaptability skill fourth valley connect job interview priority ranking naukri job कंपनी सच नौकरी इंटरव्यू जापानी स्किल कंपनी क्या देखती है हायरिंग 会社 採用 最初 日本語 スキル 順番",
           sources: [ { label: "Connect Job - Fourth Valley Concierge (the company interviewed) - connect-job.com", url: "https://www.connect-job.com/" } ],
           reel: "https://www.instagram.com/reel/DflFrK8hI1k/",
           en: {
@@ -554,11 +769,25 @@
               "सर्टिफ़िकेट फ़ाइल में रखा है और जापानी zero है - तो फ़ाइल बंद ही रहेगी। भाषा ही दरवाज़ा खोलती है।",
               "यह न सोचें - 'मेरी स्किल मज़बूत है, इसलिए जापानी ज़रूरी नहीं।' कंपनी ने ख़ुद स्किल को नंबर 3 पर रखा है।"
             ]
+          },
+          ja: {
+            title: "Company Sach パート1 - 会社が最初に見ること",
+            simple: "Shivamは本当の日本の採用会社 - Fourth Valley Concierge（Connect Job）- に1つの質問をしました: 外国人の働く人を雇うとき、最初に何を見ますか？その順番は驚くかもしれません。1番: 日本語。2番: あなたがその場所とチームにどれだけ合うか。3番: あなたのスキル。はい - スキルは3番だけです。",
+            steps: [
+              "1番 - 日本語: まずこれを上げてください。毎日20分、休みなしで勉強してください。小さい毎日の日本語が、1つの大きい勉強の日に勝ちます。",
+              "2番 - 合うこと（チームに入ること）: 日本の仕事のスタイルを学んでください - 時間に来る、仕事を先輩（せんぱい）に報告する、チームと一緒に動く。日本では、これは「やわらかい」ことではありません。硬い要件（ようけん）です。",
+              "3番 - スキル: スキルも作ってください。でも最初の2つの後です。言葉がなければ、誰もあなたのスキルを見ることさえできません。",
+              "同じ順番で上げてください: 言葉が1番、合うことが2番、スキルが3番。"
+            ],
+            traps: [
+              "ファイルの中の証明書は、あなたの日本語がゼロなら役に立ちません。ファイルは閉じたままです。言葉がドアを開けます。",
+              "「私のスキルは強いから、日本語はいらない」と考えないでください。会社自体がスキルを3番に置きました。"
+            ]
           }
         },
         {
           id: "company-sach-2-n4-n3-n2", section: "jobs",
-          keywords: "company sach part 2 n4 n3 n2 jlpt jft visa naukri job engineer visa gijinkoku japanese level कंपनी सच वीज़ा नौकरी जापानी लेवल इंजीनियर वीज़ा",
+          keywords: "company sach part 2 n4 n3 n2 jlpt jft visa naukri job engineer visa gijinkoku japanese level कंपनी सच वीज़ा नौकरी जापानी लेवल इंजीनियर वीज़ा N4 N3 N2 ビザ 仕事 エンジニア JLPT",
           sources: [ { label: "Connect Job - Fourth Valley Concierge (the company interviewed) - connect-job.com", url: "https://www.connect-job.com/" }, { label: "JLPT Official Website - jlpt.jp", url: "https://www.jlpt.jp/e/" } ],
           reel: "https://www.instagram.com/reel/DfnkDLlT1gz/",
           en: {
@@ -592,11 +821,27 @@
               "N4 पर रुककर आराम न करें। N4 काग़ज़ देता है - नौकरी उससे ऊपर वाली भाषा से मिलती है।",
               "सिर्फ़ सर्टिफ़िकेट जमा करने से कंपनी प्रभावित नहीं होती। असल में आप कितना बोल और पढ़ सकते हैं - वही मायने रखता है।"
             ]
+          },
+          ja: {
+            title: "Company Sach パート2 - N4=ビザ、N3=仕事、N2=エンジニアビザ",
+            simple: "どれだけの日本語が本当に必要ですか？同じ採用会社（Fourth Valley Concierge - Connect Job）がはっきり答えました: SSWのため、N4でビザはもらえます。でもN4の人は世界中に何千人もいます。N3の候補者が会社の1番の選択になります。そしてエンジニアビザにはN2が必要です。それより下では、チャンスはとても低いです。",
+            steps: [
+              "N4 - ビザのライン: N4かJFT-Basicで、あなたのSSWのビザは作れます。でもこれはスタートのラインです。ゴールのラインではありません。",
+              "N3 - 仕事のライン: 会社はN3を好みます。2人の候補者が同じなら、N3の候補者が最初に選ばれます。",
+              "N2 - エンジニアビザのライン: エンジニア/専門家のビザ（技人国（ぎじんこく））のため、N2以上を目指してください。",
+              "N3に届く、ステップ1: 毎日1つの小さい日本語の文章を、タイマーで読んでください。読みは、ほとんどの人が落ちる場所です。",
+              "N3に届く、ステップ2: 言葉を文の中で学んでください。1人ではありません。1人で覚えた言葉は忘れます。文の中の言葉は残ります。",
+              "N3に届く、ステップ3: 毎週1回、模擬試験（もぎしけん）を受けて、あなたのまちがいをリストに書いてください。そのまちがいのリストが、あなたの本当の本です。"
+            ],
+            traps: [
+              "N4で止まって安心しないでください。N4は紙をくれます。仕事は、その上の言葉から来ます。",
+              "証明書を集めるだけでは、会社は感心（かんしん）しません。あなたが本当に話せて読めるものが大切です。"
+            ]
           }
         },
         {
           id: "company-sach-3-interview-mistakes", section: "jobs",
-          keywords: "company sach part 3 interview mistakes reject indian candidates listening overselling fast speaking interrupt कंपनी सच इंटरव्यू ग़लती ग़लतियाँ रिजेक्ट सुनना तेज़ बोलना",
+          keywords: "company sach part 3 interview mistakes reject indian candidates listening overselling fast speaking interrupt कंपनी सच इंटरव्यू ग़लती ग़लतियाँ रिजेक्ट सुनना तेज़ बोलना 面接 まちがい 聞く 話す 落ちる",
           sources: [ { label: "Connect Job - Fourth Valley Concierge (the company interviewed) - connect-job.com", url: "https://www.connect-job.com/" } ],
           reel: "https://www.instagram.com/reel/Dfr4J6vvTXs/",
           en: {
@@ -626,11 +871,25 @@
               "Overselling - अपने बारे में बड़ी-बड़ी बातें - जापान में आपके ख़िलाफ़ जाता है। अपने काम और अपने काग़ज़ों को बोलने दें।",
               "Interviewer की बात एक बार भी काटना आपका chance ख़त्म कर सकता है। पूरी बात सुनें, फिर जवाब दें।"
             ]
+          },
+          ja: {
+            title: "Company Sach パート3 - 落ちる3つの面接のまちがい",
+            simple: "インドの候補者はなぜ面接で落ちますか？日本の採用会社（Fourth Valley Concierge - Connect Job）が、自分たちの毎日の面接から3つのまちがいを名前で言いました。まちがい1: 聞かないこと。まちがい2: 長く話すこと、自分についてだけ。まちがい3: 早く話して、相手の言葉を切ること。理由は普通、あなたのスキルではありません。",
+            steps: [
+              "直し方1 - 2秒のルール: 相手が話し終わったら、2秒待って、それから話してください。この1つの習慣（しゅうかん）が、ほとんどの割り込み（わりこみ）を止めます。",
+              "直し方2 - 最初に1行で答える: 最初に短い答えをください。詳しいことは、聞かれたときだけください。",
+              "直し方3 - 自分を録音（ろくおん）する: 電話であなたの声を録音して、聞いてください。早く話すなら、自分で聞こえます。それからゆっくりにしてください。",
+              "面接が本当にテストしていることを覚えてください:「この人は私たちのチームの中で平和に働けますか？」落ち着いて、はっきりが勝ちます。"
+            ],
+            traps: [
+              "売り込みすぎ - 自分について大きく話すこと - は、日本ではあなたに反対に働きます。あなたの仕事と書類に話させてください。",
+              "面接の人の言葉を切ることは、1回でも、あなたのチャンスを終わらせることがあります。全部聞いて、それから答えてください。"
+            ]
           }
         },
         {
           id: "company-sach-4-apply-to-offer", section: "jobs",
-          keywords: "company sach part 4 apply offer process document screening resume rirekisho interview support company कंपनी सच अप्लाई ऑफ़र प्रोसेस दस्तावेज़ स्क्रीनिंग रिज़्यूमे",
+          keywords: "company sach part 4 apply offer process document screening resume rirekisho interview support company कंपनी सच अप्लाई ऑफ़र प्रोसेस दस्तावेज़ स्क्रीनिंग रिज़्यूमे 申し込み オファー 書類 審査 履歴書 流れ",
           sources: [ { label: "Connect Job - Fourth Valley Concierge (the company interviewed) - connect-job.com", url: "https://www.connect-job.com/" } ],
           reel: "https://www.instagram.com/reel/DfubZFcO5gE/",
           en: {
@@ -664,11 +923,27 @@
               "जापान में धीमा process हमेशा 'ना' नहीं होता। हर कंपनी अपना समय लेती है - घबराएँ नहीं, और process 'तेज़' कराने के लिए किसी को पैसे न दें।",
               "एक झूठा काग़ज़ या resume की एक झूठी line सब कुछ ख़त्म कर सकती है - screening में, या join करने के बाद भी।"
             ]
+          },
+          ja: {
+            title: "Company Sach パート4 - 申し込みからオファーまで: 全部の流れ",
+            simple: "日本の仕事の流れはインドとちがいます。採用会社（Fourth Valley Concierge - Connect Job）が簡単に説明しました: 主に2つのステップがあります。最初に書類の審査（しんさ）、それから面接。危ない部分: 最初のステップは、あなたに会わずにあなたを落とすことがあります。だからあなたの書類が全部です。",
+            steps: [
+              "ステップ1 - 書類の審査: 会社は最初にあなたの紙を確認します。きれいで本当の日本スタイルの履歴書（りれきしょ）が必須です。",
+              "履歴書の空いた時間を隠さないでください。簡単に、本当に説明してください。後で開く隠した空白（くうはく）は、信頼（しんらい）を壊します。",
+              "申し込む前に書類を準備してください: JLPTかJFTの結果、技能試験の結果、パスポート。",
+              "ステップ2 - 面接: あなたの紙が合格したら、面接が来ます。避ける3つのまちがいはパート3を読んでください。",
+              "いい支援会社を使ってください: 本当の支援会社は、面接の練習、ビザ、日本に着いた後の生活の支援を手伝います。この助けは彼らの仕事の一部です。",
+              "1つの会社で止まらないでください。でも毎回正しく、全部の本当の書類で申し込んでください。"
+            ],
+            traps: [
+              "日本では、遅い流れはいつも「ダメ」という意味ではありません。会社ごとに自分の時間がかかります。慌（あわ）てないでください。「早くする」ためにお金を払わないでください。",
+              "1つのウソの紙、履歴書の1つのウソの行が、全部を終わらせることがあります。審査でも、入った後でも。"
+            ]
           }
         },
         {
           id: "company-sach-5-one-advice", section: "jobs",
-          keywords: "company sach part 5 one advice japanese six month plan 6 months learn japanese कंपनी सच सलाह जापानी छह महीने प्लान सीखें",
+          keywords: "company sach part 5 one advice japanese six month plan 6 months learn japanese कंपनी सच सलाह जापानी छह महीने प्लान सीखें アドバイス 計画 6ヶ月 日本語 毎日",
           sources: [ { label: "Connect Job - Fourth Valley Concierge (the company interviewed) - connect-job.com", url: "https://www.connect-job.com/" } ],
           reel: "https://www.instagram.com/reel/Dfw8zR0p6nH/",
           en: {
@@ -698,11 +973,78 @@
               "जापानी शुरू करने के लिए 'perfect time' का इंतज़ार न करें। कंपनी ने साफ़ कहा: भाषा ही नौकरी है, और भाषा ही जापान में ज़िंदगी है।",
               "महँगा course अकेले जवाब नहीं है - रोज़ की practice जवाब है। आपके घर के पास FREE क्लास भी होती हैं - FREE Japanese Classes वाली गाइड देखें।"
             ]
+          },
+          ja: {
+            title: "Company Sach パート5 - 会社の1つのアドバイス + 6ヶ月の計画",
+            simple: "会社への最後の質問（Fourth Valley Concierge - Connect Job）:「インドの候補者に1つのアドバイスをください。」彼らはスキルと言いませんでした。コースとも言いませんでした。1つの言葉を言いました: 日本語。彼らの言葉: 日本語が多ければ多いほど、得（とく）が多い。仕事でも、日本の毎日の生活でも。駅で、病院で、事務所で。言葉があれば、日本はあなたのものです。",
+            steps: [
+              "1-2ヶ月: 毎日20分 - 言葉と基本の文法。休みの日なし。",
+              "3-4ヶ月: 小さい文章を読むことと、毎日聞くことを始めてください。N3へ向かってください。",
+              "5-6ヶ月: 毎週1回の模擬試験と、話す練習 - 面接で必要な日本語。",
+              "毎日、小さく続けてください。この1つの習慣が、インドの何千人もの候補者の前にあなたを置きます。"
+            ],
+            traps: [
+              "日本語を始める「完璧（かんぺき）な時間」を待たないでください。会社ははっきり言いました: 言葉が仕事で、言葉が日本での生活です。",
+              "高いコースだけが答えではありません。毎日の練習が答えです。家の近くの無料の教室もあります。無料の日本語教室のガイドを見てください。"
+            ]
+          }
+        },
+        {
+          id: "work-without-ssw", section: "jobs",
+          keywords: "work without ssw direct apply direct job engineer visa gijinkoku degree n2 coe job offer titp working holiday ikusei shuro skilled labor chef बिना एसएसडब्ल्यू डायरेक्ट अप्लाई नौकरी डिग्री इंजीनियर वीज़ा 直接 申し込み 学位 N2 COE ワーキングホリデー 技能",
+          sources: [ { label: "Immigration Services Agency (ISA) - moj.go.jp", url: "https://www.moj.go.jp/isa/applications/status/gijinkoku.html" } ],
+          en: {
+            title: "Japan Work Without SSW — Can You Apply Directly?",
+            simple: "Can you apply directly to a Japanese company and work in Japan without SSW? Yes — but only if you qualify for a different visa on your own. A job offer is not a visa. First ask yourself 4 questions: Do you have a university degree? Did you graduate in Japan? Do you have family or a status-based residence in Japan? Have you passed SSW tests? If all four answers are 'no', there is no general full-time direct route — only TITP through official organisations, or a visa based on long real experience.",
+            steps: [
+              "Degree + N2: with a degree and Japanese N2, you can apply directly to companies for the Engineer visa. Two conditions: the job must match your degree, and the company must sponsor your visa (it files the COE in Japan). N2 is what companies ask for in practice — it is not a law that says 'N2 or nothing'.",
+              "No degree, 10 years of real experience: a skilled craft can qualify. For example, an Indian-cuisine chef with 10 years of provable cooking experience can be hired directly under Skilled Labor. Factory-line, shop, cleaning or general labour work does not qualify this way.",
+              "TITP is not direct apply: it must go through an NSDC-empanelled Sending Organisation in India and a licensed Supervising Organisation in Japan. Anyone who says 'direct TITP, just pay me' is not describing the official route.",
+              "Working Holiday is not for India: India is not on Japan's Working Holiday partner list. Ikusei Shuro, the new system replacing TITP, starts 1 April 2027 — and India being included is not confirmed yet.",
+              "Remember the order: job offer first, then the company files for a COE in Japan (usually 1–3 months, ISA charges no fee), then you apply for the visa in India. Offer is not a visa, and a visa is not entry permission.",
+              "Never pay a deposit and never sign a penalty contract — both are banned. A real sending organisation is on the NSDC / OTIT lists, and its fees are itemised in writing before you pay anything."
+            ],
+            traps: [
+              "A company or agent promising a 'direct general job' to someone with no degree, no Japan graduation, no family status and no SSW pass is promising something the official system does not provide.",
+              "Do not enter as a tourist and try to start work. A tourist visa does not allow paid work, and no agent can 'convert' it into a work visa."
+            ]
+          },
+          hi: {
+            title: "SSW के बिना जापान में काम — क्या Direct Apply हो सकता है?",
+            simple: "क्या आप SSW के बिना जापानी कंपनी को direct apply करके जापान में काम कर सकते हैं? हाँ — लेकिन सिर्फ़ तब, जब आप अपने दम पर किसी दूसरे वीज़ा के लिए eligible हों। Job offer ही वीज़ा नहीं होता। पहले खुद से 4 सवाल पूछें: क्या आपके पास university degree है? क्या आपने जापान से graduation किया है? क्या जापान में आपका family या status वाला residence है? क्या आपने SSW test पास किया है? चारों का जवाब 'नहीं' है, तो कोई आम full-time direct रास्ता नहीं है — सिर्फ़ TITP, official organisations के through, या लंबे असली experience वाला वीज़ा।",
+            steps: [
+              "Degree + N2: degree और जापानी N2 हो, तो Engineer वीज़ा के लिए companies को direct apply कर सकते हैं। दो शर्तें: job आपकी degree से match करे, और company आपका वीज़ा sponsor करे (COE वह जापान में file करती है)। N2 कंपनियों की practical माँग है — यह कानून नहीं है कि 'N2 हो, तो ही'।",
+              "Degree नहीं, 10 साल का असली experience: कोई skilled काम qualify कर सकता है। जैसे, 10 साल के provable cooking experience वाला Indian-cuisine chef सीधे Skilled Labor में hire हो सकता है। Factory-line, दुकान, सफ़ाई या आम मज़दूरी का काम इस तरह qualify नहीं करता।",
+              "TITP direct apply नहीं होता: इसमें भारत की NSDC-empanelled Sending Organisation और जापान की licensed Supervising Organisation से गुज़रना पड़ता है। जो 'direct TITP, बस पैसे दो' कहे, वह official रास्ता नहीं बता रहा।",
+              "Working Holiday भारत के लिए नहीं है: भारत जापान की Working Holiday partner list में नहीं है। TITP की जगह आने वाला नया सिस्टम Ikusei Shuro 1 अप्रैल 2027 से शुरू होगा — और भारत उसमें शामिल होगा या नहीं, यह अभी confirm नहीं है।",
+              "क्रम याद रखें: पहले job offer, फिर company जापान में COE file करती है (आमतौर पर 1–3 महीने, ISA कोई fee नहीं लेता), फिर आप भारत में वीज़ा के लिए apply करते हैं। Offer वीज़ा नहीं है, और वीज़ा ही entry की permission नहीं है।",
+              "कभी deposit न दें और कभी penalty वाला contract न sign करें — दोनों banned हैं। असली sending organisation NSDC / OTIT की list में होती है, और उसकी fees पैसे देने से पहले लिखित में item-wise बताई जाती हैं।"
+            ],
+            traps: [
+              "जिसके पास degree नहीं, जापान से graduation नहीं, family status नहीं और SSW pass भी नहीं — उसे 'direct general job' देने का वादा करने वाला company या agent वह चीज़ दे रहा है, जो official सिस्टम में है ही नहीं।",
+              "Tourist बनकर आकर काम शुरू करने की कोशिश न करें। Tourist वीज़ा पर पैसे वाला काम allowed नहीं है, और कोई agent उसे work वीज़ा में 'convert' नहीं कर सकता।"
+            ]
+          },
+          ja: {
+            title: "SSWなしで日本の仕事 - 直接申し込めますか？",
+            simple: "日本の会社に直接申し込んで、SSWなしで日本で働けますか？はい。でも、あなたが自分で別のビザの資格があるときだけです。仕事のオファーはビザではありません。まず自分に4つの質問をしてください: 大学の学位がありますか？日本で卒業しましたか？日本に家族や資格による在留がありますか？SSWの試験に合格しましたか？4つ全部「いいえ」なら、一般のフルタイムの直接の道はありません。公式の機関を通るTITPだけ、または長い本当の経験によるビザだけです。",
+            steps: [
+              "学位 + N2: 学位と日本語N2があれば、エンジニアビザのため会社に直接申し込めます。条件は2つ: 仕事があなたの学位と合うこと、会社があなたのビザをスポンサーすること（会社が日本でCOEを申請します）。N2は会社が実際に求めるものです。「N2かゼロか」という法律ではありません。",
+              "学位なし、10年の本当の経験: 熟練（じゅくれん）の技術が資格になることがあります。例えば、証明できる10年の料理の経験があるインド料理のシェフは、技能（ぎのう）の下で直接雇われます。工場のライン、店、掃除（そうじ）、一般の労働の仕事は、この方法では資格になりません。",
+              "TITPは直接の申し込みではありません: インドのNSDC認定（にんてい）の送出機関（そうしゅつきかん）と、日本の免許のある監理団体を通らなければなりません。「直接のTITP、お金だけ払って」と言う人は、公式の道を説明していません。",
+              "ワーキングホリデーはインドのためではありません: インドは日本のワーキングホリデーのパートナーのリストにありません。育成就労 - TITPの代わりの新しい制度 - は2027年4月1日に始まります。インドが含まれるかは、まだ確認されていません。",
+              "順番を覚えてください: 最初に仕事のオファー、それから会社が日本でCOEを申請（普通1-3ヶ月、ISAの料金はありません）、それからあなたがインドでビザを申請します。オファーはビザではありません。ビザは入国の許可ではありません。",
+              "デポジットを絶対に払わないでください。罰金の契約に絶対にサインしないでください。どちらも禁止です。本当の送出機関はNSDC/OTITのリストにあります。その料金は、あなたが何か払う前に、書面（しょめん）で明細があります。"
+            ],
+            traps: [
+              "学位なし、日本の卒業なし、家族の資格なし、SSWの合格なしの人に「直接の一般の仕事」を約束する会社やエージェントは、公式の制度がないものを約束しています。",
+              "観光で入って、仕事を始めようとしないでください。観光ビザはお金をもらう仕事を許可しません。エージェントはそれを仕事のビザに「変える」ことはできません。"
+            ]
           }
         },
         {
           id: "resume-samples-2-styles", section: "jobs",
-          keywords: "resume sample rirekisho shokumu keirekisho cv japanese resume format sample example履歴書 職務経歴書 रिज़्यूमे नमूना सैंपल जापानी रिज़्यूमे बायोडाटा",
+          keywords: "resume sample rirekisho shokumu keirekisho cv japanese resume format sample example履歴書 職務経歴書 रिज़्यूमे नमूना सैंपल जापानी रिज़्यूमे बायोडाटा 履歴書 職務経歴書 サンプル 志望動機 写真 書き方",
           sources: [ { label: "Hello Work - Public Employment Service - hellowork.mhlw.go.jp", url: "https://www.hellowork.mhlw.go.jp/" } ],
           reel: "https://www.instagram.com/reel/DfubZFcO5gE/",
           en: {
@@ -750,6 +1092,29 @@
               "Selfie नहीं, टोपी या धूप के चश्मे वाली photo नहीं, पुरानी photo नहीं। एक simple formal photo, सादा background।",
               "Sample वाले इंसान की ज़िंदगी copy न करें। STYLE copy करें - फिर अपनी सच्ची पढ़ाई, काम और tests लिखें।"
             ]
+          },
+          ja: {
+            title: "履歴書のサンプル - 日本の仕事のための2つのスタイル",
+            simple: "日本では、仕事の申し込みには普通、履歴書（りれきしょ）が必要です。スタイルは2つあります。スタイル1は履歴書: ほとんどすべての会社が最初に求める、標準の1ページの日本の履歴書。スタイル2は職務経歴書（しょくむけいれきしょ）: あなたの仕事とスキルを詳しく説明する、仕事の経験の紙。下に両方の全部のサンプルがあります。サンプルの名前と詳しいことは例です。スタイルを写して、あなたの本当のことを書いてください。",
+            steps: [
+              "スタイル1 - 履歴書（標準の履歴書）。写真、サイズ4cm×3cm、フォーマル、無地（むじ）の背景、最近3ヶ月以内に撮ったもの。サンプルの写真の場所: フォームの右上の角。",
+              "履歴書のサンプル - 個人の情報: 名前: Amit Kumar（サンプルの名前）。ふりがな（名前をカタカナで）: アミット・クマール。生年月日: 2002年5月10日。住所: New Delhi, India。電話とメール: あなたの本当の、使えるもの。会社はこれであなたに連絡します。",
+              "履歴書のサンプル - 歴史（年の順番で書く、学校と仕事を一緒に）: 2020年 - 12年生に合格。2020-2023年 - インドの部品工場で働いた: 機械の部品の確認と梱包（こんぽう）。2024年 - JLPT N4に合格。2024年 - SSW技能試験（製造）に合格。その後は何もありません。次の行に「以上（いじょう）」と書いてください。日本の履歴書のように。",
+              "履歴書のサンプル - 免許と資格（別の箱）: JLPT N4 - 合格。JFT-Basic - 合格。SSW技能試験、製造 - 合格。（本当に合格したものだけ書いてください。）",
+              "履歴書のサンプル - 志望動機（しぼうどうき）:「日本の製造で働いて、工場の経験を使って、日本語を上げ続けたいです。日本で長く働きたいです。」短く、本当に、この会社とこの仕事について。すべての会社に同じ1行を写さないでください。",
+              "履歴書のサンプル - あなたの希望（きぼう）: 会社が特別なことを聞いていなければ、「貴社規定にしたがいます」と書いてください。給料や休みを要求することから始めないでください。",
+              "スタイル2 - 職務経歴書（仕事の経験の紙）。決まったフォームはありません。1-2ページ、タイプしたもの。1つの質問に答えます:「この人は本当に何の仕事ができますか？」下にサンプル。",
+              "職務経歴書のサンプル - まとめ（上に3行）:「インドで3年の工場の仕事。機械の部品の確認と梱包の経験。JLPT N4合格、今N3を勉強中。注意深く、時間通り、チームの仕事に慣れています。」",
+              "職務経歴書のサンプル - 仕事の詳しいこと: 会社: ABC Parts Factory, India（2020-2023）。仕事: 機械の部品をサイズと見た目で確認し、悪い部品を取り除き、完成した部品を梱包した。学んだこと: 品質（ひんしつ）の確認、数えることと記録（きろく）、掃除と5Sのルール。あなたの本当の仕事をこのように書いてください。何をして、何を学んだか。",
+              "職務経歴書のサンプル - スキルのリスト: 部品の確認と品質の確認。梱包と数えること。基本の機械の場所の掃除。日本語: N4、毎日の勉強が続いています。チームの仕事と先輩への報告。",
+              "職務経歴書のサンプル - 自己PR（最後の部分）:「連絡なしに仕事を休んだことは一度もありません。毎日20分、日本語を勉強します。日本でスキルを作って、長く働きたいです。」本当のことだけ書いてください。面接はすべての行について聞きます。"
+            ],
+            traps: [
+              "ウソの日付、ウソの仕事、合格していない試験を絶対に書かないでください。書類の審査と面接が見つけます。1つのウソの行が全部を終わらせることがあります（Company Sach パート4を見てください）。",
+              "あなたの名前の文字は、パスポートと1文字ずつ合わなければなりません。両方の履歴書で、毎回。",
+              "セルフィーなし、帽子（ぼうし）やサングラスの写真なし、古い写真なし。1つの簡単なフォーマルな写真、無地の背景。",
+              "サンプルの人の人生を写さないでください。スタイルを写してください。それから、あなたの本当の学校、仕事、試験を書いてください。"
+            ]
           }
         }
       ];
@@ -762,38 +1127,46 @@
           id: "from-india",
           en: { name: "I am in India - I want to come to Japan", desc: "The full road from India: visa, tests, job, and how not to get cheated on the way." },
           hi: { name: "मैं India में हूँ - मुझे Japan आना है", desc: "India से पूरा रास्ता: visa, tests, नौकरी, और रास्ते में ठगे जाने से कैसे बचें।" },
+          ja: { name: "私はインドにいます - 日本に来たい", desc: "インドからの全部の道: ビザ、試験、仕事、そして途中でだまされない方法。" },
           guides: ["ssw-titp-visas", "prometric-registration", "ssw2-free-books", "free-japanese-classes", "company-sach-2-n4-n3-n2", "resume-samples-2-styles", "company-sach-4-apply-to-offer", "agent-money-system"]
         },
         {
           id: "in-japan",
           en: { name: "I am already in Japan", desc: "Life inside Japan: emergency numbers, problems, salary rules, and your next visa step." },
           hi: { name: "मैं पहले से Japan में हूँ", desc: "Japan के अंदर की ज़िंदगी: emergency नंबर, परेशानियाँ, वेतन के नियम, और आपका अगला visa कदम।" },
+          ja: { name: "私はもう日本にいます", desc: "日本での生活: 緊急の番号、問題、給料のルール、次のビザのステップ。" },
           guides: ["emergency-contacts", "report-a-problem", "minimum-wage", "titp-ending-ikusei-shuro", "ssw1-to-ssw2", "kaigo-other-door"]
         },
         {
           id: "job-hunt",
           en: { name: "I am looking for a job in Japan", desc: "What companies really want, the mistakes that reject you, and the resume that gets you called." },
           hi: { name: "मुझे Japan में नौकरी चाहिए", desc: "कंपनियाँ असल में क्या चाहती हैं, कौन-सी गलतियाँ reject कराती हैं, और वो resume जो आपको बुलावा दिलाए।" },
-          guides: ["company-sach-1-what-companies-want", "company-sach-2-n4-n3-n2", "company-sach-3-interview-mistakes", "resume-samples-2-styles", "company-sach-4-apply-to-offer", "company-sach-5-one-advice", "welding-job-japan", "bsc-nursing-roadmap"]
+          ja: { name: "日本で仕事を探しています", desc: "会社が本当に見ること、落ちるまちがい、電話が来る履歴書（りれきしょ）。" },
+          guides: ["company-sach-1-what-companies-want", "company-sach-2-n4-n3-n2", "company-sach-3-interview-mistakes", "resume-samples-2-styles", "company-sach-4-apply-to-offer", "company-sach-5-one-advice", "work-without-ssw", "welding-job-japan", "bsc-nursing-roadmap"]
         }
       ];
 
       var LINKS = [
         { label: "SSW Official Portal", url: "https://www.ssw.go.jp", host: "ssw.go.jp",
           en: "Visas, tests and rules for Specified Skilled Workers - the main official source.",
-          hi: "SSW वर्करों के लिए वीज़ा, टेस्ट और नियम - मुख्य आधिकारिक स्रोत।" },
+          hi: "SSW वर्करों के लिए वीज़ा, टेस्ट और नियम - मुख्य आधिकारिक स्रोत।",
+          ja: "特定技能（とくていぎのう）のビザ、試験、ルール - いちばん大切な公式の情報元。" },
         { label: "Kaigo Fukushishi Exam (Official)", url: "https://www.sssc.or.jp", host: "sssc.or.jp",
           en: "The official exam centre for the national care worker exam.",
-          hi: "राष्ट्रीय केयर वर्कर परीक्षा का आधिकारिक परीक्षा केंद्र।" },
+          hi: "राष्ट्रीय केयर वर्कर परीक्षा का आधिकारिक परीक्षा केंद्र।",
+          ja: "介護福祉士（かいごふくしし）の国家試験（こっかしけん）の公式の試験センター。" },
         { label: "Immigration Services Agency", url: "https://www.isa.go.jp", host: "isa.go.jp",
           en: "Residence status, procedures and applications.",
-          hi: "रेज़िडेंस स्टेटस, प्रक्रियाएँ और आवेदन।" },
+          hi: "रेज़िडेंस स्टेटस, प्रक्रियाएँ और आवेदन।",
+          ja: "在留資格（ざいりゅうしかく）、手続き（てつづき）、申請（しんせい）。" },
         { label: "Ministry of Health, Labour and Welfare", url: "https://www.mhlw.go.jp", host: "mhlw.go.jp",
           en: "Labour rules, minimum wage by prefecture, health and welfare.",
-          hi: "श्रम नियम, प्रान्त के हिसाब से न्यूनतम वेतन, स्वास्थ्य और कल्याण।" },
+          hi: "श्रम नियम, प्रान्त के हिसाब से न्यूनतम वेतन, स्वास्थ्य और कल्याण।",
+          ja: "労働（ろうどう）のルール、県ごとの最低賃金、健康（けんこう）と福祉（ふくし）。" },
         { label: "Consumer Affairs Agency - Hotline 188", url: "https://www.caa.go.jp", host: "caa.go.jp",
           en: "Shopping and contract problems - call the Consumer Hotline on 188 to reach your nearest Consumer Centre.",
-          hi: "खरीदारी और कॉन्ट्रैक्ट की परेशानी - Consumer Hotline 188 पर कॉल करें, सबसे पास वाला Consumer Centre मिलेगा।" }
+          hi: "खरीदारी और कॉन्ट्रैक्ट की परेशानी - Consumer Hotline 188 पर कॉल करें, सबसे पास वाला Consumer Centre मिलेगा।",
+          ja: "買い物と契約の問題 - 消費者ホットライン188に電話すると、近くの消費生活センターにつながります。" }
       ];
 
       var COURSE_ALIASES = "try japan course 30 days 30 din hiragana katakana kanji learn japanese japanese seekho japanese course beginner nihongo survival japanese जापानी सीखें जापानी सीखो कोर्स तीस दिन हिरागाना काताकाना";
@@ -802,115 +1175,149 @@
         {
           en: { name: "Week 1 - Hiragana: Japan's ABC", dates: "7–13 Dec" },
           hi: { name: "हफ़्ता 1 - Hiragana: जापान की ABC", dates: "7–13 दिसंबर" },
+          ja: { name: "第1週 - ひらがな: 日本のABC", dates: "12月7-13日" },
           days: [
-            { n: 1, dateEn: "Mon 7 Dec", dateHi: "सोम 7 दिस",
+            { n: 1, dateEn: "Mon 7 Dec", dateHi: "सोम 7 दिस", dateJa: "12月7日（月）",
               en: { title: "Three scripts + vowels", detail: "Japanese uses 3 scripts - Hiragana, Katakana and Kanji. No fear: start with the 5 vowels - あ a, い i, う u, え e, お o." },
-              hi: { title: "तीन स्क्रिप्ट + स्वर (Vowels)", detail: "जापानी में 3 स्क्रिप्ट होती हैं - Hiragana, Katakana और Kanji। डर ख़त्म: शुरुआत 5 स्वरों से - あ a, い i, う u, え e, お o।" } },
-            { n: 2, dateEn: "Tue 8 Dec", dateHi: "मंगल 8 दिस",
+              hi: { title: "तीन स्क्रिप्ट + स्वर (Vowels)", detail: "जापानी में 3 स्क्रिप्ट होती हैं - Hiragana, Katakana और Kanji। डर ख़त्म: शुरुआत 5 स्वरों से - あ a, い i, う u, え e, お o।" },
+              ja: { title: "3つの文字 + 母音（ぼいん）", detail: "日本語は3つの文字を使います - ひらがな、カタカナ、漢字。怖（こわ）がらないでください: 5つの母音から始めてください - あ a、い i、う u、え e、お o。" } },
+            { n: 2, dateEn: "Tue 8 Dec", dateHi: "मंगल 8 दिस", dateJa: "12月8日（火）",
               en: { title: "Ka row + Sa row", detail: "かきくけこ - ka, ki, ku, ke, ko · さしすせそ - sa, shi, su, se, so." },
-              hi: { title: "Ka पंक्ति + Sa पंक्ति", detail: "かきくけこ - ka, ki, ku, ke, ko · さしすせそ - sa, shi, su, se, so।" } },
-            { n: 3, dateEn: "Wed 9 Dec", dateHi: "बुध 9 दिस",
+              hi: { title: "Ka पंक्ति + Sa पंक्ति", detail: "かきくけこ - ka, ki, ku, ke, ko · さしすせそ - sa, shi, su, se, so।" },
+              ja: { title: "か行 + さ行", detail: "かきくけこ - ka, ki, ku, ke, ko · さしすせそ - sa, shi, su, se, so。" } },
+            { n: 3, dateEn: "Wed 9 Dec", dateHi: "बुध 9 दिस", dateJa: "12月9日（水）",
               en: { title: "Ta row + Na row", detail: "たちつてと - ta, chi, tsu, te, to · なにぬねの - na, ni, nu, ne, no." },
-              hi: { title: "Ta पंक्ति + Na पंक्ति", detail: "たちつてと - ta, chi, tsu, te, to · なにぬねの - na, ni, nu, ne, no।" } },
-            { n: 4, dateEn: "Thu 10 Dec", dateHi: "गुरु 10 दिस",
+              hi: { title: "Ta पंक्ति + Na पंक्ति", detail: "たちつてと - ta, chi, tsu, te, to · なにぬねの - na, ni, nu, ne, no।" },
+              ja: { title: "た行 + な行", detail: "たちつてと - ta, chi, tsu, te, to · なにぬねの - na, ni, nu, ne, no。" } },
+            { n: 4, dateEn: "Thu 10 Dec", dateHi: "गुरु 10 दिस", dateJa: "12月10日（木）",
               en: { title: "Ha row + Ma row", detail: "はひふへほ - ha, hi, fu, he, ho · まみむめも - ma, mi, mu, me, mo." },
-              hi: { title: "Ha पंक्ति + Ma पंक्ति", detail: "はひふへほ - ha, hi, fu, he, ho · まみむめも - ma, mi, mu, me, mo।" } },
-            { n: 5, dateEn: "Fri 11 Dec", dateHi: "शुक्र 11 दिस",
+              hi: { title: "Ha पंक्ति + Ma पंक्ति", detail: "はひふへほ - ha, hi, fu, he, ho · まみむめも - ma, mi, mu, me, mo।" },
+              ja: { title: "は行 + ま行", detail: "はひふへほ - ha, hi, fu, he, ho · まみむめも - ma, mi, mu, me, mo。" } },
+            { n: 5, dateEn: "Fri 11 Dec", dateHi: "शुक्र 11 दिस", dateJa: "12月11日（金）",
               en: { title: "Ya, Ra + Wa rows", detail: "やゆよ - ya, yu, yo · らりるれろ - ra, ri, ru, re, ro · わをん - wa, wo, n. Hiragana complete!" },
-              hi: { title: "Ya, Ra + Wa पंक्तियाँ", detail: "やゆよ - ya, yu, yo · らりるれろ - ra, ri, ru, re, ro · わをん - wa, wo, n। Hiragana पूरा!" } },
-            { n: 6, dateEn: "Sat 12 Dec", dateHi: "शनि 12 दिस",
+              hi: { title: "Ya, Ra + Wa पंक्तियाँ", detail: "やゆよ - ya, yu, yo · らりるれろ - ra, ri, ru, re, ro · わをん - wa, wo, n। Hiragana पूरा!" },
+              ja: { title: "や行、ら行 + わ行", detail: "やゆよ - ya, yu, yo · らりるれろ - ra, ri, ru, re, ro · わをん - wa, wo, n。ひらがな完成（かんせい）！" } },
+            { n: 6, dateEn: "Sat 12 Dec", dateHi: "शनि 12 दिस", dateJa: "12月12日（土）",
               en: { title: "Dakuten - the ten-ten marks", detail: "Two small marks change the sound: か → が, さ → ざ, た → だ, は → ば → ぱ." },
-              hi: { title: "Dakuten - टेन-टेन वाले निशान", detail: "दो छोटे निशान आवाज़ बदल देते हैं: か → が, さ → ざ, た → だ, は → ば → ぱ।" } },
-            { n: 7, dateEn: "Sun 13 Dec", dateHi: "रवि 13 दिस",
+              hi: { title: "Dakuten - टेन-टेन वाले निशान", detail: "दो छोटे निशान आवाज़ बदल देते हैं: か → が, さ → ざ, た → だ, は → ば → ぱ।" },
+              ja: { title: "濁点（だくてん）- てんてんのマーク", detail: "2つの小さいマークが音を変えます: か → が、さ → ざ、た → だ、は → ば → ぱ。" } },
+            { n: 7, dateEn: "Sun 13 Dec", dateHi: "रवि 13 दिस", dateJa: "12月13日（日）",
               en: { title: "Week 1 test - read 10 words", detail: "Read aloud: あい (love), すし, さくら, ねこ, うみ, かぜ, ゆき, はな, つき, ほし. Post your score in the comments." },
-              hi: { title: "हफ़्ता 1 टेस्ट - 10 शब्द पढ़ें", detail: "ज़ोर से पढ़ें: あい (प्यार), すし, さくら, ねこ, うみ, かぜ, ゆき, はな, つき, ほし। अपना स्कोर कमेंट में लिखें।" } }
+              hi: { title: "हफ़्ता 1 टेस्ट - 10 शब्द पढ़ें", detail: "ज़ोर से पढ़ें: あい (प्यार), すし, さくら, ねこ, うみ, かぜ, ゆき, はな, つき, ほし। अपना स्कोर कमेंट में लिखें।" },
+              ja: { title: "第1週のテスト - 10の言葉を読む", detail: "声を出して読んでください: あい（愛）、すし、さくら、ねこ、うみ、かぜ、ゆき、はな、つき、ほし。あなたのスコアをコメントに書いてください。" } }
           ]
         },
         {
           en: { name: "Week 2 - Katakana + First Words", dates: "14–20 Dec" },
           hi: { name: "हफ़्ता 2 - Katakana + पहले शब्द", dates: "14–20 दिसंबर" },
+          ja: { name: "第2週 - カタカナ + 最初の言葉", dates: "12月14-20日" },
           days: [
-            { n: 8, dateEn: "Mon 14 Dec", dateHi: "सोम 14 दिस",
+            { n: 8, dateEn: "Mon 14 Dec", dateHi: "सोम 14 दिस", dateJa: "12月14日（月）",
               en: { title: "Katakana - the script for foreign words", detail: "Katakana writes words that came from other languages. Start: アイウエオ, カキクケコ - now read コーヒー (coffee)." },
-              hi: { title: "Katakana - विदेशी शब्दों की स्क्रिप्ट", detail: "दूसरी भाषाओं से आए शब्द Katakana में लिखे जाते हैं। शुरुआत: アイウエオ, カキクケコ - अब コーヒー (coffee) पढ़कर देखें।" } },
-            { n: 9, dateEn: "Tue 15 Dec", dateHi: "मंगल 15 दिस",
+              hi: { title: "Katakana - विदेशी शब्दों की स्क्रिप्ट", detail: "दूसरी भाषाओं से आए शब्द Katakana में लिखे जाते हैं। शुरुआत: アイウエオ, カキクケコ - अब コーヒー (coffee) पढ़कर देखें।" },
+              ja: { title: "カタカナ - 外国の言葉の文字", detail: "カタカナは他の言語から来た言葉を書きます。スタート: アイウエオ、カキクケコ - 今、コーヒーを読んでください。" } },
+            { n: 9, dateEn: "Tue 15 Dec", dateHi: "मंगल 15 दिस", dateJa: "12月15日（火）",
               en: { title: "Katakana 2 + your name in Japanese", detail: "The サ to ノ rows - then write your own name in Katakana and post it as homework." },
-              hi: { title: "Katakana 2 + जापानी में आपका नाम", detail: "サ से ノ तक की पंक्तियाँ - फिर अपना नाम Katakana में लिखें और होमवर्क के तौर पर कमेंट करें।" } },
-            { n: 10, dateEn: "Wed 16 Dec", dateHi: "बुध 16 दिस",
+              hi: { title: "Katakana 2 + जापानी में आपका नाम", detail: "サ से ノ तक की पंक्तियाँ - फिर अपना नाम Katakana में लिखें और होमवर्क के तौर पर कमेंट करें।" },
+              ja: { title: "カタカナ2 + 日本語であなたの名前", detail: "サ行からノ行まで。それから、あなたの名前をカタカナで書いて、宿題（しゅくだい）としてコメントしてください。" } },
+            { n: 10, dateEn: "Wed 16 Dec", dateHi: "बुध 16 दिस", dateJa: "12月16日（水）",
               en: { title: "Katakana complete - read a menu", detail: "The ハ to ワ rows. Read real words: ラーメン (ramen), ビール (beer), テレビ (TV), ホテル (hotel)." },
-              hi: { title: "Katakana पूरा - मेनू पढ़ें", detail: "ハ से ワ तक की पंक्तियाँ। असली शब्द पढ़ें: ラーメン (ramen), ビール (beer), テレビ (TV), ホテル (hotel)।" } },
-            { n: 11, dateEn: "Thu 17 Dec", dateHi: "गुरु 17 दिस",
+              hi: { title: "Katakana पूरा - मेनू पढ़ें", detail: "ハ से ワ तक की पंक्तियाँ। असली शब्द पढ़ें: ラーメン (ramen), ビール (beer), テレビ (TV), ホテル (hotel)।" },
+              ja: { title: "カタカナ完成 - メニューを読む", detail: "ハ行からワ行まで。本当の言葉を読んでください: ラーメン、ビール、テレビ、ホテル。" } },
+            { n: 11, dateEn: "Thu 17 Dec", dateHi: "गुरु 17 दिस", dateJa: "12月17日（木）",
               en: { title: "Greetings 1", detail: "おはようございます (good morning), こんにちは (hello), こんばんは (good evening), おやすみなさい (good night)." },
-              hi: { title: "अभिवादन 1", detail: "おはようございます (सुप्रभात), こんにちは (नमस्ते), こんばんは (शुभ संध्या), おやすみなさい (शुभ रात्रि)।" } },
-            { n: 12, dateEn: "Fri 18 Dec", dateHi: "शुक्र 18 दिस",
+              hi: { title: "अभिवादन 1", detail: "おはようございます (सुप्रभात), こんにちは (नमस्ते), こんばんは (शुभ संध्या), おやすみなさい (शुभ रात्रि)।" },
+              ja: { title: "あいさつ1", detail: "おはようございます（朝のあいさつ）、こんにちは（昼のあいさつ）、こんばんは（夜のあいさつ）、おやすみなさい（寝（ね）る前）。" } },
+            { n: 12, dateEn: "Fri 18 Dec", dateHi: "शुक्र 18 दिस", dateJa: "12月18日（金）",
               en: { title: "Greetings 2 - the 4 most useful", detail: "ありがとうございます (thank you), すみません (excuse me / sorry), おねがいします (please), はい / いいえ (yes / no)." },
-              hi: { title: "अभिवादन 2 - सबसे काम के 4", detail: "ありがとうございます (धन्यवाद), すみません (माफ़ कीजिए / सॉरी), おねがいします (कृपया), はい / いいえ (हाँ / नहीं)।" } },
-            { n: 13, dateEn: "Sat 19 Dec", dateHi: "शनि 19 दिस",
+              hi: { title: "अभिवादन 2 - सबसे काम के 4", detail: "ありがとうございます (धन्यवाद), すみません (माफ़ कीजिए / सॉरी), おねがいします (कृपया), はい / いいえ (हाँ / नहीं)।" },
+              ja: { title: "あいさつ2 - いちばん役立つ4つ", detail: "ありがとうございます、すみません、おねがいします、はい / いいえ。" } },
+            { n: 13, dateEn: "Sat 19 Dec", dateHi: "शनि 19 दिस", dateJa: "12月19日（土）",
               en: { title: "Introduce yourself in Japanese", detail: "はじめまして。___です。インドから きました。よろしく おねがいします。- your full introduction, in Japanese." },
-              hi: { title: "जापानी में अपना परिचय दें", detail: "はじめまして。___です。インドから きました。よろしく おねがいします。- आपका पूरा परिचय, जापानी में।" } },
-            { n: 14, dateEn: "Sun 20 Dec", dateHi: "रवि 20 दिस",
+              hi: { title: "जापानी में अपना परिचय दें", detail: "はじめまして。___です。インドから きました。よろしく おねがいします。- आपका पूरा परिचय, जापानी में।" },
+              ja: { title: "日本語で自己紹介（じこしょうかい）", detail: "はじめまして。___です。インドから きました。よろしく おねがいします。- あなたの全部の紹介（しょうかい）、日本語で。" } },
+            { n: 14, dateEn: "Sun 20 Dec", dateHi: "रवि 20 दिस", dateJa: "12月20日（日）",
               en: { title: "Numbers 1–10 + asking a price", detail: "いち, に, さん, よん, ご, ろく, なな, はち, きゅう, じゅう (1–10) + これは いくらですか? (How much is this?)" },
-              hi: { title: "नंबर 1–10 + दाम पूछना", detail: "いち, に, さん, よん, ご, ろく, なな, はち, きゅう, じゅう (1–10) + これは いくらですか? (यह कितने का है?)" } }
+              hi: { title: "नंबर 1–10 + दाम पूछना", detail: "いち, に, さん, よん, ご, ろく, なな, はち, きゅう, じゅう (1–10) + これは いくらですか? (यह कितने का है?)" },
+              ja: { title: "数字（すうじ）1-10 + 値段（ねだん）を聞く", detail: "いち、に、さん、よん、ご、ろく、なな、はち、きゅう、じゅう（1-10）+ これは いくらですか？" } }
           ]
         },
         {
           en: { name: "Week 3 - Words That Work", dates: "21–27 Dec" },
           hi: { name: "हफ़्ता 3 - काम के शब्द", dates: "21–27 दिसंबर" },
+          ja: { name: "第3週 - 役立つ言葉", dates: "12月21-27日" },
           days: [
-            { n: 15, dateEn: "Mon 21 Dec", dateHi: "सोम 21 दिस",
+            { n: 15, dateEn: "Mon 21 Dec", dateHi: "सोम 21 दिस", dateJa: "12月21日（月）",
               en: { title: "Verbs set 1 - everyday life", detail: "たべる (eat), のむ (drink), いく (go), くる (come), みる (see / watch)." },
-              hi: { title: "क्रियाएँ सेट 1 - रोज़ की ज़िंदगी", detail: "たべる (खाना), のむ (पीना), いく (जाना), くる (आना), みる (देखना)।" } },
-            { n: 16, dateEn: "Tue 22 Dec", dateHi: "मंगल 22 दिस",
+              hi: { title: "क्रियाएँ सेट 1 - रोज़ की ज़िंदगी", detail: "たべる (खाना), のむ (पीना), いく (जाना), くる (आना), みる (देखना)।" },
+              ja: { title: "動詞（どうし）セット1 - 毎日の生活", detail: "たべる、のむ、いく、くる、みる。" } },
+            { n: 16, dateEn: "Tue 22 Dec", dateHi: "मंगल 22 दिस", dateJa: "12月22日（火）",
               en: { title: "Verbs set 2 - doing words", detail: "かう (buy), はたらく (work), はなす (speak), きく (listen / ask), つくる (make)." },
-              hi: { title: "क्रियाएँ सेट 2 - काम की क्रियाएँ", detail: "かう (खरीदना), はたらく (काम करना), はなす (बोलना), きく (सुनना / पूछना), つくる (बनाना)।" } },
-            { n: 17, dateEn: "Wed 23 Dec", dateHi: "बुध 23 दिस",
+              hi: { title: "क्रियाएँ सेट 2 - काम की क्रियाएँ", detail: "かう (खरीदना), はたらく (काम करना), はなす (बोलना), きく (सुनना / पूछना), つくる (बनाना)।" },
+              ja: { title: "動詞セット2 - することの言葉", detail: "かう、はたらく、はなす、きく、つくる。" } },
+            { n: 17, dateEn: "Wed 23 Dec", dateHi: "बुध 23 दिस", dateJa: "12月23日（水）",
               en: { title: "Everyday nouns", detail: "みず (water), パン (bread), おかね (money), でんしゃ (train), みせ (shop), いえ (home), しごと (work)." },
-              hi: { title: "रोज़ के संज्ञा शब्द", detail: "みず (पानी), パン (ब्रेड), おかね (पैसा), でんしゃ (ट्रेन), みせ (दुकान), いえ (घर), しごと (काम)।" } },
-            { n: 18, dateEn: "Thu 24 Dec", dateHi: "गुरु 24 दिस",
+              hi: { title: "रोज़ के संज्ञा शब्द", detail: "みず (पानी), パン (ब्रेड), おかね (पैसा), でんしゃ (ट्रेन), みせ (दुकान), いえ (घर), しごと (काम)।" },
+              ja: { title: "毎日の名詞（めいし）", detail: "みず、パン、おかね、でんしゃ、みせ、いえ、しごと。" } },
+            { n: 18, dateEn: "Thu 24 Dec", dateHi: "गुरु 24 दिस", dateJa: "12月24日（木）",
               en: { title: "Adjectives", detail: "おおきい (big), ちいさい (small), たかい (expensive / high), やすい (cheap), おいしい (tasty), あつい (hot), さむい (cold)." },
-              hi: { title: "विशेषण (Adjectives)", detail: "おおきい (बड़ा), ちいさい (छोटा), たかい (महँगा / ऊँचा), やすい (सस्ता), おいしい (स्वादिष्ट), あつい (गर्म), さむい (ठंडा)।" } },
-            { n: 19, dateEn: "Fri 25 Dec", dateHi: "शुक्र 25 दिस",
+              hi: { title: "विशेषण (Adjectives)", detail: "おおきい (बड़ा), ちいさい (छोटा), たかい (महँगा / ऊँचा), やすい (सस्ता), おいしい (स्वादिष्ट), あつい (गर्म), さむい (ठंडा)।" },
+              ja: { title: "形容詞（けいようし）", detail: "おおきい、ちいさい、たかい、やすい、おいしい、あつい、さむい。" } },
+            { n: 19, dateEn: "Fri 25 Dec", dateHi: "शुक्र 25 दिस", dateJa: "12月25日（金）",
               en: { title: "Time words", detail: "きょう (today), あした (tomorrow), きのう (yesterday), いま (now) + なんじですか? (What time is it?)" },
-              hi: { title: "समय वाले शब्द", detail: "きょう (आज), あした (आने वाला कल), きのう (बीता हुआ कल), いま (अभी) + なんじですか? (कितने बजे हैं?)" } },
-            { n: 20, dateEn: "Sat 26 Dec", dateHi: "शनि 26 दिस",
+              hi: { title: "समय वाले शब्द", detail: "きょう (आज), あした (आने वाला कल), きのう (बीता हुआ कल), いま (अभी) + なんじですか? (कितने बजे हैं?)" },
+              ja: { title: "時間の言葉", detail: "きょう、あした、きのう、いま + なんじですか？" } },
+            { n: 20, dateEn: "Sat 26 Dec", dateHi: "शनि 26 दिस", dateJa: "12月26日（土）",
               en: { title: "Your first full sentence", detail: "わたしは ___を たべます / のみます / かいます - the simple magic of the polite ~masu form." },
-              hi: { title: "आपका पहला पूरा वाक्य", detail: "わたしは ___を たべます / のみます / かいます - विनम्र ~masu रूप का आसान जादू।" } },
-            { n: 21, dateEn: "Sun 27 Dec", dateHi: "रवि 27 दिस",
+              hi: { title: "आपका पहला पूरा वाक्य", detail: "わたしは ___を たべます / のみます / かいます - विनम्र ~masu रूप का आसान जादू।" },
+              ja: { title: "あなたの最初の全部の文", detail: "わたしは ___を たべます / のみます / かいます - 丁寧（ていねい）な「ます」の形の簡単な魔法（まほう）。" } },
+            { n: 21, dateEn: "Sun 27 Dec", dateHi: "रवि 27 दिस", dateJa: "12月27日（日）",
               en: { title: "Week 3 challenge - make 5 sentences", detail: "Make 5 sentences of your own and post them in the comments - the best 5 get read out in the next Reel." },
-              hi: { title: "हफ़्ता 3 चैलेंज - 5 वाक्य बनाएँ", detail: "अपने 5 वाक्य बनाएँ और कमेंट में लिखें - सबसे अच्छे 5 अगली Reel में पढ़े जाएँगे।" } }
+              hi: { title: "हफ़्ता 3 चैलेंज - 5 वाक्य बनाएँ", detail: "अपने 5 वाक्य बनाएँ और कमेंट में लिखें - सबसे अच्छे 5 अगली Reel में पढ़े जाएँगे।" },
+              ja: { title: "第3週のチャレンジ - 5つの文を作る", detail: "あなたの5つの文を作って、コメントに書いてください。いちばんいい5つが次のリールで読まれます。" } }
           ]
         },
         {
           en: { name: "Week 4 - Real Japan", dates: "28 Dec – 5 Jan" },
           hi: { name: "हफ़्ता 4 - असली जापान", dates: "28 दिसंबर – 5 जनवरी" },
+          ja: { name: "第4週 - 本当の日本", dates: "12月28日-1月5日" },
           days: [
-            { n: 22, dateEn: "Mon 28 Dec", dateHi: "सोम 28 दिस",
+            { n: 22, dateEn: "Mon 28 Dec", dateHi: "सोम 28 दिस", dateJa: "12月28日（月）",
               en: { title: "Convenience store survival", detail: "これを ください (this one, please), ふくろは いりません (no bag needed) - and how to answer at the till." },
-              hi: { title: "कॉनबिनी (सुविधा स्टोर) में काम चलाएँ", detail: "これを ください (यह दे दीजिए), ふくろは いりません (बैग नहीं चाहिए) - और काउंटर पर जवाब कैसे दें।" } },
-            { n: 23, dateEn: "Tue 29 Dec", dateHi: "मंगल 29 दिस",
+              hi: { title: "कॉनबिनी (सुविधा स्टोर) में काम चलाएँ", detail: "これを ください (यह दे दीजिए), ふくろは いりません (बैग नहीं चाहिए) - और काउंटर पर जवाब कैसे दें।" },
+              ja: { title: "コンビニで生きる", detail: "これを ください、ふくろは いりません - そしてレジでどう答えるか。" } },
+            { n: 23, dateEn: "Tue 29 Dec", dateHi: "मंगल 29 दिस", dateJa: "12月29日（火）",
               en: { title: "Station survival", detail: "___は どこですか? (Where is ___?), きっぷ (ticket), でんしゃ (train), えき (station)." },
-              hi: { title: "स्टेशन पर काम चलाएँ", detail: "___は どこですか? (___ कहाँ है?), きっぷ (टिकट), でんしゃ (ट्रेन), えき (स्टेशन)।" } },
-            { n: 24, dateEn: "Wed 30 Dec", dateHi: "बुध 30 दिस",
+              hi: { title: "स्टेशन पर काम चलाएँ", detail: "___は どこですか? (___ कहाँ है?), きっぷ (टिकट), でんしゃ (ट्रेन), えき (स्टेशन)।" },
+              ja: { title: "駅（えき）で生きる", detail: "___は どこですか？、きっぷ、でんしゃ、えき。" } },
+            { n: 24, dateEn: "Wed 30 Dec", dateHi: "बुध 30 दिस", dateJa: "12月30日（水）",
               en: { title: "Restaurant survival", detail: "メニューを ください (menu, please), みずを ください (water, please), おかいけい おねがいします (bill, please), ごちそうさまでした (thank you for the meal)." },
-              hi: { title: "रेस्टोरेंट में काम चलाएँ", detail: "メニューを ください (मेनू दीजिए), みずを ください (पानी दीजिए), おかいけい おねがいします (बिल दीजिए), ごちそうさまでした (खाने के लिए धन्यवाद)।" } },
-            { n: 25, dateEn: "Thu 31 Dec", dateHi: "गुरु 31 दिस",
+              hi: { title: "रेस्टोरेंट में काम चलाएँ", detail: "メニューを ください (मेनू दीजिए), みずを ください (पानी दीजिए), おかいけい おねがいします (बिल दीजिए), ごちそうさまでした (खाने के लिए धन्यवाद)।" },
+              ja: { title: "レストランで生きる", detail: "メニューを ください、みずを ください、おかいけい おねがいします、ごちそうさまでした。" } },
+            { n: 25, dateEn: "Thu 31 Dec", dateHi: "गुरु 31 दिस", dateJa: "12月31日（木）",
               en: { title: "Words for work", detail: "おつかれさまです (the after-work greeting), わかりました (understood), もういちど おねがいします (once more, please)." },
-              hi: { title: "काम पर काम आने वाले शब्द", detail: "おつかれさまです (काम के बाद का अभिवादन), わかりました (समझ गया), もういちど おねがいします (एक बार फिर बोलिए)।" } },
-            { n: 26, dateEn: "Fri 1 Jan", dateHi: "शुक्र 1 जन",
+              hi: { title: "काम पर काम आने वाले शब्द", detail: "おつかれさまです (काम के बाद का अभिवादन), わかりました (समझ गया), もういちど おねがいします (एक बार फिर बोलिए)।" },
+              ja: { title: "仕事の言葉", detail: "おつかれさまです（仕事の後のあいさつ）、わかりました、もういちど おねがいします。" } },
+            { n: 26, dateEn: "Fri 1 Jan", dateHi: "शुक्र 1 जन", dateJa: "1月1日（金）",
               en: { title: "Help phrases", detail: "たすけてください (help!), わかりません (I don't understand), ゆっくり おねがいします (slowly, please). New Year bonus: あけまして おめでとうございます (Happy New Year)." },
-              hi: { title: "मदद माँगने वाले वाक्य", detail: "たすけてください (मदद कीजिए!), わかりません (समझ नहीं आया), ゆっくり おねがいします (धीरे बोलिए)। नए साल का बोनस: あけまして おめでとうございます (नव वर्ष की शुभकामनाएँ)।" } },
-            { n: 27, dateEn: "Sat 2 Jan", dateHi: "शनि 2 जन",
+              hi: { title: "मदद माँगने वाले वाक्य", detail: "たすけてください (मदद कीजिए!), わかりません (समझ नहीं आया), ゆっくり おねがいします (धीरे बोलिए)। नए साल का बोनस: あけまして おめでとうございます (नव वर्ष की शुभकामनाएँ)।" },
+              ja: { title: "助けの言葉", detail: "たすけてください、わかりません、ゆっくり おねがいします。新年のボーナス: あけまして おめでとうございます。" } },
+            { n: 27, dateEn: "Sat 2 Jan", dateHi: "शनि 2 जन", dateJa: "1月2日（土）",
               en: { title: "Basic kanji 1 - people & Japan", detail: "人 (person), 日 (day / sun), 本 (book / origin) - now read 日本 (Japan) and 日本人 (Japanese person)." },
-              hi: { title: "बेसिक Kanji 1 - इंसान और जापान", detail: "人 (इंसान), 日 (दिन / सूरज), 本 (किताब / मूल) - अब 日本 (जापान) और 日本人 (जापानी व्यक्ति) पढ़कर देखें।" } },
-            { n: 28, dateEn: "Sun 3 Jan", dateHi: "रवि 3 जन",
+              hi: { title: "बेसिक Kanji 1 - इंसान और जापान", detail: "人 (इंसान), 日 (दिन / सूरज), 本 (किताब / मूल) - अब 日本 (जापान) और 日本人 (जापानी व्यक्ति) पढ़कर देखें।" },
+              ja: { title: "基本（きほん）の漢字1 - 人と日本", detail: "人（ひと）、日（ひ）、本（もと）- 今、日本と日本人を読んでください。" } },
+            { n: 28, dateEn: "Sun 3 Jan", dateHi: "रवि 3 जन", dateJa: "1月3日（日）",
               en: { title: "Basic kanji 2 - nature & size", detail: "山 (mountain), 川 (river), 田 (rice field), 大 (big), 小 (small), 中 (middle)." },
-              hi: { title: "बेसिक Kanji 2 - प्रकृति और आकार", detail: "山 (पहाड़), 川 (नदी), 田 (धान का खेत), 大 (बड़ा), 小 (छोटा), 中 (बीच)।" } },
-            { n: 29, dateEn: "Mon 4 Jan", dateHi: "सोम 4 जन",
+              hi: { title: "बेसिक Kanji 2 - प्रकृति और आकार", detail: "山 (पहाड़), 川 (नदी), 田 (धान का खेत), 大 (बड़ा), 小 (छोटा), 中 (बीच)।" },
+              ja: { title: "基本の漢字2 - 自然（しぜん）と大きさ", detail: "山、川、田、大、小、中。" } },
+            { n: 29, dateEn: "Mon 4 Jan", dateHi: "सोम 4 जन", dateJa: "1月4日（月）",
               en: { title: "A full conversation", detail: "Role-play: introduce yourself → buy something in a shop → say thank you. All 30 days in one scene." },
-              hi: { title: "एक पूरी बातचीत", detail: "रोल-प्ले: अपना परिचय → दुकान पर कुछ खरीदना → धन्यवाद। 30 दिन की पूरी सीख, एक ही सीन में।" } },
-            { n: 30, dateEn: "Tue 5 Jan", dateHi: "मंगल 5 जन",
+              hi: { title: "एक पूरी बातचीत", detail: "रोल-प्ले: अपना परिचय → दुकान पर कुछ खरीदना → धन्यवाद। 30 दिन की पूरी सीख, एक ही सीन में।" },
+              ja: { title: "全部の会話（かいわ）", detail: "ロールプレイ: 自己紹介 → 店で買う → ありがとうを言う。30日の全部が1つの場面（ばめん）に。" } },
+            { n: 30, dateEn: "Tue 5 Jan", dateHi: "मंगल 5 जन", dateJa: "1月5日（火）",
               en: { title: "Final test + your next step", detail: "Post your introduction + 3 sentences in the comments. Completed all 30 days? Your next step is the N5 roadmap." },
-              hi: { title: "फ़ाइनल टेस्ट + आपका अगला कदम", detail: "अपना परिचय + 3 वाक्य कमेंट करें। 30/30 दिन पूरे किए? आपका अगला कदम है N5 का रोडमैप।" } }
+              hi: { title: "फ़ाइनल टेस्ट + आपका अगला कदम", detail: "अपना परिचय + 3 वाक्य कमेंट करें। 30/30 दिन पूरे किए? आपका अगला कदम है N5 का रोडमैप।" },
+              ja: { title: "最後のテスト + あなたの次のステップ", detail: "あなたの紹介 + 3つの文をコメントに書いてください。30日全部を完成しましたか？あなたの次のステップはN5のロードマップです。" } }
           ]
         }
       ];
@@ -1010,7 +1417,10 @@
           courseFollowTitle: "Watch the daily lessons",
           courseFollowText: "Every lesson is a free Reel on Instagram. Follow now so Day 1 does not pass you by - and send this course to one friend who dreams of Japan.",
           courseFollowBtn: "Follow @shivam_bhai_japan"
-        },
+        ,
+          linksWord: "links",
+          comingSoon: "Guide coming soon",
+          minWageJapan: "Minimum wage · Japan"},
         hi: {
           brandSub: "जापान की पूरी गाइड",
           heroTitle: "जापान जाना है? <span class=\"accent\">पहले ये पढ़ो!</span>",
@@ -1105,5 +1515,106 @@
           courseFollowTitle: "रोज़ के lessons देखें",
           courseFollowText: "हर lesson Instagram पर एक मुफ़्त Reel है। अभी फॉलो करें ताकि Day 1 छूट न जाए - और यह कोर्स उस एक दोस्त को भेजें जो जापान का सपना देखता है।",
           courseFollowBtn: "@shivam_bhai_japan को फॉलो करें"
+        ,
+          linksWord: "लिंक",
+          comingSoon: "गाइड जल्द आ रही है",
+          minWageJapan: "न्यूनतम वेतन · जापान"},
+        ja: {
+          brandSub: "日本完全ガイド",
+          heroTitle: "日本に行きますか？ <span class=\\\"accent\\\">まず読んでください！</span>",
+          heroLede: "ビザ、仕事、試験、毎日の生活 - 全部、簡単な言葉で。誰にもだまされません。日本に住んで働くインド人が書きました。",
+          heroSearchPh: "何でも検索 - ビザ、給料、試験、介護（かいご）…",
+          heroSearchHint: "入力を始めてください - 「介護（かいご）」「給料（きゅうりょう）」「prometric」「緊急（きんきゅう）」など。",
+          heroNoResults: "そのガイドはまだありません。下のトピックを見てください。またはInstagramでShivamに聞いてください。いい質問は新しいガイドになります。",
+          heroTopicWord: "トピック",
+          heroBtnGuides: "ガイドを読む",
+          heroBtnLinks: "公式リンク",
+          heroKicker: "100%無料（むりょう）・エージェント不要（ふよう）",
+          introKicker: "このガイドを作った人",
+          introTitle: "日本を中から説明します",
+          topicsKicker: "ここから始めてください",
+          guidesKicker: "すべてのリールを文字にしました",
+          linksKicker: "仲介者（ちゅうかいしゃ）はいません",
+          talkKicker: "まだ分かりませんか？",
+          talkTitle: "Shivamに話してください",
+          whoRole: "日本の岡山（おかやま）に住んで働くインド人",
+          whoText: "私は日本に住んで働いています。この国を中から説明します。自分の兄弟に説明するように、簡単な言葉で。リールで話したことは、全部ここに書いてあります。",
+          promise: "誰でも、いつでも無料。お金はいりません。エージェントはいりません。公式の情報を簡単な言葉で。",
+          emgTitle: "日本の緊急",
+          emgPolice: "警察（けいさつ）",
+          emgFire: "火事（かじ）・救急車（きゅうきゅうしゃ）",
+          emgFree: "無料・24時間・どの電話でも",
+          topicsTitle: "トピックから探す",
+          guidesTitle: "ガイド",
+          guidesSub: "最初に簡単な答え、そのあと順番に説明します。",
+          searchPh: "ガイドを検索 - 「給料（きゅうりょう）」「試験」「介護（かいご）」など…",
+          allTopics: "全部",
+          guidesWord: "ガイド",
+          stepsWord: "ステップ",
+          trustLine: "✓ すべての情報は公式の情報元から · ✓ 確認した日: 2026年11月 · ✓ お金はいりません、エージェントはいりません",
+          talkDm: "📩 ShivamにDM",
+          guideWord: "ガイド",
+          openGuide: "ガイドを開く",
+          noResults: "その検索のガイドはまだありません。「ビザ」「給料（きゅうりょう）」「試験」で試してください。またはInstagramでShivamに聞いてください。いい質問は新しいガイドになります。",
+          linksTitle: "公式リンク",
+          linksSub: "政府（せいふ）の情報元へ直接（ちょくせつ）行ってください。",
+          followTitle: "Instagramでリールを見る",
+          followText: "大丈夫（だいじょうぶ）です。Shivamは日本に住んでいて、自分で質問に答えます。遠慮（えんりょ）しないで、メッセージを送ってください。",
+          aboutTitle: "このガイドがある理由",
+          aboutText: "日本にいる多くのインド人が困ったり、だまされたりします。理由は1つだけです。誰もルールを簡単な言葉で説明しなかったからです。このガイドがそれを直します。Shivamのリールの全部のトピックを、公式の情報元と一緒に書きました。誰でも、いつでも無料です。",
+          aboutBtn: "@shivam_bhai_japanをフォロー",
+          footFree: "誰でも、いつでも無料です。",
+          footNote: "一般の情報です。法律のアドバイスではありません。あなたの場合は公式の情報を確認してください。",
+          backAll: "すべてのガイド",
+          simpleAnswer: "簡単な答え",
+          stepByStep: "順番に説明",
+          trapsTitle: "気をつけて！",
+          reelTitle: "リールを見る",
+          reelText: "ShivamはこのトピックをInstagramの短いリールで説明しています。簡単なヒンディー語で、日本から直接。",
+          reelBtn: "Instagramで見る",
+          pathsKicker: "質問は1つだけ",
+          pathsTitle: "あなたは今、どこにいますか？",
+          pathsSub: "これだけ教えてください。正しい道を順番に教えます。",
+          pathStepWord: "ステップ",
+          pathOpen: "この道を始める",
+          shareBtn: "シェア",
+          whatsappBtn: "WhatsApp",
+          summaryBtn: "写真のまとめ",
+          relatedTitle: "あなたに役立つガイド",
+          reportBtn: "このガイドにまちがいがありますか？Shivamに教えてください",
+          popularLabel: "よく聞かれること:",
+          stickyHome: "ホーム",
+          stickyVideo: "動画",
+          sourceLabel: "公式の情報元",
+          checked: "確認した日: 2026年11月",
+          disclaimer: "一般の情報です。法律のアドバイスではありません。あなたの場合は公式の情報を確認してください。",
+          prevGuide: "前のガイド",
+          nextGuide: "次のガイド",
+          courseKicker: "新しい無料コース",
+          courseBannerTitle: "Try Japan for 30 Days",
+          courseTitle: "Try Japan for 30 Days",
+          courseTag: "無料コース · 2026年12月7日スタート",
+          courseBannerText: "日本の動画を見て、ここに来る夢を見ていますか？まず生きるための日本語を勉強してください。1日1つの小さいレッスン、30日間: ひらがな、カタカナ、あいさつ、毎日使う言葉、あなたの最初の文。日本に住むインド人が、簡単な言葉で教えます。",
+          courseDatePill: "1日目 · 2026年12月7日（月）",
+          courseMetaFree: "無料 · 30日 · 1日1レッスン",
+          courseMetaLevel: "初心者（しょしんしゃ）· 本はいりません",
+          courseCtaChart: "30日の表を見る",
+          courseSideNote: "ひらがな · カタカナ · 漢字（かんじ）",
+          courseBack: "ホームに戻る",
+          courseLede: "日本に来たいと考えている、インドの日本好きのための無料の30日初心者コースです。毎日1つの短いリールのレッスン - 基本のひらがなとカタカナ、役立つ漢字、あいさつ、そして本当に使う動詞（どうし）、名詞（めいし）、形容詞（けいようし）。",
+          coursePromise: "正直（しょうじき）な約束: 30日でペラペラにはなりません。でも日本の店、駅、道で迷いません。文字が読めて、あいさつができて、値段（ねだん）が聞けて、最初の文が言えます。証明書（しょうめいしょ）やビザの約束はありません。本当に使える日本語だけです。",
+          courseWhoTitle: "誰のためですか？",
+          courseWho: "日本の生活の動画を見て「私も、もしかして？」と思いますか？このコースは、その夢から本当の最初の一歩まで連れて行きます。お金を使う前、大きい決断（けつだん）の前に、日本が本当に使っている言葉を勉強してください。",
+          courseHowTitle: "方法（ほうほう）",
+          courseHow: "1日目は2026年12月7日（月）に始まります。毎日、Instagramで45-75秒のリールのレッスンが1つ。新しいものは5つまで。小さい宿題（しゅくだい）がコメントにあります。1日休んでも大丈夫。次の日に続けてください。シリーズは壊れません。30のレッスン全部が下にあります。",
+          courseChartTitle: "30日の表",
+          coursePending: "リールは近日公開（きんじつこうかい）",
+          courseDayWord: "日目",
+          courseFollowTitle: "毎日のレッスンを見る",
+          courseFollowText: "すべてのレッスンはInstagramの無料のリールです。今フォローしてください。1日目を逃（のが）しません。そして、日本の夢を見る友達1人にこのコースを送ってください。",
+          courseFollowBtn: "@shivam_bhai_japanをフォロー",
+          linksWord: "リンク",
+          comingSoon: "ガイドは近日公開",
+          minWageJapan: "最低賃金（さいていちんぎん）・日本"
         }
       };

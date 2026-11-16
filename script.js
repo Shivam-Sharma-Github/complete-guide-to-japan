@@ -54,7 +54,7 @@
       /* ---- static text (data-i18n) ---- */
       function applyStatic() {
         var t = STR[lang];
-        document.documentElement.lang = lang === "hi" ? "hi" : "en";
+        document.documentElement.lang = lang === "hi" ? "hi" : (lang === "ja" ? "ja" : "en");
         var nodes = document.querySelectorAll("[data-i18n]");
         for (var i = 0; i < nodes.length; i++) {
           var key = nodes[i].getAttribute("data-i18n");
@@ -69,6 +69,7 @@
         document.getElementById("heroSearchInput").setAttribute("placeholder", t.heroSearchPh);
         document.getElementById("langEn").setAttribute("aria-pressed", lang === "en" ? "true" : "false");
         document.getElementById("langHi").setAttribute("aria-pressed", lang === "hi" ? "true" : "false");
+        document.getElementById("langJa").setAttribute("aria-pressed", lang === "ja" ? "true" : "false");
       }
 
       /* ---- home: sections ---- */
@@ -86,15 +87,15 @@
         SECTIONS.forEach(function (s, i) {
           var count = guidesIn(s.id).length;
           var countText;
-          if (s.id === "links") countText = LINKS.length + " " + (lang === "hi" ? "लिंक" : "links");
-          else if (count === 0) countText = lang === "hi" ? "गाइड जल्द आ रही है" : "Guide coming soon";
+          if (s.id === "links") countText = LINKS.length + " " + t.linksWord;
+          else if (count === 0) countText = t.comingSoon;
           else countText = count + " " + (count === 1 ? t.guideWord : t.guidesWord);
           var m = SECTION_MEDIA[s.id];
           var media;
           if (m && m.type === "img") {
             media = '<span class="sec-media"><span class="sec-num">0' + (i + 1) + '</span><img src="' + m.src + '" alt="' + esc(m.alt) + '" loading="lazy" /></span>';
           } else if (m && m.type === "graphic") {
-            var small = s.id === "help" ? t.emgTitle : (lang === "hi" ? "न्यूनतम वेतन · जापान" : "Minimum wage · Japan");
+            var small = s.id === "help" ? t.emgTitle : t.minWageJapan;
             media = '<span class="sec-media graphic ' + m.cls + '"><span><span class="gm-big">' + m.big + '</span><span class="gm-small" style="display:block">' + esc(small) + '</span></span></span>';
           } else {
             media = '<span class="sec-media graphic clay"><span class="gm-big">0' + (i + 1) + '</span></span>';
@@ -237,11 +238,13 @@
 
       /* ---- home: popular search chips ---- */
       var POPULAR = ["Resume", "188", "JLPT", "Minimum wage", "Kaigo"];
+      var POPULAR_JA = ["履歴書", "188", "JLPT", "最低賃金", "介護"];
       function renderPopular() {
         var box = document.getElementById("heroPopular");
         if (!box) return;
+        var terms = lang === "ja" ? POPULAR_JA : POPULAR;
         var html = "";
-        POPULAR.forEach(function (term) {
+        terms.forEach(function (term) {
           html += '<button type="button" class="hp-chip" data-pop="' + esc(term) + '">' + esc(term) + '</button>';
         });
         box.innerHTML = html;
@@ -282,7 +285,7 @@
       function courseHaystack() {
         var titles = "";
         COURSE_WEEKS.forEach(function (w) {
-          titles += " " + w.en.name + " " + w.hi.name;
+          titles += " " + w.en.name + " " + w.hi.name + (w.ja ? " " + w.ja.name : "");
           w.days.forEach(function (d) { titles += " " + d.en.title + " " + d.en.detail + " " + d.hi.title + " " + d.hi.detail; });
         });
         return (STR.en.courseTitle + " " + STR.hi.courseTitle + " " + COURSE_ALIASES + titles).toLowerCase();
@@ -299,7 +302,7 @@
       }
       function guideHaystack(g) {
         var sec = sectionById(g.section);
-        return (g.en.title + " " + g.en.simple + " " + g.hi.title + " " + g.hi.simple + " " + (g.keywords || "") + " " + (sec ? sec.en.name + " " + sec.hi.name : "")).toLowerCase();
+        return (g.en.title + " " + g.en.simple + " " + g.hi.title + " " + g.hi.simple + " " + (g.ja ? g.ja.title + " " + g.ja.simple : "") + " " + (g.keywords || "") + " " + (sec ? sec.en.name + " " + sec.hi.name + (sec.ja ? " " + sec.ja.name : "") : "")).toLowerCase();
       }
       function heroMatches(q) {
         q = q.trim().toLowerCase();
@@ -458,7 +461,7 @@
           var rows = "";
           w.days.forEach(function (d) {
             var c = d[lang];
-            var date = lang === "hi" ? d.dateHi : d.dateEn;
+            var date = lang === "hi" ? d.dateHi : (lang === "ja" && d.dateJa ? d.dateJa : d.dateEn);
             rows += '<div class="day-row">'
               + '<span class="day-num">' + (d.n < 10 ? "0" : "") + d.n + '</span>'
               + '<span class="day-main"><span class="day-title">' + esc(c.title) + '</span>'
@@ -542,6 +545,7 @@
 
       document.getElementById("langEn").addEventListener("click", function () { if (lang !== "en") { lang = "en"; renderAll(); } });
       document.getElementById("langHi").addEventListener("click", function () { if (lang !== "hi") { lang = "hi"; renderAll(); } });
+      document.getElementById("langJa").addEventListener("click", function () { if (lang !== "ja") { lang = "ja"; renderAll(); } });
       document.getElementById("searchInput").addEventListener("input", function () {
         var hi = document.getElementById("heroSearchInput");
         if (hi.value !== this.value) hi.value = this.value;

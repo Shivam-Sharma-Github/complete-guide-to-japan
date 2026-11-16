@@ -26,7 +26,7 @@
         margin: 0;
         background: var(--bg);
         color: var(--ink);
-        font-family: "Archivo", "Noto Sans Devanagari", system-ui, -apple-system, "Segoe UI", sans-serif;
+        font-family: "Archivo", "Noto Sans JP", "Noto Sans Devanagari", system-ui, -apple-system, "Segoe UI", sans-serif;
         line-height: 1.55;
         -webkit-font-smoothing: antialiased;
       }
@@ -515,9 +515,10 @@
       /* ---------- small-phone header fixes ---------- */
       .brand > span { min-width: 0; overflow: hidden; }
       @media (max-width: 560px) {
-        .brand-name { font-size: 14px; letter-spacing: 0.02em; }
-        .brand-sub { font-size: 9.5px; letter-spacing: 0.1em; }
-        .lang-toggle button { padding: 6px 10px; font-size: 12.5px; }
+        .brand { gap: 8px; }
+        .brand-name { font-size: 12.5px; letter-spacing: 0.01em; }
+        .brand-sub { font-size: 9px; letter-spacing: 0.08em; }
+        .lang-toggle button { padding: 6px 8px; font-size: 12px; }
         .emergency { padding: 6px 0; }
         .emergency .e-in { gap: 4px 16px; }
         .emergency .e-title { font-size: 11px; }
