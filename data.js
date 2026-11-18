@@ -1043,6 +1043,65 @@
           }
         },
         {
+          id: "how-to-apply-japan-job", section: "jobs",
+          keywords: "how to apply japan job apply kaise kare step by step free guidable yolo work hello work india se apply नौकरी apply कैसे करें जापान जॉब आवेदन तरीका 仕事 申し込み 方法 無料 ハローワーク",
+          sources: [ { label: "Hello Work - Public Employment Service - hellowork.mhlw.go.jp", url: "https://www.hellowork.mhlw.go.jp/" }, { label: "YOLO WORK - work.yolo-japan.com", url: "https://work.yolo-japan.com/" }, { label: "SSW Official Portal - ssw.go.jp", url: "https://www.ssw.go.jp/" } ],
+          en: {
+            title: "How to Apply for a Job in Japan — Step by Step (FREE)",
+            simple: "How do you actually apply for a job in Japan? Here is the full way, in 8 simple steps. Everything here is FREE — you never pay to apply.",
+            steps: [
+              "First, pass 2 tests — Japanese (N4 or JFT-Basic) and your field's skill test. Without these, no company can hire you for SSW.",
+              "Apply FREE on Guidable Jobs and YOLO WORK — never pay anyone to apply.",
+              "In Japan, also register FREE at Hello Work — they help with jobs and interviews.",
+              "From India: most job posts are for people already in Japan. Look for posts that clearly say 'India se apply OK'. Government online matching events sometimes let you join from India too.",
+              "Documents you need: a Japanese-style resume — Rirekisho (your profile) and Shokumu Keirekisho (your work experience). Free samples are in the 'Resume Samples' guide on this website.",
+              "A job offer is NOT a visa. After the offer, the company applies for your COE, then you apply for the visa.",
+              "Never pay for a job. There is no COE charge and no job fee for candidates — if anyone asks for money for a job, stop there.",
+              "Keep first-month money ready: salary usually comes on the 25th of next month, so keep about ¥1 lakh (around ₹55–60 thousand) with you for food, train and daily costs."
+            ],
+            traps: [
+              "Anyone who says 'pay money, get a job' is not the official route. Applying is always free.",
+              "If you are in India, do not waste time on posts that need you to already live in Japan — read every post carefully first."
+            ]
+          },
+          hi: {
+            title: "जापान में नौकरी के लिए Apply कैसे करें? — Step by Step (FREE)",
+            simple: "जापान में नौकरी के लिए apply असल में करते कैसे हैं? ये रहा पूरा तरीका, 8 आसान steps में। यहाँ सब कुछ FREE है — apply करने का कोई पैसा नहीं लगता।",
+            steps: [
+              "Pehle 2 test pass kijiye — Japanese (N4 ya JFT-Basic) aur apne field ka skill test. Inke bina SSW par koi company hire nahi kar sakti.",
+              "Guidable Jobs aur YOLO WORK par bilkul FREE apply kijiye — apply karne ke liye kisi ko paisa mat dijiye.",
+              "Japan mein hain to Hello Work par FREE registration kijiye — wahan job aur interview mein madad milti hai.",
+              "India se: zyada tar jobs Japan mein rehne walon ke liye hoti hain. Wahi post chuniye jisme saaf likha ho 'India se apply OK'. Sarkari online matching events mein kabhi-kabhi India se bhi jud sakte hain.",
+              "Kagaz: Japanese-style resume chahiye — Rirekisho (aapki profile) aur Shokumu Keirekisho (kaam ka anubhav). Free samples is website ke 'Resume Samples' guide mein hain.",
+              "Job offer ka matlab visa nahi hai. Offer ke baad company COE ke liye apply karti hai, phir aap visa ke liye apply karte hain.",
+              "Job ke liye kabhi paisa mat dijiye. COE ka koi charge nahi hota, candidate se job ki fees nahi li ja sakti — koi paisa mange to wahin ruk jaiye.",
+              "Pehle mahine ke paise saath rakhiye: salary aksar agle mahine ki 25 tarikh ko aati hai, isliye khane, train aur roz ke kharche ke liye lagbhag ¥1 lakh (lagbhag ₹55–60 hazaar) saath rakhna safe hai."
+            ],
+            traps: [
+              "Jo 'paisa do, job dunga' kahe, woh official rasta nahi hai. Apply hamesha free hota hai.",
+              "India mein hain toh Japan mein rehne walon wali post par time barbaad na karein — pehle har post dhyaan se padhein."
+            ]
+          },
+          ja: {
+            title: "日本の仕事への申し込み方 - ステップごと（無料）",
+            simple: "日本で働きたいとき、どうやって申し込みますか？ 8つのステップで説明します。全部無料です。申し込みにお金は要りません。",
+            steps: [
+              "まず2つのテストに合格してください — 日本語（N4かJFT-Basic）と、仕事の技能テスト。テストがないと、SSWでは会社は雇えません。",
+              "Guidable JobsとYOLO WORKで無料で申し込んでください。申し込みのためにお金を払わないでください。",
+              "日本にいる人は、ハローワークでも無料で登録できます。仕事と面接を手伝ってくれます。",
+              "インドから： 仕事の多くは、日本に住んでいる人のためです。「インドから申し込みOK」と書いてある仕事を探してください。国のオンライン・マッチングイベントでは、インドから参加できることもあります。",
+              "書類： 日本の履歴書が要ります — 履歴書（プロフィール）と職務経歴書（仕事の経験）。無料のサンプルは、このウェブサイトの「Resume Samples」ガイドにあります。",
+              "仕事のオファーはビザではありません。オファーの後、会社がCOE（在留資格認定証明書）を申し込みます。それから、あなたがビザを申し込みます。",
+              "仕事のためにお金を払わないでください。COEの料金はありません。候補者から仕事のお金は取れません。お金を求められたら、そこで止めてください。",
+              "最初の月のお金を用意してください： 給料はたいてい翌月の25日です。食べ物、電車、毎日の生活のために、約10万円を用意すると安心です。"
+            ],
+            traps: [
+              "「お金を払えば仕事を紹介する」という人は、公式のやり方ではありません。申し込みはいつも無料です。",
+              "インドにいる人は、日本に住んでいる人のための仕事に時間を使わないでください。まず仕事の内容をよく読んでください。"
+            ]
+          }
+        },
+        {
           id: "resume-samples-2-styles", section: "jobs",
           keywords: "resume sample rirekisho shokumu keirekisho cv japanese resume format sample example履歴書 職務経歴書 रिज़्यूमे नमूना सैंपल जापानी रिज़्यूमे बायोडाटा 履歴書 職務経歴書 サンプル 志望動機 写真 書き方",
           sources: [ { label: "Hello Work - Public Employment Service - hellowork.mhlw.go.jp", url: "https://www.hellowork.mhlw.go.jp/" } ],
@@ -1142,7 +1201,7 @@
           en: { name: "I am looking for a job in Japan", desc: "What companies really want, the mistakes that reject you, and the resume that gets you called." },
           hi: { name: "मुझे Japan में नौकरी चाहिए", desc: "कंपनियाँ असल में क्या चाहती हैं, कौन-सी गलतियाँ reject कराती हैं, और वो resume जो आपको बुलावा दिलाए।" },
           ja: { name: "日本で仕事を探しています", desc: "会社が本当に見ること、落ちるまちがい、電話が来る履歴書（りれきしょ）。" },
-          guides: ["company-sach-1-what-companies-want", "company-sach-2-n4-n3-n2", "company-sach-3-interview-mistakes", "resume-samples-2-styles", "company-sach-4-apply-to-offer", "company-sach-5-one-advice", "work-without-ssw", "welding-job-japan", "bsc-nursing-roadmap"]
+          guides: ["company-sach-1-what-companies-want", "company-sach-2-n4-n3-n2", "company-sach-3-interview-mistakes", "resume-samples-2-styles", "company-sach-4-apply-to-offer", "company-sach-5-one-advice", "work-without-ssw", "how-to-apply-japan-job", "welding-job-japan", "bsc-nursing-roadmap"]
         }
       ];
 
