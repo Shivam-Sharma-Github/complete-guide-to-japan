@@ -1042,62 +1042,127 @@
             ]
           }
         },
-        {
-          id: "how-to-apply-japan-job", section: "jobs",
-          keywords: "how to apply japan job apply kaise kare step by step free guidable yolo work hello work india se apply नौकरी apply कैसे करें जापान जॉब आवेदन तरीका 仕事 申し込み 方法 無料 ハローワーク",
-          sources: [ { label: "Hello Work - Public Employment Service - hellowork.mhlw.go.jp", url: "https://www.hellowork.mhlw.go.jp/" }, { label: "YOLO WORK - work.yolo-japan.com", url: "https://work.yolo-japan.com/" }, { label: "SSW Official Portal - ssw.go.jp", url: "https://www.ssw.go.jp/" } ],
+                {
+          id: "apply-job-from-india", section: "jobs",
+          keywords: "apply job from india overseas guidable yolo work matching event coe india se naukri apply विदेश से नौकरी आवेदन जापान जॉब インドから 申し込み 仕事 海外 マッチング",
+          sources: [ { label: "SSW Official Portal - ssw.go.jp", url: "https://www.ssw.go.jp/" }, { label: "YOLO WORK - work.yolo-japan.com", url: "https://work.yolo-japan.com/" } ],
           en: {
-            title: "How to Apply for a Job in Japan — Step by Step (FREE)",
-            simple: "How do you actually apply for a job in Japan? Here is the full way, in 8 simple steps. Everything here is FREE — you never pay to apply.",
+            title: "Applying for a Job in Japan — From India",
+            simple: "You are in India and want a job in Japan. This is your exact road, step by step. Remember the biggest rule first: applying is always FREE. Nobody can charge you money for a job.",
             steps: [
-              "First, pass 2 tests — Japanese (N4 or JFT-Basic) and your field's skill test. Without these, no company can hire you for SSW.",
-              "Apply FREE on Guidable Jobs and YOLO WORK — never pay anyone to apply.",
-              "In Japan, also register FREE at Hello Work — they help with jobs and interviews.",
-              "From India: most job posts are for people already in Japan. Look for posts that clearly say 'India se apply OK'. Government online matching events sometimes let you join from India too.",
-              "Documents you need: a Japanese-style resume — Rirekisho (your profile) and Shokumu Keirekisho (your work experience). Free samples are in the 'Resume Samples' guide on this website.",
-              "A job offer is NOT a visa. After the offer, the company applies for your COE, then you apply for the visa.",
-              "Never pay for a job. There is no COE charge and no job fee for candidates — if anyone asks for money for a job, stop there.",
-              "Keep first-month money ready: salary usually comes on the 25th of next month, so keep about ¥1 lakh (around ₹55–60 thousand) with you for food, train and daily costs."
+              "First, pass 2 tests — a Japanese test (JLPT N4 or JFT-Basic) and the SSW skill test of your field. Both tests also happen in India, on Prometric. Without these 2, no company can hire you for SSW.",
+              "Make your 2 Japanese resumes — Rirekisho and Shokumu Keirekisho. Free filled samples are in the 'Resume Samples' guide on this website.",
+              "Apply FREE on Guidable Jobs and YOLO WORK. Read every post carefully — apply only where it clearly says India / overseas applicants are OK. Most posts are for people already living in Japan.",
+              "Watch for government online matching events on the SSW portal — some events let candidates join from India online.",
+              "The interview is online. Speak slowly and listen fully — read the 'Interview Mistakes' guide (Company Sach Part 3) before it.",
+              "Got an offer? A job offer is NOT a visa. The company applies for your COE in Japan (about 1–3 months, and there is no COE fee), then you apply for the visa in India.",
+              "TITP is different: it never goes by direct apply. It runs only through an NSDC-listed Sending Organisation in India and a licensed Supervising Organisation in Japan — see the 'Japan Work Without SSW' guide.",
+              "Keep first-month money ready: salary usually comes on the 25th of the next month, so keep about ₹55–60 thousand (around ¥1 lakh) with you for food, train and daily costs after you land."
             ],
             traps: [
-              "Anyone who says 'pay money, get a job' is not the official route. Applying is always free.",
-              "If you are in India, do not waste time on posts that need you to already live in Japan — read every post carefully first."
+              "Never pay for a job. There is no job fee and no COE charge for candidates — anyone asking money for a job is not the official route.",
+              "Do not waste time on posts that need you to already live in Japan — read the post's conditions first.",
+              "Never pay a deposit and never sign a penalty paper — both are banned."
             ]
           },
           hi: {
-            title: "जापान में नौकरी के लिए Apply कैसे करें? — Step by Step (FREE)",
-            simple: "जापान में नौकरी के लिए apply असल में करते कैसे हैं? ये रहा पूरा तरीका, 8 आसान steps में। यहाँ सब कुछ FREE है — apply करने का कोई पैसा नहीं लगता।",
+            title: "India से Japan की नौकरी के लिए Apply — Step by Step",
+            simple: "आप India में हैं और Japan में नौकरी चाहते हैं। ये रहा आपका पूरा रास्ता, step by step। सबसे बड़ा नियम पहले याद रखें: apply करना हमेशा FREE है। नौकरी के लिए कोई आपसे पैसा नहीं ले सकता।",
             steps: [
-              "Pehle 2 test pass kijiye — Japanese (N4 ya JFT-Basic) aur apne field ka skill test. Inke bina SSW par koi company hire nahi kar sakti.",
-              "Guidable Jobs aur YOLO WORK par bilkul FREE apply kijiye — apply karne ke liye kisi ko paisa mat dijiye.",
-              "Japan mein hain to Hello Work par FREE registration kijiye — wahan job aur interview mein madad milti hai.",
-              "India se: zyada tar jobs Japan mein rehne walon ke liye hoti hain. Wahi post chuniye jisme saaf likha ho 'India se apply OK'. Sarkari online matching events mein kabhi-kabhi India se bhi jud sakte hain.",
-              "Kagaz: Japanese-style resume chahiye — Rirekisho (aapki profile) aur Shokumu Keirekisho (kaam ka anubhav). Free samples is website ke 'Resume Samples' guide mein hain.",
-              "Job offer ka matlab visa nahi hai. Offer ke baad company COE ke liye apply karti hai, phir aap visa ke liye apply karte hain.",
-              "Job ke liye kabhi paisa mat dijiye. COE ka koi charge nahi hota, candidate se job ki fees nahi li ja sakti — koi paisa mange to wahin ruk jaiye.",
-              "Pehle mahine ke paise saath rakhiye: salary aksar agle mahine ki 25 tarikh ko aati hai, isliye khane, train aur roz ke kharche ke liye lagbhag ¥1 lakh (lagbhag ₹55–60 hazaar) saath rakhna safe hai."
+              "पहले 2 test pass करें — Japanese test (JLPT N4 या JFT-Basic) और अपने field का SSW skill test। दोनों test India में भी होते हैं (Prometric)। इन 2 के बिना कोई company आपको SSW पर रख ही नहीं सकती।",
+              "अपने 2 Japanese resume बनाएँ — Rirekisho और Shokumu Keirekisho। भरे हुए free samples इस website की 'Resume Samples' guide में हैं।",
+              "Guidable Jobs और YOLO WORK पर FREE apply करें। हर post ध्यान से पढ़ें — सिर्फ़ वहीं apply करें जहाँ साफ़ लिखा हो कि India / विदेश से apply OK है। ज़्यादातर posts Japan में पहले से रहने वालों के लिए होते हैं।",
+              "Government के online matching events पर नज़र रखें (SSW portal) — कुछ events में India से online जुड़ सकते हैं।",
+              "Interview online होगा। धीरे बोलें, पूरी बात सुनें — उससे पहले 'Interview Mistakes' guide (Company Sach Part 3) ज़रूर पढ़ें।",
+              "Offer मिल गया? Job offer वीज़ा नहीं होता। Company Japan में आपका COE apply करेगी (लगभग 1–3 महीने, COE की कोई fee नहीं), फिर आप India में वीज़ा apply करेंगे।",
+              "TITP अलग है: इसमें direct apply कभी नहीं होता। ये सिर्फ़ India की NSDC-listed Sending Organisation और Japan की licensed Supervising Organisation से चलता है ('Japan Work Without SSW' guide देखें)।",
+              "पहले महीने का पैसा तैयार रखें: salary आम तौर पर अगले महीने की 25 तारीख़ को आती है, इसलिए Japan पहुँचने के बाद खाने, train और रोज़ के ख़र्च के लिए लगभग ₹55–60 हज़ार (करीब ¥1 lakh) साथ रखें।"
             ],
             traps: [
-              "Jo 'paisa do, job dunga' kahe, woh official rasta nahi hai. Apply hamesha free hota hai.",
-              "India mein hain toh Japan mein rehne walon wali post par time barbaad na karein — pehle har post dhyaan se padhein."
+              "नौकरी के लिए कभी पैसा न दें। Candidate के लिए न job fee है, न COE charge — जो नौकरी के लिए पैसा माँगे, वो official रास्ता नहीं है।",
+              "जिन posts के लिए Japan में पहले से रहना ज़रूरी है, उन पर समय बर्बाद न करें — पहले post की शर्तें पढ़ें।",
+              "Deposit कभी न दें और penalty वाला paper कभी sign न करें — दोनों banned हैं।"
             ]
           },
           ja: {
-            title: "日本の仕事への申し込み方 - ステップごと（無料）",
-            simple: "日本で働きたいとき、どうやって申し込みますか？ 8つのステップで説明します。全部無料です。申し込みにお金は要りません。",
+            title: "インドから日本の仕事に申し込む",
+            simple: "あなたはインドにいて、日本の仕事がほしいです。これがあなたの正確な道です。順番に説明します。いちばん大きいルールを最初に覚えてください: 申し込みはいつも無料です。仕事のためにお金を取ることは誰にもできません。",
             steps: [
-              "まず2つのテストに合格してください — 日本語（N4かJFT-Basic）と、仕事の技能テスト。テストがないと、SSWでは会社は雇えません。",
-              "Guidable JobsとYOLO WORKで無料で申し込んでください。申し込みのためにお金を払わないでください。",
-              "日本にいる人は、ハローワークでも無料で登録できます。仕事と面接を手伝ってくれます。",
-              "インドから： 仕事の多くは、日本に住んでいる人のためです。「インドから申し込みOK」と書いてある仕事を探してください。国のオンライン・マッチングイベントでは、インドから参加できることもあります。",
-              "書類： 日本の履歴書が要ります — 履歴書（プロフィール）と職務経歴書（仕事の経験）。無料のサンプルは、このウェブサイトの「Resume Samples」ガイドにあります。",
-              "仕事のオファーはビザではありません。オファーの後、会社がCOE（在留資格認定証明書）を申し込みます。それから、あなたがビザを申し込みます。",
-              "仕事のためにお金を払わないでください。COEの料金はありません。候補者から仕事のお金は取れません。お金を求められたら、そこで止めてください。",
-              "最初の月のお金を用意してください： 給料はたいてい翌月の25日です。食べ物、電車、毎日の生活のために、約10万円を用意すると安心です。"
+              "最初に2つの試験に合格してください: 日本語の試験（JLPT N4かJFT-Basic）と、あなたの分野のSSW技能試験。どちらの試験もインドで受けられます（Prometric）。この2つがなければ、会社はあなたをSSWで雇えません。",
+              "2つの日本の履歴書を作ってください: 履歴書と職務経歴書。無料の記入済みサンプルは、このウェブサイトの「履歴書のサンプル」のガイドにあります。",
+              "Guidable JobsとYOLO WORKで無料で申し込んでください。すべての投稿を注意深く読んでください。インド/海外からの申し込みがOKとはっきり書いてある場所だけに申し込んでください。ほとんどの投稿は、すでに日本に住んでいる人のためです。",
+              "政府のオンライン・マッチングイベントを見てください（SSWポータル）。いくつかのイベントは、インドからオンラインで参加できます。",
+              "面接はオンラインです。ゆっくり話して、全部聞いてください。その前に「面接のまちがい」のガイド（Company Sach パート3）を必ず読んでください。",
+              "オファーをもらいましたか？仕事のオファーはビザではありません。会社が日本であなたのCOEを申請します（約1-3ヶ月、COEの料金はありません）。それからあなたがインドでビザを申請します。",
+              "TITPはちがいます: 直接の申し込みは絶対にありません。インドのNSDC認定の送出機関と、日本の免許のある監理団体を通るだけです（「SSWなしで日本の仕事」のガイドを見てください）。",
+              "最初の月のお金を準備してください: 給料は普通、次の月の25日に来ます。日本に着いた後の食べ物、電車、毎日の費用のために、約100,000円（約55,000-60,000ルピー）を残してください。"
             ],
             traps: [
-              "「お金を払えば仕事を紹介する」という人は、公式のやり方ではありません。申し込みはいつも無料です。",
-              "インドにいる人は、日本に住んでいる人のための仕事に時間を使わないでください。まず仕事の内容をよく読んでください。"
+              "仕事のためにお金を絶対に払わないでください。候補者のための仕事の料金も、COEの料金もありません。仕事のためにお金を要求する人は、公式の道ではありません。",
+              "すでに日本に住んでいることが必要な投稿に時間を無駄にしないでください。最初に投稿の条件を読んでください。",
+              "デポジットを絶対に払わないでください。罰金の紙に絶対にサインしないでください。どちらも禁止です。"
+            ]
+          }
+        },
+        {
+          id: "apply-job-in-japan", section: "jobs",
+          keywords: "apply job in japan hello work job change foreigners corner fair students engineer visa ハローワーク 転職 日本にいる 申し込み 仕事探し 外国人コーナー",
+          sources: [ { label: "Hello Work - Public Employment Service - hellowork.mhlw.go.jp", url: "https://www.hellowork.mhlw.go.jp/" }, { label: "SSW Official Portal - ssw.go.jp", url: "https://www.ssw.go.jp/" }, { label: "YOLO WORK - work.yolo-japan.com", url: "https://work.yolo-japan.com/" } ],
+          en: {
+            title: "Applying for a Job in Japan — You Are Already in Japan",
+            simple: "You already live in Japan — student, trainee or worker — and you want a job, or a job change, inside Japan. Your road is shorter, and your biggest help is FREE: Hello Work, the government's job office. Here is the full way, step by step.",
+            steps: [
+              "Register FREE at Hello Work, the government's job office. Take your residence card and passport. Many offices have a foreigners' corner and interpreters. They show you jobs, fix your resume and practise interviews with you — all free.",
+              "Also apply FREE on Guidable Jobs and YOLO WORK — many posts are only for people already in Japan, so your chance is higher.",
+              "Keep your 2 Japanese resumes ready — Rirekisho and Shokumu Keirekisho. Free filled samples are in the 'Resume Samples' guide on this website.",
+              "Go to free job fairs and matching events for foreign workers (Hello Work and government events). You meet companies face to face — carry printed resumes with you.",
+              "Know your status rules before you change: on SSW you can change jobs only inside the same field. On TITP you cannot simply change companies — talk to OTIT or your support organisation first.",
+              "Students: with a degree, companies can hire you for the Engineer visa — job fairs for foreign students are your best door. Your Japanese decides your chance: from N3, companies start choosing you (see Company Sach Part 2).",
+              "The interview is in person: reach 10 minutes early, carry your documents, speak slowly and listen fully (see Company Sach Part 3).",
+              "When you change jobs, the paperwork matters most: a job change must be reported to Immigration within 14 days. Before you resign, ask your support organisation to check your papers."
+            ],
+            traps: [
+              "Never pay for a job — applying, Hello Work and fairs are all free.",
+              "Do not resign before your next job and your status paperwork are confirmed — a gap can hurt your visa.",
+              "A new job in a different field is not allowed on SSW — same field only."
+            ]
+          },
+          hi: {
+            title: "Japan में रहकर नौकरी के लिए Apply — आप पहले से Japan में हैं",
+            simple: "आप पहले से Japan में रहते हैं — student, trainee या worker — और Japan के अंदर ही नौकरी, या नौकरी बदलाव, चाहते हैं। आपका रास्ता छोटा है, और आपकी सबसे बड़ी मदद FREE है: Hello Work, सरकार का job office। ये रहा पूरा तरीका, step by step।",
+            steps: [
+              "Hello Work (सरकार के job office) में FREE register करें। अपना residence card और passport साथ ले जाएँ। कई offices में foreigners' corner और interpreter होते हैं। वे आपको नौकरियाँ दिखाते हैं, resume ठीक करते हैं और interview की practice कराते हैं — सब free।",
+              "Guidable Jobs और YOLO WORK पर भी FREE apply करें — कई posts सिर्फ़ Japan में पहले से रहने वालों के लिए होते हैं, इसलिए आपका chance ज़्यादा है।",
+              "अपने 2 Japanese resume तैयार रखें — Rirekisho और Shokumu Keirekisho। भरे हुए free samples इस website की 'Resume Samples' guide में हैं।",
+              "विदेशी workers के लिए होने वाले free job fairs और matching events में जाएँ (Hello Work और government events)। वहाँ companies से आमने-सामने मिलते हैं — printed resume साथ ले जाएँ।",
+              "बदलने से पहले अपने status के नियम जानें: SSW पर आप सिर्फ़ उसी field के अंदर नौकरी बदल सकते हैं। TITP पर आप आसानी से company नहीं बदल सकते — पहले OTIT या अपनी support organisation से बात करें।",
+              "Students: अगर आपके पास degree है, तो companies आपको Engineer visa पर रख सकती हैं — foreign students के job fairs आपका सबसे अच्छा दरवाज़ा हैं। आपकी Japanese ही आपका chance तय करती है: N3 से companies आपको चुनना शुरू करती हैं (Company Sach Part 2 देखें)।",
+              "Interview आमने-सामने होगा: 10 minute पहले पहुँचें, documents साथ रखें, धीरे बोलें और पूरी बात सुनें (Company Sach Part 3 देखें)।",
+              "नौकरी बदलते समय paperwork सबसे ज़रूरी है: नौकरी बदलने की सूचना Immigration को 14 दिन के अंदर देनी होती है। इस्तीफ़ा देने से पहले अपनी support organisation से papers check कराएँ।"
+            ],
+            traps: [
+              "नौकरी के लिए कभी पैसा न दें — apply करना, Hello Work, fairs: सब free है।",
+              "अगली नौकरी और status का paperwork pakka होने से पहले इस्तीफ़ा न दें — बीच का gap आपके वीज़ा को नुकसान पहुँचा सकता है।",
+              "SSW पर अलग field की नई नौकरी allowed नहीं है — सिर्फ़ वही field।"
+            ]
+          },
+          ja: {
+            title: "日本に住んでいる人の仕事の申し込み",
+            simple: "あなたはすでに日本に住んでいます。学生、実習生、または働く人です。日本の中で仕事、または仕事の変更がほしいです。あなたの道は短いです。そしていちばん大きい助けは無料です: ハローワーク、政府の仕事の事務所です。これが全部の方法です。順番に説明します。",
+            steps: [
+              "ハローワーク（政府の仕事の事務所）に無料で登録してください。在留カードとパスポートを持って行ってください。多くの事務所に外国人のコーナーと通訳がいます。仕事を見せて、履歴書を直して、面接の練習をします。全部無料です。",
+              "Guidable JobsとYOLO WORKでも無料で申し込んでください。多くの投稿は、すでに日本に住んでいる人だけのためです。だからあなたのチャンスは高いです。",
+              "2つの日本の履歴書を準備してください: 履歴書と職務経歴書。無料の記入済みサンプルは、このウェブサイトの「履歴書のサンプル」のガイドにあります。",
+              "外国人の働く人のための無料の就職フェアとマッチングイベントに行ってください（ハローワークと政府のイベント）。会社と直接会えます。印刷した履歴書を持って行ってください。",
+              "変える前に、あなたの資格のルールを知ってください: SSWでは、同じ分野の中でだけ仕事を変えられます。TITPでは、簡単に会社を変えられません。まずOTITか、あなたの支援機関に相談してください。",
+              "学生: 学位があれば、会社はあなたをエンジニアビザで雇えます。外国人学生のための就職フェアが、あなたのいちばんいいドアです。あなたの日本語がチャンスを決めます: N3から会社があなたを選び始めます（Company Sach パート2を見てください）。",
+              "面接は直接です: 10分前に着いて、書類を持って、ゆっくり話して、全部聞いてください（Company Sach パート3を見てください）。",
+              "仕事を変えるとき、書類がいちばん大切です: 仕事の変更を14日以内に出入国在留管理庁（しゅつにゅうこくざいりゅうかんりちょう）に知らせなければなりません。辞（や）める前に、あなたの支援機関に紙を確認してもらってください。"
+            ],
+            traps: [
+              "仕事のためにお金を絶対に払わないでください。申し込み、ハローワーク、フェア: 全部無料です。",
+              "次の仕事と資格の書類が確実になる前に、辞めないでください。間の空白があなたのビザを傷つけることがあります。",
+              "SSWでは、ちがう分野の新しい仕事は許可されません。同じ分野だけです。"
             ]
           }
         },
@@ -1187,21 +1252,21 @@
           en: { name: "I am in India - I want to come to Japan", desc: "The full road from India: visa, tests, job, and how not to get cheated on the way." },
           hi: { name: "मैं India में हूँ - मुझे Japan आना है", desc: "India से पूरा रास्ता: visa, tests, नौकरी, और रास्ते में ठगे जाने से कैसे बचें।" },
           ja: { name: "私はインドにいます - 日本に来たい", desc: "インドからの全部の道: ビザ、試験、仕事、そして途中でだまされない方法。" },
-          guides: ["ssw-titp-visas", "prometric-registration", "ssw2-free-books", "free-japanese-classes", "company-sach-2-n4-n3-n2", "resume-samples-2-styles", "company-sach-4-apply-to-offer", "agent-money-system"]
+          guides: ["ssw-titp-visas", "prometric-registration", "ssw2-free-books", "free-japanese-classes", "company-sach-2-n4-n3-n2", "resume-samples-2-styles", "apply-job-from-india", "company-sach-4-apply-to-offer", "agent-money-system"]
         },
         {
           id: "in-japan",
           en: { name: "I am already in Japan", desc: "Life inside Japan: emergency numbers, problems, salary rules, and your next visa step." },
           hi: { name: "मैं पहले से Japan में हूँ", desc: "Japan के अंदर की ज़िंदगी: emergency नंबर, परेशानियाँ, वेतन के नियम, और आपका अगला visa कदम।" },
           ja: { name: "私はもう日本にいます", desc: "日本での生活: 緊急の番号、問題、給料のルール、次のビザのステップ。" },
-          guides: ["emergency-contacts", "report-a-problem", "minimum-wage", "titp-ending-ikusei-shuro", "ssw1-to-ssw2", "kaigo-other-door"]
+          guides: ["emergency-contacts", "report-a-problem", "minimum-wage", "titp-ending-ikusei-shuro", "ssw1-to-ssw2", "kaigo-other-door", "apply-job-in-japan"]
         },
         {
           id: "job-hunt",
           en: { name: "I am looking for a job in Japan", desc: "What companies really want, the mistakes that reject you, and the resume that gets you called." },
           hi: { name: "मुझे Japan में नौकरी चाहिए", desc: "कंपनियाँ असल में क्या चाहती हैं, कौन-सी गलतियाँ reject कराती हैं, और वो resume जो आपको बुलावा दिलाए।" },
           ja: { name: "日本で仕事を探しています", desc: "会社が本当に見ること、落ちるまちがい、電話が来る履歴書（りれきしょ）。" },
-          guides: ["company-sach-1-what-companies-want", "company-sach-2-n4-n3-n2", "company-sach-3-interview-mistakes", "resume-samples-2-styles", "company-sach-4-apply-to-offer", "company-sach-5-one-advice", "work-without-ssw", "how-to-apply-japan-job", "welding-job-japan", "bsc-nursing-roadmap"]
+          guides: ["company-sach-1-what-companies-want", "company-sach-2-n4-n3-n2", "company-sach-3-interview-mistakes", "resume-samples-2-styles", "company-sach-4-apply-to-offer", "company-sach-5-one-advice", "work-without-ssw", "apply-job-in-japan", "welding-job-japan", "bsc-nursing-roadmap"]
         }
       ];
 
