@@ -38,7 +38,85 @@
       ];
 
       var GUIDES = [
-        {
+                {
+          id: "all-visas-at-a-glance", section: "visas",
+          keywords: "all visas japan visa types list titp ikusei shuro ssw engineer skilled labor business manager highly skilled transfer student kaigo working holiday saare visa सभी वीज़ा जापान वीज़ा प्रकार ビザ 種類 全部 一覧",
+          sources: [ { label: "Immigration Services Agency (ISA) - moj.go.jp", url: "https://www.moj.go.jp/isa/" }, { label: "SSW Official Portal - ssw.go.jp", url: "https://www.ssw.go.jp/" } ],
+          reel: "https://www.instagram.com/p/Df3B0_3k5Mj/",
+          en: {
+            title: "All Japan Visas — At a Glance",
+            simple: "Japan has many visas, and every visa has its own rule. Here is every main work and study visa on one page, in very simple words: what it is, who can go, how many years, and can your family join you? Read this first, then open the full guide of your visa.",
+            steps: [
+              "TITP (Technical Intern Training): the old training route. You come to learn work skills - it is training, not a direct job. From India, only through an official Sending Organisation; no direct apply. Maximum 5 years in total. Family cannot join. Changing company is almost impossible.",
+              "Ikusei Shuro: the NEW system that will replace TITP, starting 1 April 2027. Usually 3 years, then the road to SSW opens. Family cannot join. India is NOT confirmed yet - anyone taking money in its name today is lying.",
+              "SSW-1 (Specified Skilled Worker): a direct work visa. Pass your field's skill test + Japanese N4 or JFT-Basic. 16 fields - factory, food, building, care, farming and more. Maximum 5 years in total. Family cannot join. You CAN change company inside the same field, and no agent is needed.",
+              "SSW-2: the level above SSW-1. Needs 2-3 years of SSW-1 work, the bigger SSW-2 test, and experience of teaching others. Only 11 fields. No total limit - it keeps renewing. Family CAN join. The long-stay and PR road opens from here. Kaigo has no SSW-2.",
+              "Engineer Visa (Engineer / Specialist in Humanities / International Services): a direct company job for degree holders. The job must match your degree, or you need 10 years of experience (for IT, some special exams also count). It keeps renewing. Family can join. N2 is not a law - but companies ask for it.",
+              "Skilled Labor: for special hands-on skills, like the chef of a big hotel. You need about 10 years of proven experience in a listed skill. No degree needed - your hands and experience are everything. It keeps renewing. Family can join.",
+              "Business Manager: open your own company in Japan and live on it. Rules became very strict in 2025: at least ¥30 million capital, your own office, and 1 full-time staff. It keeps renewing. Family can join. Small money does not work for this visa now.",
+              "Highly Skilled Professional: the points fast-track visa. Points for education, salary and experience - you need 70 points or more. One grant is 5 years. Family can join, with extra benefits. Fastest PR: at 80 points, you can apply for PR in just 1 year.",
+              "Intra-Company Transfer: the same company moves you from its India office to its Japan office. You must have worked in the same company group for at least 1 year before. The visa is tied to that company - you cannot switch to another company.",
+              "Student Visa: for study - a Japanese language school or a university. You need admission and your fees arranged. Up to 2 years at a time, by course. Family usually cannot join. Part-time work is only 28 hours a week. This is a study road - do not choose it for work.",
+              "Kaigo Visa (Care Worker): the special visa for care workers who pass the Kaigo Fukushishi national exam. Before the exam: about 3 years of care work + about 450 hours of training. No 5-year stop - it keeps renewing. Family can join. The exam is in Japanese - hard, but this visa is stronger than SSW.",
+              "Working Holiday: a travel-plus-work visa for young people of SOME countries. India is NOT on the list - an Indian passport cannot get this visa at all. Any agent who promises you a Working Holiday visa is lying.",
+              "Which visa is for you? Degree hai - Engineer Visa. Skill test de sakte ho - SSW. Training se shuru karna hai - TITP / Ikusei Shuro. Padhai ke liye aana hai - Student Visa. Care ka kaam pasand hai - the Kaigo road."
+            ],
+            traps: [
+              "Never pay a deposit and never sign a penalty paper - both are banned. If an agent asks for money, first check the official site yourself.",
+              "Ikusei Shuro starts on 1 April 2027 and India is not confirmed for it. Taking money in its name today is fraud.",
+              "There is no Working Holiday visa for India. Any agent selling it is lying - stay away."
+            ]
+          },
+          hi: {
+            title: "Japan के सारे वीज़ा — एक नज़र में",
+            simple: "Japan के कई वीज़ा हैं, और हर वीज़ा का अपना नियम है। यहाँ हर मुख्य work और study वीज़ा एक ही page पर है, बिल्कुल आसान शब्दों में: ये है क्या, कौन जा सकता है, कितने साल मिलता है, और परिवार साथ आ सकता है या नहीं? पहले ये पढ़ें, फिर अपने वीज़ा की पूरी guide खोलें।",
+            steps: [
+              "TITP (Technical Intern Training): पुराना training वाला रास्ता। आप काम सीखने आते हैं — ये training है, सीधी नौकरी नहीं। India से सिर्फ़ official Sending Organisation के through; direct apply नहीं होता। कुल ज़्यादा से ज़्यादा 5 साल। परिवार साथ नहीं आ सकता। Company बदलना लगभग नामुमकिन है।",
+              "Ikusei Shuro: TITP की जगह आने वाला NAYA system, 1 April 2027 से शुरू। आम तौर पर 3 साल, फिर SSW का रास्ता खुलता है। परिवार साथ नहीं आ सकता। India अभी confirm नहीं है — आज इसके नाम पर पैसा लेने वाला झूठ बोल रहा है।",
+              "SSW-1 (Specified Skilled Worker): सीधा काम का वीज़ा। अपने field का skill test + Japanese N4 या JFT-Basic pass करें। 16 fields हैं — factory, खाना, building, care, खेती वग़ैरह। कुल ज़्यादा से ज़्यादा 5 साल। परिवार साथ नहीं आ सकता। उसी field में company बदल सकते हैं, और agent की ज़रूरत नहीं है।",
+              "SSW-2: SSW-1 के ऊपर वाला level। SSW-1 में 2–3 साल काम, बड़ा SSW-2 test, और दूसरों को सिखाने का तजुर्बा चाहिए। सिर्फ़ 11 fields में है। कोई कुल limit नहीं — renew होता रहता है। परिवार साथ आ सकता है। लंबे समय रहने और PR का रास्ता यहीं से खुलता है। Kaigo में SSW-2 नहीं है।",
+              "Engineer Visa (Engineer / Specialist in Humanities / International Services): degree वालों के लिए सीधी company नौकरी। काम आपकी degree से जुड़ा होना चाहिए, या 10 साल का तजुर्बा चाहिए (IT के लिए कुछ ख़ास exams भी चलते हैं)। Renew होता रहता है। परिवार साथ आ सकता है। N2 क़ानून नहीं है — पर companies माँगती हैं।",
+              "Skilled Labor: ख़ास हाथ के हुनर वालों के लिए, जैसे बड़े hotel के chef। List वाले हुनर में लगभग 10 साल का साबित तजुर्बा चाहिए। Degree नहीं चाहिए — हाथ और तजुर्बा ही सब कुछ है। Renew होता रहता है। परिवार साथ आ सकता है।",
+              "Business Manager: Japan में अपनी company खोलकर रहने का वीज़ा। 2025 से नियम बहुत सख़्त हैं: कम से कम ¥30 million पूँजी, अपना office, और 1 full-time staff चाहिए। Renew होता रहता है। परिवार साथ आ सकता है। अब छोटे पैसे से ये वीज़ा नहीं होता।",
+              "Highly Skilled Professional: points वाला fast-track वीज़ा। पढ़ाई, salary और तजुर्बे पर points — 70 points या ज़्यादा चाहिए। एक बार में 5 साल का वीज़ा मिलता है। परिवार साथ आ सकता है, कुछ ख़ास सुविधाओं के साथ। PR सबसे जल्दी: 80 points पर सिर्फ़ 1 साल में PR apply कर सकते हैं।",
+              "Intra-Company Transfer: वही company आपको India office से Japan office भेजती है। पहले उसी company group में कम से कम 1 साल काम किया होना चाहिए। वीज़ा उसी company से बँधा होता है — दूसरी company में बदल नहीं सकते।",
+              "Student Visa: पढ़ाई के लिए — Japanese language school या university। Admission और fees का इंतज़ाम होना चाहिए। Course के हिसाब से एक बार में 2 साल तक। परिवार आम तौर पर साथ नहीं आ सकता। Part-time काम सिर्फ़ 28 घंटे/हफ़्ता। ये पढ़ाई का रास्ता है — काम के लिए इसे मत चुनें।",
+              "Kaigo Visa (Care Worker): उन care workers का ख़ास वीज़ा जो Kaigo Fukushishi का national exam pass करते हैं। Exam से पहले: लगभग 3 साल care का काम + लगभग 450 घंटे की training। 5 साल वाली रोक नहीं — renew होता रहता है। परिवार साथ आ सकता है। Exam Japanese में होता है — मुश्किल है, पर ये वीज़ा SSW से मज़बूत है।",
+              "Working Holiday: कुछ देशों के नौजवानों के लिए घूमते हुए काम करने का वीज़ा। India इस list में नहीं है — Indian passport पर ये वीज़ा मिल ही नहीं सकता। जो agent Working Holiday दिलाने की बात करे, वो झूठ बोल रहा है।",
+              "आपके लिए कौन-सा वीज़ा? Degree है — Engineer Visa। Skill test दे सकते हो — SSW। Training से शुरू करना है — TITP / Ikusei Shuro। पढ़ाई के लिए आना है — Student Visa। Care का काम पसंद है — Kaigo का रास्ता।"
+            ],
+            traps: [
+              "Deposit कभी न दें और penalty वाला paper कभी sign न करें — दोनों banned हैं। Agent पैसा माँगे तो पहले official site पर ख़ुद check करें।",
+              "Ikusei Shuro 1 April 2027 से शुरू होगा और India उसके लिए confirm नहीं है। आज इसके नाम पर पैसा लेना fraud है।",
+              "India के लिए Working Holiday वीज़ा है ही नहीं। इसे बेचने वाला agent झूठ बोल रहा है — दूर रहें।"
+            ]
+          },
+          ja: {
+            title: "日本のビザ全部 — 一目で分かる",
+            simple: "日本にはたくさんのビザがあります。ビザごとにルールがちがいます。ここに主な仕事と勉強のビザを全部、1つのページに書きました。とても簡単な言葉です: これは何か、誰が行けるか、何年もらえるか、家族を連れて来られるか。まずこれを読んで、それからあなたのビザの詳しいガイドを開いてください。",
+            steps: [
+              "TITP（技能実習）: 古い研修の道です。仕事を学ぶために来ます。研修です。直接の仕事ではありません。インドからは、公式の送出機関を通るだけです。直接の申し込みはありません。全部で最長5年です。家族は来られません。会社の変更はほとんどできません。",
+              "育成就労: TITPの代わりの新しい制度です。2027年4月1日に始まります。普通は3年です。それからSSWへの道が開きます。家族は来られません。インドはまだ確定していません。今日この名前でお金を取る人は嘘をついています。",
+              "SSW-1（特定技能1号）: 直接の仕事のビザです。あなたの分野の技能試験と、日本語N4かJFT-Basicに合格してください。16の分野があります。工場、食品、建設、介護、農業などです。全部で最長5年です。家族は来られません。同じ分野の中で会社を変えられます。エージェントは必要ありません。",
+              "SSW-2: SSW-1の上のレベルです。SSW-1で2-3年の仕事、大きいSSW-2試験、人に教える経験が必要です。11の分野だけです。合計の制限はありません。更新が続きます。家族が来られます。長く住む道と永住の道はここから開きます。介護にSSW-2はありません。",
+              "エンジニアビザ（技術・人文知識・国際業務）: 学位がある人のための、直接の会社の仕事です。仕事はあなたの学位と合わなければなりません。または10年の経験が必要です（ITは特別な試験も使えます）。更新が続きます。家族が来られます。N2は法律ではありませんが、会社が求めます。",
+              "技能: 特別な手の技能のためのビザです。例えば大きいホテルのシェフです。リストの技能で約10年の証明できる経験が必要です。学位は必要ありません。手と経験が全部です。更新が続きます。家族が来られます。",
+              "経営・管理: 日本で自分の会社を開いて住むビザです。2025年からルールがとても厳しくなりました: 最低3,000万円の資本金、自分の事務所、フルタイムのスタッフ1人が必要です。更新が続きます。家族が来られます。今は小さいお金ではできません。",
+              "高度専門職: ポイントの早いビザです。学歴、給料、経験でポイントがもらえます。70ポイント以上が必要です。1回で5年のビザがもらえます。家族が来られます。特別な利点もあります。永住がいちばん早いです: 80ポイントで、たった1年で永住を申請できます。",
+              "企業内転勤: 同じ会社が、インドの事務所から日本の事務所へあなたを移します。前に同じ会社グループで最低1年働いていなければなりません。ビザはその会社と結びついています。他の会社に変えられません。",
+              "留学: 勉強のためのビザです。日本語学校か大学です。入学と学費の準備が必要です。コースにより、1回で最長2年です。家族は普通来られません。アルバイトは週に28時間だけです。これは勉強の道です。仕事のために選ばないでください。",
+              "介護ビザ: 介護福祉士の国家試験に合格した介護の人のための特別なビザです。試験の前: 約3年の介護の仕事と、約450時間の研修です。5年の停止はありません。更新が続きます。家族が来られます。試験は日本語です。難しいですが、このビザはSSWより強いです。",
+              "ワーキングホリデー: いくつかの国の若い人のための、旅行と仕事のビザです。インドはリストにありません。インドのパスポートではこのビザは絶対にもらえません。ワーキングホリデーを約束するエージェントは嘘をついています。",
+              "あなたにはどのビザ？学位があります — エンジニアビザ。技能試験を受けられます — SSW。研修から始めたい — TITP / 育成就労。勉強のために来たい — 留学ビザ。介護の仕事が好きです — 介護の道。"
+            ],
+            traps: [
+              "デポジットを絶対に払わないでください。罰金の紙に絶対にサインしないでください。どちらも禁止です。エージェントがお金を求めたら、まず公式サイトで自分で確認してください。",
+              "育成就労は2027年4月1日に始まります。インドは確定していません。今日その名前でお金を取ることは詐欺です。",
+              "インドのためのワーキングホリデービザはありません。それを売るエージェントは嘘をついています。離れてください。"
+            ]
+          }
+        },
+{
           id: "ssw-titp-visas", section: "visas",
           keywords: "visa visas ssw titp work route training trainee skilled worker welding shipbuilding वीज़ा वीजा वर्क रूट ट्रेनिंग प्रशिक्षु नौकरी काम ビザ 特定技能 技能実習 働く 道",
           sources: [ { label: "SSW Official Portal - ssw.go.jp", url: "https://www.ssw.go.jp/en/" }, { label: "Immigration Services Agency (ISA) - moj.go.jp", url: "https://www.moj.go.jp/isa/" }, { label: "OTIT - otit.go.jp", url: "https://www.otit.go.jp/" } ],
@@ -369,6 +447,105 @@
           }
         },
         {
+          id: "work-contract-words", section: "money",
+          keywords: "contract keiyaku roudou jouken tsuuchisho work conditions overtime zangyou fixed overtime penalty iyakukin shift work sign hanko basic salary deduction allowance कॉन्ट्रैक्ट साइन ओवरटाइम जुर्माना शिफ्ट अनुबंध वेतन कटौती भत्ता 契約 労働条件通知書 残業 固定残業代 違約金 交代勤務 署名 捺印 基本給 手当 控除",
+          sources: [ { label: "Ministry of Health, Labour and Welfare - mhlw.go.jp", url: "https://www.mhlw.go.jp/" }, { label: "OTIT - otit.go.jp", url: "https://www.otit.go.jp/" }, { label: "Instagram Post - 16 Contract Words With Pictures - instagram.com", url: "https://www.instagram.com/p/DgAlFYlCS-W/" } ],
+          reel: "https://www.instagram.com/reel/DgAlAsEBAAF/",
+          en: {
+            title: "Japan Work Contract - Read Before You Sign",
+            simple: "Before you start a job in Japan, the company must give you one paper - the Roudou Jouken Tsuuchisho. It lists your salary, your hours, your holidays and every rule of your job. This guide explains the 16 words on that paper in very simple words, the 3 danger points to check before you sign, and the 4 steps to take if the company breaks a rule. Read first, sign later - if you understand your contract, nobody can cheat you.",
+            steps: [
+              "The paper itself - 労働条件通知書 (roudou jouken tsuuchisho): the company must give you this paper before you start. It lists all your job conditions. Always keep your own copy safe.",
+              "契約期間 (keiyaku kikan) - contract period: how long your job lasts. Check the end date on the very first day.",
+              "基本給 (kihonkyuu) - basic salary. Overtime money is counted on this amount - if the basic pay is written low, your overtime pay also becomes low.",
+              "手当 (teate) - allowance: extra money on top of salary. Check which allowance it is, and how much it is.",
+              "残業 (zangyou) - overtime: work after your fixed hours. It must be paid at least 25% extra.",
+              "控除 (koujo) - deduction: money cut from your salary. Every cut must have a written reason.",
+              "社会保険 (shakai hoken) - government health and pension insurance. This cut is correct - it makes your hospital treatment cheap.",
+              "有給休暇 (yuukyuu kyuuka) - paid holiday: a day off with no salary cut. After 6 months of work, you get at least 10 days.",
+              "休日 (kyuujitsu) - your weekly day off. At least 1 day off every week is your legal right.",
+              "試用期間 (shiyou kikan) - trial period (probation) at the start of the job. Salary and rules stay the same in this period too.",
+              "解雇 (kaiko) - the company removing you from the job (firing). Sudden firing is illegal - the company must inform you 30 days before.",
+              "退職 (taishoku) - leaving the job yourself (resignation). Check the rule first - usually you inform the company 2 weeks before.",
+              "署名・捺印 (shomei / natsuin) - signing a paper and putting your stamp (hanko). Never sign anything without reading it first.",
+              "DANGER POINT 1 - 固定残業代 (kotei zangyou dai): fixed overtime pay already included inside your salary. Check how many hours are included - work above those hours must be paid separately.",
+              "DANGER POINT 2 - 交代勤務 (koutai kinmu): rotational shift work - day shift and night shift take turns. Work between 10 PM and 5 AM must be paid at least 25% extra.",
+              "DANGER POINT 3 - 違約金 (iyakukin): penalty money asked when you leave a job. For TITP trainee workers this penalty is banned by law - the company cannot take it from you.",
+              "Company made a mistake? STEP 1 - take out your contract copy and find the exact point that is broken.",
+              "STEP 2 - first, show the contract and talk calmly.",
+              "STEP 3 - if they refuse, go to the Labour Standards Inspection Office (労働基準監督署, roudou kijun kantokusho).",
+              "STEP 4 - TITP workers also get special free help from OTIT and FRESC. Do not be afraid - Japanese law stands with the worker."
+            ],
+            traps: [
+              "Everything is on paper, not in spoken words. A promise that is not written in the contract does not count.",
+              "The law stands with the worker - but only the person who kept his contract copy can prove his point. Keep the copy.",
+              "Read first, sign later. If you do not understand a word, ask before signing - not after a problem starts."
+            ]
+          },
+          hi: {
+            title: "जापान का वर्क कॉन्ट्रैक्ट - साइन करने से पहले पढ़ें",
+            simple: "Japan में नौकरी शुरू करने से पहले कंपनी आपको एक काग़ज़ देती है - 労働条件通知書, काम की सारी शर्तें लिखी हुई सबसे ज़रूरी काग़ज़। इस guide में उस काग़ज़ के 16 शब्द बिल्कुल आसान भाषा में हैं - हर शब्द का मतलब और एक काम की tip। साथ में 3 ख़तरे के पॉइंट, जो साइन से पहले ज़रूर देखने हैं, और कंपनी ग़लती करे तो उठाने वाले 4 step। पहले कॉन्ट्रैक्ट पढ़ो, फिर साइन करो - कॉन्ट्रैक्ट समझोगे तो कोई धोखा नहीं दे पाएगा।",
+            steps: [
+              "काग़ज़ ख़ुद - 労働条件通知書 (roudou jouken tsuuchisho): नौकरी शुरू होने से पहले कंपनी को ये काग़ज़ देना ही पड़ता है। इसमें आपकी नौकरी की सारी शर्तें लिखी होती हैं। इसकी कॉपी हमेशा अपने पास सुरक्षित रखो।",
+              "契約期間 (keiyaku kikan) - कॉन्ट्रैक्ट का समय: आपकी नौकरी कितने समय के लिए है। ख़त्म होने की तारीख़ पहले दिन ही देख लो।",
+              "基本給 (kihonkyuu) - बेसिक सैलरी। ओवरटाइम का पैसा इसी रकम पर गिना जाता है - बेसिक कम लिखा हो तो ओवरटाइम भी कम मिलेगा।",
+              "手当 (teate) - भत्ता: सैलरी के ऊपर मिलने वाला एक्स्ट्रा पैसा। कौन सा भत्ता है और कितना है - साफ़ देखो।",
+              "残業 (zangyou) - ओवरटाइम: तय समय के बाद का काम। इसका पैसा कम से कम 25% ज़्यादा मिलना चाहिए।",
+              "控除 (koujo) - कटौती: सैलरी से कटने वाला पैसा। हर कटौती की वजह लिखी होनी चाहिए।",
+              "社会保険 (shakai hoken) - सेहत और पेंशन का सरकारी बीमा। ये कटना सही है - इससे अस्पताल का इलाज सस्ता होता है।",
+              "有給休暇 (yuukyuu kyuuka) - पैसों वाली छुट्टी: सैलरी कटे बिना छुट्टी। 6 महीने काम के बाद कम से कम 10 दिन मिलते हैं।",
+              "休日 (kyuujitsu) - हफ़्ते की छुट्टी वाला दिन। हफ़्ते में कम से कम 1 छुट्टी आपका क़ानूनी हक़ है।",
+              "試用期間 (shiyou kikan) - शुरुआत का आज़माइशी समय (probation)। इस समय में भी सैलरी और नियम वही रहते हैं।",
+              "解雇 (kaiko) - कंपनी का आपको नौकरी से निकालना। अचानक निकालना ग़ैरक़ानूनी है - 30 दिन पहले बताना होता है।",
+              "退職 (taishoku) - ख़ुद नौकरी छोड़ना। छोड़ने से पहले नियम देखो - आम तौर पर 2 हफ़्ते पहले बताते हैं।",
+              "署名・捺印 (shomei / natsuin) - साइन करना और मोहर (स्टाम्प) लगाना। पढ़े बिना कभी साइन मत करो।",
+              "ख़तरा पॉइंट 1 - 固定残業代 (kotei zangyou dai): सैलरी में पहले से शामिल तय ओवरटाइम का पैसा। देखो कितने घंटे का ओवरटाइम शामिल है - उससे ज़्यादा काम का पैसा अलग मिलेगा।",
+              "ख़तरा पॉइंट 2 - 交代勤務 (koutai kinmu): बारी-बारी से बदलने वाली ड्यूटी - दिन की शिफ़्ट और रात की शिफ़्ट। रात 10 बजे से सुबह 5 बजे के काम पर कम से कम 25% एक्स्ट्रा मिलता है।",
+              "ख़तरा पॉइंट 3 - 違約金 (iyakukin): नौकरी छोड़ने पर माँगा जाने वाला जुर्माना पैसा। TITP प्रशिक्षु मज़दूरों के लिए ये जुर्माना क़ानून से मना है - कंपनी ये पैसा नहीं ले सकती।",
+              "कंपनी ग़लती करे तो? STEP 1 - अपनी कॉन्ट्रैक्ट की कॉपी निकालो और ग़लती वाला पॉइंट ढूँढो।",
+              "STEP 2 - पहले शांति से कॉन्ट्रैक्ट दिखा कर बात करो।",
+              "STEP 3 - ना माने तो Labour Standards Office (労働基準監督署) जाओ।",
+              "STEP 4 - TITP मज़दूरों के लिए OTIT और FRESC की ख़ास मुफ़्त मदद भी है। डरने की ज़रूरत नहीं - जापान का क़ानून मज़दूर के साथ खड़ा है।"
+            ],
+            traps: [
+              "कंपनी की हर बात मुँह से नहीं, काग़ज़ पर होती है। जो वादा कॉन्ट्रैक्ट में लिखा नहीं, वो गिना नहीं जाता।",
+              "क़ानून मज़दूर के साथ खड़ा है - लेकिन अपनी बात सिर्फ़ वही साबित कर सकता है जिसके पास कॉन्ट्रैक्ट की कॉपी है। कॉपी हमेशा रखो।",
+              "पहले पढ़ो, फिर साइन करो। कोई शब्द समझ न आए तो साइन से पहले पूछो - परेशानी शुरू होने के बाद नहीं।"
+            ]
+          },
+          ja: {
+            title: "日本の仕事の契約（けいやく）- サインの前に読んでください",
+            simple: "日本で仕事を始める前に、会社は1つの紙を渡します - 労働条件通知書（ろうどうじょうけんつうちしょ）、仕事の条件が全部書いてある、いちばん大切な紙です。このガイドは、その紙の16の言葉を簡単な言葉で説明（せつめい）します。サインの前に見る3つの危ないポイントと、会社がルールを破（やぶ）ったときの4つのステップもあります。先に読んで、後でサインしてください。コントラクトが分かれば、だまされません。",
+            steps: [
+              "紙（かみ）そのもの - 労働条件通知書（ろうどうじょうけんつうちしょ）: 仕事を始める前に、会社はこの紙を渡さなければなりません。仕事の条件が全部書いてあります。コピーをいつも自分で持ってください。",
+              "契約期間（けいやくきかん）- コントラクトの時間: あなたの仕事がどのぐらいの時間か。終わりの日を最初の日に確認（かくにん）してください。",
+              "基本給（きほんきゅう）- 基本の給料。残業のお金はこの金額（きんがく）で数えます。基本給が少ないと、残業のお金も少なくなります。",
+              "手当（てあて）- 給料の上に来る余分なお金。どの手当か、いくらか、はっきり確認してください。",
+              "残業（ざんぎょう）- 決まった時間の後の仕事。お金は25%以上、多くなければなりません。",
+              "控除（こうじょ）- 給料から引かれるお金。全部の引かれるお金に、書いた理由（りゆう）が必要です。",
+              "社会保険（しゃかいほけん）- 健康（けんこう）と年金の国の保険（ほけん）。この引き方は正しいです。病院の治療（ちりょう）が安くなります。",
+              "有給休暇（ゆうきゅうきゅうか）- お金のある休み: 給料が減らない休み。6ヶ月働いた後、10日以上もらえます。",
+              "休日（きゅうじつ）- 週の休みの日。週に1日以上の休みは、法律（ほうりつ）の権利（けんり）です。",
+              "試用期間（しようきかん）- 仕事の最初の試しの時間。この時間も、給料とルールは同じです。",
+              "解雇（かいこ）- 会社があなたを仕事から出すこと。急に出すことは法律違反（ほうりついはん）です。30日前に言わなければなりません。",
+              "退職（たいしょく）- 自分で仕事をやめること。先にルールを確認してください。普通は2週間前に言います。",
+              "署名（しょめい）・捺印（なついん）- 紙にサインすることと、はんこを押すこと。読まないで、絶対（ぜったい）にサインしないでください。",
+              "危ないポイント1 - 固定残業代（こていざんぎょうだい）: 給料の中に先に入っている決まった残業のお金。何時間入っているか確認してください。それより多い仕事のお金は別にもらえます。",
+              "危ないポイント2 - 交代勤務（こうたいきんむ）: 昼のシフトと夜のシフトが交代する仕事。夜10時から朝5時の仕事は、25%以上多くなければなりません。",
+              "危ないポイント3 - 違約金（いやくきん）: 仕事をやめるときに払う罰（ばつ）のお金。技能実習生（ぎのうじっしゅうせい）からは、このお金は法律で禁止（きんし）です。会社は取れません。",
+              "会社がまちがえたら? ステップ1 - あなたのコントラクトのコピーを出して、まちがえたポイントを見つけてください。",
+              "ステップ2 - 先に、コントラクトを見せて、静かに話してください。",
+              "ステップ3 - 会社が聞かなければ、労働基準監督署（ろうどうきじゅんかんとくしょ）に行ってください。",
+              "ステップ4 - 技能実習生には、OTITとFRESCの無料の特別な助けもあります。怖（こわ）がらないでください。日本の法律は働く人の味方です。"
+            ],
+            traps: [
+              "会社の全部の約束（やくそく）は、口ではなく紙の上にあります。コントラクトに書いていない約束は、数えられません。",
+              "法律は働く人の味方です。でも、コントラクトのコピーを持っている人だけが、自分の話を証明（しょうめい）できます。コピーをいつも持ってください。",
+              "先に読んで、後でサインしてください。分からない言葉があれば、問題が始まる前ではなく、サインの前に聞いてください。"
+            ]
+          }
+        },
+        {
           id: "titp-ending-ikusei-shuro", section: "visas",
           keywords: "titp ending ikusei shuro 2027 new system visa change ट्रेनिंग खत्म नया सिस्टम वीज़ा बदलाव 育成就労 技能実習 終わり 新しい制度 2027",
           sources: [ { label: "Immigration Services Agency (ISA) - moj.go.jp", url: "https://www.moj.go.jp/isa/" }, { label: "OTIT - otit.go.jp", url: "https://www.otit.go.jp/" } ],
@@ -582,6 +759,7 @@
           id: "free-japanese-classes", section: "money",
           keywords: "free japanese classes nihongo kyoshitsu learn japanese city hall shiyakusho international association coaching मुफ़्त जापानी क्लास जापानी सीखें सिटी हॉल कोचिंग भाषा 日本語教室 無料 市役所 ボランティア 勉強",
           sources: [ { label: "Agency for Cultural Affairs - bunka.go.jp", url: "https://www.bunka.go.jp/" }, { label: "Irodori - Free Japanese Learning, Japan Foundation - jpf.go.jp", url: "https://www.irodori.jpf.go.jp/en/" } ],
+          reel: "https://www.instagram.com/reel/Df8cUL6hRZ3/",
           en: {
             title: "FREE Japanese Classes Near You - Nihongo Kyoshitsu",
             simple: "In almost every city in Japan, a free Japanese class runs near your home. It is called Nihongo Kyoshitsu - a community Japanese class. City offices, international associations and local volunteers run it under the Japanese government's Japanese-language education system. Most classes are free; some take only ¥100–500 for copies and materials.",
@@ -1252,14 +1430,14 @@
           en: { name: "I am in India - I want to come to Japan", desc: "The full road from India: visa, tests, job, and how not to get cheated on the way." },
           hi: { name: "मैं India में हूँ - मुझे Japan आना है", desc: "India से पूरा रास्ता: visa, tests, नौकरी, और रास्ते में ठगे जाने से कैसे बचें।" },
           ja: { name: "私はインドにいます - 日本に来たい", desc: "インドからの全部の道: ビザ、試験、仕事、そして途中でだまされない方法。" },
-          guides: ["ssw-titp-visas", "prometric-registration", "ssw2-free-books", "free-japanese-classes", "company-sach-2-n4-n3-n2", "resume-samples-2-styles", "apply-job-from-india", "company-sach-4-apply-to-offer", "agent-money-system"]
+          guides: ["all-visas-at-a-glance", "ssw-titp-visas", "prometric-registration", "ssw2-free-books", "free-japanese-classes", "company-sach-2-n4-n3-n2", "resume-samples-2-styles", "apply-job-from-india", "company-sach-4-apply-to-offer", "agent-money-system"]
         },
         {
           id: "in-japan",
           en: { name: "I am already in Japan", desc: "Life inside Japan: emergency numbers, problems, salary rules, and your next visa step." },
           hi: { name: "मैं पहले से Japan में हूँ", desc: "Japan के अंदर की ज़िंदगी: emergency नंबर, परेशानियाँ, वेतन के नियम, और आपका अगला visa कदम।" },
           ja: { name: "私はもう日本にいます", desc: "日本での生活: 緊急の番号、問題、給料のルール、次のビザのステップ。" },
-          guides: ["emergency-contacts", "report-a-problem", "minimum-wage", "titp-ending-ikusei-shuro", "ssw1-to-ssw2", "kaigo-other-door", "apply-job-in-japan"]
+          guides: ["emergency-contacts", "report-a-problem", "minimum-wage", "work-contract-words", "titp-ending-ikusei-shuro", "ssw1-to-ssw2", "kaigo-other-door", "apply-job-in-japan"]
         },
         {
           id: "job-hunt",
@@ -1290,7 +1468,11 @@
         { label: "Consumer Affairs Agency - Hotline 188", url: "https://www.caa.go.jp", host: "caa.go.jp",
           en: "Shopping and contract problems - call the Consumer Hotline on 188 to reach your nearest Consumer Centre.",
           hi: "खरीदारी और कॉन्ट्रैक्ट की परेशानी - Consumer Hotline 188 पर कॉल करें, सबसे पास वाला Consumer Centre मिलेगा।",
-          ja: "買い物と契約の問題 - 消費者ホットライン188に電話すると、近くの消費生活センターにつながります。" }
+          ja: "買い物と契約の問題 - 消費者ホットライン188に電話すると、近くの消費生活センターにつながります。" },
+        { label: "JETRO Open for Professionals", url: "https://www.jetro.go.jp/en/hrportal/", host: "jetro.go.jp",
+          en: "Big Japanese companies hiring foreign professionals - the official JETRO list. For Engineer-visa level jobs.",
+          hi: "विदेशी professionals को रखने वाली बड़ी जापानी कंपनियाँ - JETRO की आधिकारिक लिस्ट। Engineer वीज़ा level की नौकरियों के लिए।",
+          ja: "外国人のプロフェッショナルを雇（やと）う大きな日本の会社 - JETROの公式リスト。技術（ぎじゅつ）・人文知識（じんぶんちしき）・国際業務（こくさいぎょうむ）の仕事のため。" }
       ];
 
       var COURSE_ALIASES = "try japan course 30 days 30 din hiragana katakana kanji learn japanese japanese seekho japanese course beginner nihongo survival japanese जापानी सीखें जापानी सीखो कोर्स तीस दिन हिरागाना काताकाना";
